@@ -10,15 +10,20 @@ export default function Wishlist() {
 
   const wishedProducts = products.filter(p => wishlist.includes(p.id))
 
+  const getFirstAvailableVariant = (product) => {
+    if (!product?.variants?.length) return null
+    return product.variants.find(v => v.stock > 0 && v.color && v.size) || null
+  }
+
   const removeFromWishlist = (id) => {
     dispatch({ type: 'REMOVE_WISHLIST', payload: id })
     toast('Removed from wishlist', 'info')
   }
 
   const moveToCart = (product) => {
-    const firstVariant = product.variants.find(v => v.stock > 0)
+    const firstVariant = getFirstAvailableVariant(product)
     if (!firstVariant) {
-      toast('No stock available', 'error')
+      toast('No purchasable variant in stock', 'error')
       return
     }
     dispatch({

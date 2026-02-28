@@ -72,6 +72,12 @@
   font-size: .8rem;
 }
 
+.clearAllBtn {
+  height: 38px;
+  padding: 0 .9rem;
+  font-size: .68rem;
+}
+
 .empty {
   text-align: center;
   padding: 5rem 2rem;
@@ -87,4 +93,46 @@
 .emptySub {
   color: var(--ink-muted);
   font-size: .9rem;
+}
+
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+.pageBtn {
+  height: 38px;
+  padding: 0 1rem;
+  font-size: .72rem;
+}
+
+.pageNumbers {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.pageNumber {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--sand-dark);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--ink);
+  font-size: .78rem;
+  transition: all .2s;
+}
+
+.pageNumber:hover {
+  border-color: var(--ink);
+}
+
+.pageNumberActive {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--white);
 }

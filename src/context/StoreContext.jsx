@@ -14,33 +14,49 @@ const initialState = {
 }
 
 let toastId = 0
+const getVariantStock = (product, color, size) =>
+  product?.variants?.find(v => v.color === color && v.size === size)?.stock ?? 0
 
 function reducer(state, action) {
   switch (action.type) {
 
     case 'ADD_TO_CART': {
       const { product, color, size, qty = 1 } = action.payload
+      const stock = getVariantStock(product, color, size)
+      if (stock < 1) return state
+
       const key = `${product.id}-${color}-${size}`
       const existing = state.cart.find(i => i.key === key)
+      const safeQty = Math.max(1, Math.min(qty, stock))
+
       if (existing) {
         return {
           ...state,
           cart: state.cart.map(i =>
-            i.key === key ? { ...i, qty: i.qty + qty } : i
+            i.key === key ? { ...i, qty: Math.min(i.qty + safeQty, stock) } : i
           ),
         }
       }
       return {
         ...state,
-        cart: [...state.cart, { key, product, color, size, qty }],
+        cart: [...state.cart, { key, product, color, size, qty: safeQty }],
       }
     }
 
     case 'UPDATE_QTY': {
+      const item = state.cart.find(i => i.key === action.payload.key)
+      if (!item) return state
+
+      const stock = getVariantStock(item.product, item.color, item.size)
+      if (stock < 1) {
+        return { ...state, cart: state.cart.filter(i => i.key !== action.payload.key) }
+      }
+
+      const nextQty = Math.max(1, Math.min(action.payload.qty, stock))
       return {
         ...state,
         cart: state.cart.map(i =>
-          i.key === action.payload.key ? { ...i, qty: action.payload.qty } : i
+          i.key === action.payload.key ? { ...i, qty: nextQty } : i
         ),
       }
     }

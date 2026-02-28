@@ -128,6 +128,67 @@
   margin-bottom: 1.5rem;
 }
 
+.promoWrap {
+  margin-bottom: 1.25rem;
+  padding: .9rem;
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--r-sm);
+  background: var(--cream);
+}
+
+.promoLabel {
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: .45rem;
+}
+
+.promoRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .5rem;
+}
+
+.promoInput {
+  height: 40px;
+  font-size: .8rem;
+}
+
+.applyBtn {
+  height: 40px;
+  min-width: 90px;
+  padding: 0 .85rem;
+  font-size: .68rem;
+}
+
+.promoError {
+  margin-top: .45rem;
+  font-size: .75rem;
+  color: var(--error);
+}
+
+.appliedPromo {
+  margin-top: .55rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  font-size: .75rem;
+  color: var(--ink);
+}
+
+.removePromoBtn {
+  font-size: .72rem;
+  color: var(--ink-muted);
+  text-decoration: underline;
+  transition: color .2s;
+}
+
+.removePromoBtn:hover {
+  color: var(--error);
+}
+
 .summaryRows { display: flex; flex-direction: column; gap: .75rem; }
 
 .row {

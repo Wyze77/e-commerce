@@ -3,30 +3,86 @@ import { useSearchParams } from 'react-router-dom'
 import { useProducts } from '../hooks/useProducts'
 import ProductCard from '../components/ProductCard'
 import Filters from '../components/Filters'
+import BackToTop from '../components/BackToTop'
 import styles from './Shop.module.css'
 
 const SORT_OPTIONS = [
   { value: 'newest', label: 'Newest' },
   { value: 'price-asc', label: 'Price: Low to High' },
   { value: 'price-desc', label: 'Price: High to Low' },
+  { value: 'rating', label: 'Rating' },
 ]
 
 const DEFAULT_FILTERS = { search: '', category: '', minPrice: '', maxPrice: '', colors: [], sizes: [] }
+const PER_PAGE = 12
+
+const parseArrayParam = (value) => (value ? value.split(',').map(x => x.trim()).filter(Boolean) : [])
+
+const parseFiltersFromParams = (params) => ({
+  ...DEFAULT_FILTERS,
+  search: params.get('search') || '',
+  category: params.get('category') || '',
+  minPrice: params.get('minPrice') || '',
+  maxPrice: params.get('maxPrice') || '',
+  colors: parseArrayParam(params.get('colors')),
+  sizes: parseArrayParam(params.get('sizes')),
+})
+
+const parseSortFromParams = (params) => {
+  const value = params.get('sort') || 'newest'
+  return SORT_OPTIONS.some(o => o.value === value) ? value : 'newest'
+}
+
+const parsePageFromParams = (params) => {
+  const page = Number(params.get('page') || 1)
+  return Number.isInteger(page) && page > 0 ? page : 1
+}
+
+const buildParams = (filters, sort, page) => {
+  const params = new URLSearchParams()
+  if (filters.search) params.set('search', filters.search)
+  if (filters.category) params.set('category', filters.category)
+  if (filters.minPrice) params.set('minPrice', filters.minPrice)
+  if (filters.maxPrice) params.set('maxPrice', filters.maxPrice)
+  if (filters.colors?.length) params.set('colors', filters.colors.join(','))
+  if (filters.sizes?.length) params.set('sizes', filters.sizes.join(','))
+  if (sort && sort !== 'newest') params.set('sort', sort)
+  if (page > 1) params.set('page', String(page))
+  return params
+}
 
 export default function Shop() {
   const { products, loading } = useProducts()
-  const [searchParams] = useSearchParams()
-  const [sort, setSort] = useState('newest')
-  const [filters, setFilters] = useState(() => ({
-    ...DEFAULT_FILTERS,
-    category: searchParams.get('category') || '',
-  }))
+  const [searchParams, setSearchParams] = useSearchParams()
+  const [filters, setFilters] = useState(() => parseFiltersFromParams(searchParams))
+  const [sort, setSort] = useState(() => parseSortFromParams(searchParams))
+  const [page, setPage] = useState(() => parsePageFromParams(searchParams))
   const [showFilters, setShowFilters] = useState(false)
 
   useEffect(() => {
-    const cat = searchParams.get('category')
-    if (cat) setFilters(f => ({ ...f, category: cat }))
+    setFilters(parseFiltersFromParams(searchParams))
+    setSort(parseSortFromParams(searchParams))
+    setPage(parsePageFromParams(searchParams))
   }, [searchParams])
+
+  const syncQuery = (nextFilters, nextSort, nextPage) => {
+    const nextParams = buildParams(nextFilters, nextSort, nextPage)
+    if (nextParams.toString() !== searchParams.toString()) {
+      setSearchParams(nextParams)
+    }
+  }
+
+  const handleFiltersChange = (nextFilters) => {
+    setFilters(nextFilters)
+    setPage(1)
+    syncQuery(nextFilters, sort, 1)
+  }
+
+  const handleSortChange = (nextSort) => {
+    setSort(nextSort)
+    setPage(1)
+    syncQuery(filters, nextSort, 1)
+  }
 
   const filtered = useMemo(() => {
     let list = [...products]
@@ -55,12 +111,51 @@ export default function Shop() {
 
     if (sort === 'price-asc') list.sort((a, b) => (a.salePrice ?? a.price) - (b.salePrice ?? b.price))
     else if (sort === 'price-desc') list.sort((a, b) => (b.salePrice ?? b.price) - (a.salePrice ?? a.price))
+    else if (sort === 'rating') list.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0) || (b.id - a.id))
     else list.sort((a, b) => b.id - a.id)
 
     return list
   }, [products, filters, sort])
 
-  const clearFilters = () => setFilters(DEFAULT_FILTERS)
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE))
+
+  useEffect(() => {
+    if (loading) return
+    if (page > totalPages) {
+      setPage(totalPages)
+      syncQuery(filters, sort, totalPages)
+    }
+  }, [loading, page, totalPages, filters, sort])
+
+  const paginatedProducts = useMemo(() => {
+    const start = (page - 1) * PER_PAGE
+    return filtered.slice(start, start + PER_PAGE)
+  }, [filtered, page])
+
+  const clearFilters = () => {
+    setFilters(DEFAULT_FILTERS)
+    setSort('newest')
+    setPage(1)
+    setSearchParams({})
+  }
+
+  const hasActiveFilters = Boolean(
+    filters.search ||
+    filters.category ||
+    filters.minPrice ||
+    filters.maxPrice ||
+    filters.colors?.length ||
+    filters.sizes?.length ||
+    sort !== 'newest' ||
+    page !== 1
+  )
+
+  const goToPage = (nextPage) => {
+    if (nextPage < 1 || nextPage > totalPages) return
+    setPage(nextPage)
+    syncQuery(filters, sort, nextPage)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
     <div className="container" style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
@@ -83,16 +178,24 @@ export default function Shop() {
 
         {/* Sidebar */}
         <div className={`${styles.sidebar} ${showFilters ? styles.sidebarOpen : ''}`}>
-          <Filters filters={filters} onChange={setFilters} onClear={clearFilters} />
+          <Filters filters={filters} onChange={handleFiltersChange} onClear={clearFilters} />
         </div>
 
         {/* Main */}
         <div className={styles.main}>
           <div className={styles.toolbar}>
             <p className={styles.countDesktop}>{filtered.length} products</p>
+            {hasActiveFilters && (
+              <button
+                className={`btn btn-ghost ${styles.clearAllBtn}`}
+                onClick={clearFilters}
+              >
+                Clear all filters
+              </button>
+            )}
             <select
               value={sort}
-              onChange={e => setSort(e.target.value)}
+              onChange={e => handleSortChange(e.target.value)}
               className={styles.sort}
             >
               {SORT_OPTIONS.map(o => (
@@ -112,20 +215,59 @@ export default function Shop() {
               <p className={styles.emptyTitle}>No products found</p>
               <p className={styles.emptySub}>Try adjusting your filters or search term.</p>
               <button className="btn btn-outline" onClick={clearFilters} style={{ marginTop: '1.5rem' }}>
-                Clear Filters
+                Clear all filters
               </button>
             </div>
           ) : (
-            <div className="products-grid">
-              {filtered.map((p, i) => (
-                <div key={p.id} className="fade-up" style={{ animationDelay: `${i * .04}s` }}>
-                  <ProductCard product={p} />
+            <>
+              <div className="products-grid">
+                {paginatedProducts.map((p, i) => (
+                  <div key={p.id} className="fade-up" style={{ animationDelay: `${i * .04}s` }}>
+                    <ProductCard product={p} />
+                  </div>
+                ))}
+              </div>
+
+              {totalPages > 1 && (
+                <div className={`${styles.pagination} fade-up`}>
+                  <button
+                    className={`btn btn-ghost ${styles.pageBtn}`}
+                    onClick={() => goToPage(page - 1)}
+                    disabled={page === 1}
+                  >
+                    Previous
+                  </button>
+
+                  <div className={styles.pageNumbers}>
+                    {Array.from({ length: totalPages }, (_, idx) => {
+                      const value = idx + 1
+                      return (
+                        <button
+                          key={value}
+                          className={`${styles.pageNumber} ${value === page ? styles.pageNumberActive : ''}`}
+                          onClick={() => goToPage(value)}
+                          aria-current={value === page ? 'page' : undefined}
+                        >
+                          {value}
+                        </button>
+                      )
+                    })}
+                  </div>
+
+                  <button
+                    className={`btn btn-ghost ${styles.pageBtn}`}
+                    onClick={() => goToPage(page + 1)}
+                    disabled={page === totalPages}
+                  >
+                    Next
+                  </button>
                 </div>
-              ))}
-            </div>
+              )}
+            </>
           )}
         </div>
       </div>
+      <BackToTop />
     </div>
   )
 }

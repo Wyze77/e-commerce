@@ -1,4 +1,4 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+﻿*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --ink: #1a1a18;
@@ -49,7 +49,15 @@ button {
 
 img { display: block; max-width: 100%; }
 
-/* ── Layout ── */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+/* -- Layout -- */
 .container {
   width: 100%;
   max-width: var(--max-w);
@@ -61,7 +69,7 @@ img { display: block; max-width: 100%; }
   .container { padding: 0 2rem; }
 }
 
-/* ── Buttons ── */
+/* -- Buttons -- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -103,12 +111,12 @@ img { display: block; max-width: 100%; }
   cursor: not-allowed;
 }
 
-/* ── Typography ── */
+/* -- Typography -- */
 .serif { font-family: var(--font-serif); }
 
 h1, h2, h3 { font-family: var(--font-serif); font-weight: 300; line-height: 1.15; }
 
-/* ── Utility ── */
+/* -- Utility -- */
 .sr-only {
   position: absolute; width: 1px; height: 1px;
   padding: 0; margin: -1px; overflow: hidden;
@@ -128,7 +136,7 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 300; line-height: 1.15
 .tag-sale { background: var(--ink); color: var(--white); }
 .tag-new { background: var(--accent); color: var(--white); }
 
-/* ── Page skeleton ── */
+/* -- Page skeleton -- */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--sand-dark);
@@ -137,7 +145,7 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 300; line-height: 1.15
 
 .page-header h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
 
-/* ── Inputs ── */
+/* -- Inputs -- */
 input, select {
   font-family: var(--font-sans);
   font-size: .875rem;
@@ -162,7 +170,7 @@ input[type=range] {
   accent-color: var(--ink);
 }
 
-/* ── Grid ── */
+/* -- Grid -- */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -179,7 +187,7 @@ input[type=range] {
   .products-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
-/* ── Animations ── */
+/* -- Animations -- */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
@@ -195,7 +203,14 @@ input[type=range] {
   to { opacity: 1; }
 }
 
+@keyframes pulse {
+  0% { opacity: .45; }
+  50% { opacity: .85; }
+  100% { opacity: .45; }
+}
+
 .fade-up { animation: fadeUp .4s ease both; }
 
-/* ── Divider ── */
+/* -- Divider -- */
 hr { border: none; border-top: 1px solid var(--sand-dark); }
+

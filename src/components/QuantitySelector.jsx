@@ -1,4 +1,4 @@
-import styles from './QuantitySelector.module.css'
+﻿import styles from './QuantitySelector.module.css'
 
 export default function QuantitySelector({ qty, onChange, max = 99, min = 1 }) {
   return (
@@ -8,7 +8,7 @@ export default function QuantitySelector({ qty, onChange, max = 99, min = 1 }) {
         onClick={() => onChange(Math.max(min, qty - 1))}
         disabled={qty <= min}
         aria-label="Decrease"
-      >−</button>
+      >-</button>
       <span className={styles.qty}>{qty}</span>
       <button
         className={styles.btn}
@@ -19,3 +19,4 @@ export default function QuantitySelector({ qty, onChange, max = 99, min = 1 }) {
     </div>
   )
 }
+

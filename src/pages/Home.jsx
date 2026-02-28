@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { useProducts } from '../hooks/useProducts'
 import ProductCard from '../components/ProductCard'
 import styles from './Home.module.css'
@@ -55,7 +55,7 @@ export default function Home() {
         <div className="container">
           <div className={styles.featHeader}>
             <h2 className={styles.sectionTitle}>Featured</h2>
-            <Link to="/shop" className={styles.viewAll}>View All →</Link>
+            <Link to="/shop" className={styles.viewAll}>View All -&gt;</Link>
           </div>
           {loading ? (
             <div className={styles.loading}>
@@ -79,7 +79,7 @@ export default function Home() {
       <section className={styles.banner}>
         <div className="container">
           <p className={styles.bannerText}>Free shipping on orders over $150</p>
-          <p className={styles.bannerSub}>Worldwide delivery · 30-day returns</p>
+          <p className={styles.bannerSub}>Worldwide delivery | 30-day returns</p>
         </div>
       </section>
 
@@ -87,9 +87,10 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className="container">
           <p className={styles.footerLogo}>VAUX</p>
-          <p className={styles.footerSub}>© 2024 VAUX. All rights reserved.</p>
+          <p className={styles.footerSub}>(c) 2024 VAUX. All rights reserved.</p>
         </div>
       </footer>
     </div>
   )
 }
+

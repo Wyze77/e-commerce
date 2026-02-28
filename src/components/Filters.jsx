@@ -1,4 +1,4 @@
-import styles from './Filters.module.css'
+﻿import styles from './Filters.module.css'
 
 const CATEGORIES = ['clothing', 'shoes', 'belts', 'accessories']
 const ALL_COLORS = ['Black', 'White', 'Cream', 'Slate', 'Khaki', 'Charcoal', 'Camel', 'Navy', 'Ivory', 'Rust/Black', 'Grey/White', 'Tan', 'Dark Brown', 'Sand', 'Rust', 'Burgundy', 'Cognac', 'Off-White', 'Olive']
@@ -28,7 +28,7 @@ export default function Filters({ filters, onChange, onClear }) {
         <label className={styles.label}>Search</label>
         <input
           type="search"
-          placeholder="Name, brand, tag…"
+          placeholder="Name, brand, tag..."
           value={filters.search || ''}
           onChange={e => set('search', e.target.value)}
         />
@@ -53,13 +53,13 @@ export default function Filters({ filters, onChange, onClear }) {
         <label className={styles.label}>
           Price Range
           <span className={styles.rangeVal}>
-            ${filters.minPrice || 0} – ${filters.maxPrice || 400}
+            ${filters.minPrice || 0} - ${filters.maxPrice || 400}
           </span>
         </label>
         <div className={styles.rangeRow}>
           <input type="number" placeholder="Min" min="0" max="400"
             value={filters.minPrice || ''} onChange={e => set('minPrice', e.target.value)} style={{width:'80px'}} />
-          <span style={{color:'var(--ink-muted)'}}>–</span>
+          <span style={{color:'var(--ink-muted)'}}>-</span>
           <input type="number" placeholder="Max" min="0" max="500"
             value={filters.maxPrice || ''} onChange={e => set('maxPrice', e.target.value)} style={{width:'80px'}} />
         </div>
@@ -97,3 +97,4 @@ export default function Filters({ filters, onChange, onClear }) {
     </aside>
   )
 }
+

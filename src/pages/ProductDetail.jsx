@@ -1,9 +1,23 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useProducts } from '../hooks/useProducts'
 import { useStore } from '../context/StoreContext'
 import QuantitySelector from '../components/QuantitySelector'
+import ProductCard from '../components/ProductCard'
+import BackToTop from '../components/BackToTop'
 import styles from './ProductDetail.module.css'
+
+const RECENTLY_VIEWED_KEY = 'recentlyViewedProducts'
+const RECENTLY_VIEWED_LIMIT = 6
+
+const loadRecentIds = () => {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(RECENTLY_VIEWED_KEY) || '[]')
+    return Array.isArray(parsed) ? parsed.filter(x => Number.isInteger(x)) : []
+  } catch {
+    return []
+  }
+}
 
 export default function ProductDetail() {
   const { id } = useParams()
@@ -16,22 +30,59 @@ export default function ProductDetail() {
   const [selectedColor, setSelectedColor] = useState('')
   const [selectedSize, setSelectedSize] = useState('')
   const [qty, setQty] = useState(1)
+  const [recentIds, setRecentIds] = useState(loadRecentIds)
 
   const inWishlist = product ? state.wishlist.includes(product.id) : false
 
   const getVariant = (color, size) =>
     product?.variants.find(v => v.color === color && v.size === size)
 
-  const availableSizes = useMemo(() => {
-    if (!product || !selectedColor) return product?.sizes || []
-    return product.variants
-      .filter(v => v.color === selectedColor && v.stock > 0)
-      .map(v => v.size)
-  }, [product, selectedColor])
-
   const currentVariant = selectedColor && selectedSize
     ? getVariant(selectedColor, selectedSize)
     : null
+
+  useEffect(() => {
+    setActiveImg(0)
+    setSelectedColor('')
+    setSelectedSize('')
+    setQty(1)
+  }, [product?.id])
+
+  useEffect(() => {
+    if (!product) return
+
+    setRecentIds(prev => {
+      const next = [product.id, ...prev.filter(pid => pid !== product.id)].slice(0, RECENTLY_VIEWED_LIMIT)
+      localStorage.setItem(RECENTLY_VIEWED_KEY, JSON.stringify(next))
+      return next
+    })
+  }, [product])
+
+  const recentlyViewedProducts = useMemo(() => {
+    if (!product) return []
+
+    return recentIds
+      .filter(pid => pid !== product.id)
+      .map(pid => products.find(p => p.id === pid))
+      .filter(Boolean)
+      .slice(0, RECENTLY_VIEWED_LIMIT)
+  }, [recentIds, products, product])
+
+  const relatedProducts = useMemo(() => {
+    if (!product) return []
+
+    return products
+      .filter(p => p.id !== product.id)
+      .map(candidate => {
+        const sharedTags = candidate.tags.filter(tag => product.tags.includes(tag)).length
+        const score = (candidate.category === product.category ? 2 : 0) + sharedTags
+        return { candidate, score }
+      })
+      .filter(item => item.score > 0)
+      .sort((a, b) => b.score - a.score || b.candidate.id - a.candidate.id)
+      .slice(0, 4)
+      .map(item => item.candidate)
+  }, [products, product])
 
   const maxQty = currentVariant?.stock || 1
   const canAdd = selectedColor && selectedSize && currentVariant && currentVariant.stock > 0
@@ -83,11 +134,11 @@ export default function ProductDetail() {
     <div className="container" style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
       <nav className={styles.breadcrumb}>
         <Link to="/">Home</Link>
-        <span>›</span>
+        <span>&gt;</span>
         <Link to="/shop">Shop</Link>
-        <span>›</span>
+        <span>&gt;</span>
         <Link to={`/shop?category=${product.category}`} style={{ textTransform: 'capitalize' }}>{product.category}</Link>
-        <span>›</span>
+        <span>&gt;</span>
         <span>{product.name}</span>
       </nav>
 
@@ -217,6 +268,48 @@ export default function ProductDetail() {
           </div>
         </div>
       </div>
+
+      <div className={styles.sections}>
+        <section className={styles.sectionBlock}>
+          <div className={styles.sectionHead}>
+            <h2>Recently Viewed</h2>
+            <Link to="/shop" className={styles.sectionLink}>Back to Shop</Link>
+          </div>
+
+          {recentlyViewedProducts.length === 0 ? (
+            <div className={styles.sectionEmpty}>
+              <p>No recently viewed products yet.</p>
+              <p>Browse products and they will appear here.</p>
+            </div>
+          ) : (
+            <div className="products-grid">
+              {recentlyViewedProducts.map(item => (
+                <ProductCard key={item.id} product={item} />
+              ))}
+            </div>
+          )}
+        </section>
+
+        <section className={styles.sectionBlock}>
+          <div className={styles.sectionHead}>
+            <h2>Related Products</h2>
+          </div>
+
+          {relatedProducts.length === 0 ? (
+            <div className={styles.sectionEmpty}>
+              <p>No related products found for this item.</p>
+              <p>Try exploring other categories in the shop.</p>
+            </div>
+          ) : (
+            <div className="products-grid">
+              {relatedProducts.map(item => (
+                <ProductCard key={item.id} product={item} />
+              ))}
+            </div>
+          )}
+        </section>
+      </div>
+      <BackToTop />
     </div>
   )
 }
