@@ -164,6 +164,7 @@ export default function ProductDetail() {
               alt={product.name}
               className={styles.img}
               wrapperClassName={styles.mainImageMedia}
+              fallbackSrc="/images/placeholder.jpg"
             />
             {product.salePrice && <span className="tag tag-sale" style={{ position: 'absolute', top: '1rem', left: '1rem' }}>Sale</span>}
           </div>
@@ -175,7 +176,14 @@ export default function ProductDetail() {
                   className={`${styles.thumb} ${i === activeImg ? styles.thumbActive : ''}`}
                   onClick={() => setActiveImg(i)}
                 >
-                  <AppImage src={img} alt="" />
+                  <AppImage
+                    src={img}
+                    alt=""
+                    className={styles.thumbImg}
+                    wrapperClassName={styles.thumbMedia}
+                    fallbackSrc="/images/placeholder.jpg"
+                    loading="lazy"
+                  />
                 </button>
               ))}
             </div>

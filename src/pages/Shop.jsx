@@ -248,8 +248,8 @@ export default function Shop() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  const categoryLabel = CATEGORY_LABELS[filters.category] || 'Products'
-  const breadcrumbCategory = CATEGORY_LABELS[filters.category] || 'All Items'
+  const categoryLabel = CATEGORY_LABELS[filters.category] || 'All Products'
+  const breadcrumbCategory = CATEGORY_LABELS[filters.category] || 'All Products'
   const itemsOnCurrentPage = loading ? 0 : paginatedProducts.length
 
   return (

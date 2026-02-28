@@ -10,6 +10,7 @@ const RECENTLY_VIEWED_KEY = 'recentlyViewedProducts'
 const SHORTCUTS = [
   { label: 'New Arrivals', to: '/shop?new=1&sort=newest' },
   { label: 'Sale', to: '/shop?sale=1' },
+  { label: 'Clothing', to: '/shop?category=clothing' },
   { label: 'Shoes', to: '/shop?category=shoes' },
   { label: 'Accessories', to: '/shop?category=accessories' },
   { label: 'Belts', to: '/shop?category=belts' },
