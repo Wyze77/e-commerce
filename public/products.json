@@ -1,1 +1,3530 @@
-[{"id":1,"name":"Obsidian Oversized Tee","category":"clothing","brand":"VAUX","price":68,"images":["https://picsum.photos/seed/vaux-01-a/900/1125","https://picsum.photos/seed/vaux-01-b/900/1125","https://picsum.photos/seed/vaux-01-c/900/1125"],"colors":["Black","White"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"Black","size":"XS","stock":1,"sku":"VX-001-01-XS"},{"color":"Black","size":"S","stock":2,"sku":"VX-001-01-S"},{"color":"Black","size":"M","stock":3,"sku":"VX-001-01-M"},{"color":"Black","size":"L","stock":4,"sku":"VX-001-01-L"},{"color":"Black","size":"XL","stock":5,"sku":"VX-001-01-XL"},{"color":"White","size":"XS","stock":3,"sku":"VX-001-02-XS"},{"color":"White","size":"S","stock":4,"sku":"VX-001-02-S"},{"color":"White","size":"M","stock":5,"sku":"VX-001-02-M"},{"color":"White","size":"L","stock":6,"sku":"VX-001-02-L"},{"color":"White","size":"XL","stock":0,"sku":"VX-001-02-XL"}],"description":"Heavyweight cotton tee with dropped shoulders, relaxed drape, and soft washed finish.","tags":["oversized","cotton","everyday"],"featured":true,"createdAt":"2026-02-20","salePrice":52},{"id":2,"name":"Marble Crew Sweat","category":"clothing","brand":"VAUX","price":118,"images":["https://picsum.photos/seed/vaux-02-a/900/1125","https://picsum.photos/seed/vaux-02-b/900/1125","https://picsum.photos/seed/vaux-02-c/900/1125"],"colors":["Cream","Slate"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"Cream","size":"XS","stock":2,"sku":"VX-002-01-XS"},{"color":"Cream","size":"S","stock":3,"sku":"VX-002-01-S"},{"color":"Cream","size":"M","stock":4,"sku":"VX-002-01-M"},{"color":"Cream","size":"L","stock":5,"sku":"VX-002-01-L"},{"color":"Cream","size":"XL","stock":6,"sku":"VX-002-01-XL"},{"color":"Slate","size":"XS","stock":4,"sku":"VX-002-02-XS"},{"color":"Slate","size":"S","stock":5,"sku":"VX-002-02-S"},{"color":"Slate","size":"M","stock":6,"sku":"VX-002-02-M"},{"color":"Slate","size":"L","stock":0,"sku":"VX-002-02-L"},{"color":"Slate","size":"XL","stock":1,"sku":"VX-002-02-XL"}],"description":"Brushed fleece crew with clean rib trims and an easy regular fit for daily layering.","tags":["fleece","crewneck","layering"],"featured":true,"createdAt":"2025-11-14"},{"id":3,"name":"Slate Utility Cargo Pant","category":"clothing","brand":"ARCFORM","price":186,"images":["https://picsum.photos/seed/vaux-03-a/900/1125","https://picsum.photos/seed/vaux-03-b/900/1125","https://picsum.photos/seed/vaux-03-c/900/1125"],"colors":["Khaki","Charcoal"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"Khaki","size":"XS","stock":3,"sku":"VX-003-01-XS"},{"color":"Khaki","size":"S","stock":4,"sku":"VX-003-01-S"},{"color":"Khaki","size":"M","stock":5,"sku":"VX-003-01-M"},{"color":"Khaki","size":"L","stock":6,"sku":"VX-003-01-L"},{"color":"Khaki","size":"XL","stock":0,"sku":"VX-003-01-XL"},{"color":"Charcoal","size":"XS","stock":5,"sku":"VX-003-02-XS"},{"color":"Charcoal","size":"S","stock":6,"sku":"VX-003-02-S"},{"color":"Charcoal","size":"M","stock":0,"sku":"VX-003-02-M"},{"color":"Charcoal","size":"L","stock":1,"sku":"VX-003-02-L"},{"color":"Charcoal","size":"XL","stock":2,"sku":"VX-003-02-XL"}],"description":"Structured cargo pants with articulated knees, secure pockets, and tapered leg opening.","tags":["cargo","utility","streetwear"],"featured":false,"createdAt":"2025-10-08"},{"id":4,"name":"Ivory Merino Turtleneck","category":"clothing","brand":"VAUX","price":152,"images":["https://picsum.photos/seed/vaux-04-a/900/1125","https://picsum.photos/seed/vaux-04-b/900/1125","https://picsum.photos/seed/vaux-04-c/900/1125"],"colors":["Ivory","Navy"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"Ivory","size":"XS","stock":4,"sku":"VX-004-01-XS"},{"color":"Ivory","size":"S","stock":5,"sku":"VX-004-01-S"},{"color":"Ivory","size":"M","stock":6,"sku":"VX-004-01-M"},{"color":"Ivory","size":"L","stock":0,"sku":"VX-004-01-L"},{"color":"Ivory","size":"XL","stock":1,"sku":"VX-004-01-XL"},{"color":"Navy","size":"XS","stock":6,"sku":"VX-004-02-XS"},{"color":"Navy","size":"S","stock":0,"sku":"VX-004-02-S"},{"color":"Navy","size":"M","stock":1,"sku":"VX-004-02-M"},{"color":"Navy","size":"L","stock":2,"sku":"VX-004-02-L"},{"color":"Navy","size":"XL","stock":3,"sku":"VX-004-02-XL"}],"description":"Fine merino knit turtleneck built for warmth without bulk and polished winter styling.","tags":["merino","knitwear","minimal"],"featured":true,"createdAt":"2025-12-02"},{"id":5,"name":"Dune Relaxed Hoodie","category":"clothing","brand":"VAUX","price":132,"images":["https://picsum.photos/seed/vaux-05-a/900/1125","https://picsum.photos/seed/vaux-05-b/900/1125","https://picsum.photos/seed/vaux-05-c/900/1125"],"colors":["Sand","Olive"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"Sand","size":"XS","stock":5,"sku":"VX-005-01-XS"},{"color":"Sand","size":"S","stock":6,"sku":"VX-005-01-S"},{"color":"Sand","size":"M","stock":0,"sku":"VX-005-01-M"},{"color":"Sand","size":"L","stock":1,"sku":"VX-005-01-L"},{"color":"Sand","size":"XL","stock":2,"sku":"VX-005-01-XL"},{"color":"Olive","size":"XS","stock":0,"sku":"VX-005-02-XS"},{"color":"Olive","size":"S","stock":1,"sku":"VX-005-02-S"},{"color":"Olive","size":"M","stock":2,"sku":"VX-005-02-M"},{"color":"Olive","size":"L","stock":3,"sku":"VX-005-02-L"},{"color":"Olive","size":"XL","stock":4,"sku":"VX-005-02-XL"}],"description":"Midweight fleece hoodie with roomy body, lined hood, and durable tonal drawcord tips.","tags":["hoodie","cozy","sale"],"featured":true,"createdAt":"2026-02-12","salePrice":98},{"id":6,"name":"Eclipse Zip Bomber","category":"clothing","brand":"ARCFORM","price":228,"images":["https://picsum.photos/seed/vaux-06-a/900/1125","https://picsum.photos/seed/vaux-06-b/900/1125","https://picsum.photos/seed/vaux-06-c/900/1125"],"colors":["Black","Graphite"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"Black","size":"XS","stock":6,"sku":"VX-006-01-XS"},{"color":"Black","size":"S","stock":0,"sku":"VX-006-01-S"},{"color":"Black","size":"M","stock":1,"sku":"VX-006-01-M"},{"color":"Black","size":"L","stock":2,"sku":"VX-006-01-L"},{"color":"Black","size":"XL","stock":3,"sku":"VX-006-01-XL"},{"color":"Graphite","size":"XS","stock":1,"sku":"VX-006-02-XS"},{"color":"Graphite","size":"S","stock":2,"sku":"VX-006-02-S"},{"color":"Graphite","size":"M","stock":3,"sku":"VX-006-02-M"},{"color":"Graphite","size":"L","stock":4,"sku":"VX-006-02-L"},{"color":"Graphite","size":"XL","stock":5,"sku":"VX-006-02-XL"}],"description":"Matte technical bomber with two-way zip, rib collar, and breathable mesh lining.","tags":["jacket","bomber","outerwear"],"featured":false,"createdAt":"2025-09-19"},{"id":7,"name":"Granite Knit Polo","category":"clothing","brand":"VAUX","price":124,"images":["https://picsum.photos/seed/vaux-07-a/900/1125","https://picsum.photos/seed/vaux-07-b/900/1125","https://picsum.photos/seed/vaux-07-c/900/1125"],"colors":["Stone","Black"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"Stone","size":"XS","stock":0,"sku":"VX-007-01-XS"},{"color":"Stone","size":"S","stock":1,"sku":"VX-007-01-S"},{"color":"Stone","size":"M","stock":2,"sku":"VX-007-01-M"},{"color":"Stone","size":"L","stock":3,"sku":"VX-007-01-L"},{"color":"Stone","size":"XL","stock":4,"sku":"VX-007-01-XL"},{"color":"Black","size":"XS","stock":2,"sku":"VX-007-02-XS"},{"color":"Black","size":"S","stock":3,"sku":"VX-007-02-S"},{"color":"Black","size":"M","stock":4,"sku":"VX-007-02-M"},{"color":"Black","size":"L","stock":5,"sku":"VX-007-02-L"},{"color":"Black","size":"XL","stock":6,"sku":"VX-007-02-XL"}],"description":"Soft knit polo featuring compact collar, clean placket, and streamlined silhouette.","tags":["polo","knit","smart-casual"],"featured":false,"createdAt":"2025-08-24"},{"id":8,"name":"Drift Linen Overshirt","category":"clothing","brand":"ARCFORM","price":164,"images":["https://picsum.photos/seed/vaux-08-a/900/1125","https://picsum.photos/seed/vaux-08-b/900/1125","https://picsum.photos/seed/vaux-08-c/900/1125"],"colors":["Bone","Slate"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"Bone","size":"XS","stock":1,"sku":"VX-008-01-XS"},{"color":"Bone","size":"S","stock":2,"sku":"VX-008-01-S"},{"color":"Bone","size":"M","stock":3,"sku":"VX-008-01-M"},{"color":"Bone","size":"L","stock":4,"sku":"VX-008-01-L"},{"color":"Bone","size":"XL","stock":5,"sku":"VX-008-01-XL"},{"color":"Slate","size":"XS","stock":3,"sku":"VX-008-02-XS"},{"color":"Slate","size":"S","stock":4,"sku":"VX-008-02-S"},{"color":"Slate","size":"M","stock":5,"sku":"VX-008-02-M"},{"color":"Slate","size":"L","stock":6,"sku":"VX-008-02-L"},{"color":"Slate","size":"XL","stock":0,"sku":"VX-008-02-XL"}],"description":"Breathable linen-blend overshirt with boxy cut, patch pockets, and matte corozo buttons.","tags":["linen","overshirt","sale"],"featured":false,"createdAt":"2026-02-06","salePrice":129},{"id":9,"name":"Core Waffle Long Sleeve","category":"clothing","brand":"VAUX","price":88,"images":["https://picsum.photos/seed/vaux-09-a/900/1125","https://picsum.photos/seed/vaux-09-b/900/1125","https://picsum.photos/seed/vaux-09-c/900/1125"],"colors":["White","Clay"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"White","size":"XS","stock":2,"sku":"VX-009-01-XS"},{"color":"White","size":"S","stock":3,"sku":"VX-009-01-S"},{"color":"White","size":"M","stock":4,"sku":"VX-009-01-M"},{"color":"White","size":"L","stock":5,"sku":"VX-009-01-L"},{"color":"White","size":"XL","stock":6,"sku":"VX-009-01-XL"},{"color":"Clay","size":"XS","stock":4,"sku":"VX-009-02-XS"},{"color":"Clay","size":"S","stock":5,"sku":"VX-009-02-S"},{"color":"Clay","size":"M","stock":6,"sku":"VX-009-02-M"},{"color":"Clay","size":"L","stock":0,"sku":"VX-009-02-L"},{"color":"Clay","size":"XL","stock":1,"sku":"VX-009-02-XL"}],"description":"Thermal waffle long sleeve designed with bound neck and flatlock seams for comfort.","tags":["waffle","basics","long-sleeve"],"featured":false,"createdAt":"2025-12-22"},{"id":10,"name":"Atlas Pleated Trouser","category":"clothing","brand":"ARCFORM","price":198,"images":["https://picsum.photos/seed/vaux-10-a/900/1125","https://picsum.photos/seed/vaux-10-b/900/1125","https://picsum.photos/seed/vaux-10-c/900/1125"],"colors":["Taupe","Ink"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"Taupe","size":"XS","stock":3,"sku":"VX-010-01-XS"},{"color":"Taupe","size":"S","stock":4,"sku":"VX-010-01-S"},{"color":"Taupe","size":"M","stock":5,"sku":"VX-010-01-M"},{"color":"Taupe","size":"L","stock":6,"sku":"VX-010-01-L"},{"color":"Taupe","size":"XL","stock":0,"sku":"VX-010-01-XL"},{"color":"Ink","size":"XS","stock":5,"sku":"VX-010-02-XS"},{"color":"Ink","size":"S","stock":6,"sku":"VX-010-02-S"},{"color":"Ink","size":"M","stock":0,"sku":"VX-010-02-M"},{"color":"Ink","size":"L","stock":1,"sku":"VX-010-02-L"},{"color":"Ink","size":"XL","stock":2,"sku":"VX-010-02-XL"}],"description":"Relaxed pleated trousers with crisp crease, extended tab closure, and fluid drape.","tags":["trouser","tailored","modern"],"featured":true,"createdAt":"2025-11-30"},{"id":11,"name":"Mono Tech Jogger","category":"clothing","brand":"VAUX","price":142,"images":["https://picsum.photos/seed/vaux-11-a/900/1125","https://picsum.photos/seed/vaux-11-b/900/1125","https://picsum.photos/seed/vaux-11-c/900/1125"],"colors":["Black","Smoke"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"Black","size":"XS","stock":4,"sku":"VX-011-01-XS"},{"color":"Black","size":"S","stock":5,"sku":"VX-011-01-S"},{"color":"Black","size":"M","stock":6,"sku":"VX-011-01-M"},{"color":"Black","size":"L","stock":0,"sku":"VX-011-01-L"},{"color":"Black","size":"XL","stock":1,"sku":"VX-011-01-XL"},{"color":"Smoke","size":"XS","stock":6,"sku":"VX-011-02-XS"},{"color":"Smoke","size":"S","stock":0,"sku":"VX-011-02-S"},{"color":"Smoke","size":"M","stock":1,"sku":"VX-011-02-M"},{"color":"Smoke","size":"L","stock":2,"sku":"VX-011-02-L"},{"color":"Smoke","size":"XL","stock":3,"sku":"VX-011-02-XL"}],"description":"Stretch nylon joggers with zip pockets, cuffed hem, and moisture-managing interior.","tags":["jogger","techwear","commute"],"featured":false,"createdAt":"2025-10-28"},{"id":12,"name":"Ash Layered Tank Set","category":"clothing","brand":"VAUX","price":74,"images":["https://picsum.photos/seed/vaux-12-a/900/1125","https://picsum.photos/seed/vaux-12-b/900/1125","https://picsum.photos/seed/vaux-12-c/900/1125"],"colors":["Ash","Off-White"],"sizes":["XS","S","M","L","XL"],"variants":[{"color":"Ash","size":"XS","stock":5,"sku":"VX-012-01-XS"},{"color":"Ash","size":"S","stock":6,"sku":"VX-012-01-S"},{"color":"Ash","size":"M","stock":0,"sku":"VX-012-01-M"},{"color":"Ash","size":"L","stock":1,"sku":"VX-012-01-L"},{"color":"Ash","size":"XL","stock":2,"sku":"VX-012-01-XL"},{"color":"Off-White","size":"XS","stock":0,"sku":"VX-012-02-XS"},{"color":"Off-White","size":"S","stock":1,"sku":"VX-012-02-S"},{"color":"Off-White","size":"M","stock":2,"sku":"VX-012-02-M"},{"color":"Off-White","size":"L","stock":3,"sku":"VX-012-02-L"},{"color":"Off-White","size":"XL","stock":4,"sku":"VX-012-02-XL"}],"description":"Two-piece rib tank set with soft stretch yarn and clean raw-edge finishing details.","tags":["tank","layering","summer"],"featured":false,"createdAt":"2026-01-31"},{"id":13,"name":"Flux Runner","category":"shoes","brand":"SOLE+","price":205,"images":["https://picsum.photos/seed/vaux-13-a/900/1125","https://picsum.photos/seed/vaux-13-b/900/1125","https://picsum.photos/seed/vaux-13-c/900/1125"],"colors":["Black","Silver"],"sizes":["7","8","9","10","11","12"],"variants":[{"color":"Black","size":"7","stock":6,"sku":"VX-013-01-7"},{"color":"Black","size":"8","stock":0,"sku":"VX-013-01-8"},{"color":"Black","size":"9","stock":1,"sku":"VX-013-01-9"},{"color":"Black","size":"10","stock":2,"sku":"VX-013-01-10"},{"color":"Black","size":"11","stock":3,"sku":"VX-013-01-11"},{"color":"Black","size":"12","stock":4,"sku":"VX-013-01-12"},{"color":"Silver","size":"7","stock":1,"sku":"VX-013-02-7"},{"color":"Silver","size":"8","stock":2,"sku":"VX-013-02-8"},{"color":"Silver","size":"9","stock":3,"sku":"VX-013-02-9"},{"color":"Silver","size":"10","stock":4,"sku":"VX-013-02-10"},{"color":"Silver","size":"11","stock":5,"sku":"VX-013-02-11"},{"color":"Silver","size":"12","stock":6,"sku":"VX-013-02-12"}],"description":"Performance runner with responsive foam midsole, breathable mesh upper, and heel lock fit.","tags":["running","lightweight","sale"],"featured":true,"createdAt":"2026-02-24","salePrice":165},{"id":14,"name":"Northbound Trail Shoe","category":"shoes","brand":"SOLE+","price":218,"images":["https://picsum.photos/seed/vaux-14-a/900/1125","https://picsum.photos/seed/vaux-14-b/900/1125","https://picsum.photos/seed/vaux-14-c/900/1125"],"colors":["Moss","Grey"],"sizes":["7","8","9","10","11","12"],"variants":[{"color":"Moss","size":"7","stock":0,"sku":"VX-014-01-7"},{"color":"Moss","size":"8","stock":1,"sku":"VX-014-01-8"},{"color":"Moss","size":"9","stock":2,"sku":"VX-014-01-9"},{"color":"Moss","size":"10","stock":3,"sku":"VX-014-01-10"},{"color":"Moss","size":"11","stock":4,"sku":"VX-014-01-11"},{"color":"Moss","size":"12","stock":5,"sku":"VX-014-01-12"},{"color":"Grey","size":"7","stock":2,"sku":"VX-014-02-7"},{"color":"Grey","size":"8","stock":3,"sku":"VX-014-02-8"},{"color":"Grey","size":"9","stock":4,"sku":"VX-014-02-9"},{"color":"Grey","size":"10","stock":5,"sku":"VX-014-02-10"},{"color":"Grey","size":"11","stock":6,"sku":"VX-014-02-11"},{"color":"Grey","size":"12","stock":0,"sku":"VX-014-02-12"}],"description":"Trail-ready shoe featuring directional lugs, reinforced toe cap, and stable platform.","tags":["trail","grip","outdoor"],"featured":true,"createdAt":"2026-01-10"},{"id":15,"name":"Harbor Leather Derby","category":"shoes","brand":"CROFT","price":312,"images":["https://picsum.photos/seed/vaux-15-a/900/1125","https://picsum.photos/seed/vaux-15-b/900/1125","https://picsum.photos/seed/vaux-15-c/900/1125"],"colors":["Tan","Dark Brown"],"sizes":["7","8","9","10","11","12"],"variants":[{"color":"Tan","size":"7","stock":1,"sku":"VX-015-01-7"},{"color":"Tan","size":"8","stock":2,"sku":"VX-015-01-8"},{"color":"Tan","size":"9","stock":3,"sku":"VX-015-01-9"},{"color":"Tan","size":"10","stock":4,"sku":"VX-015-01-10"},{"color":"Tan","size":"11","stock":5,"sku":"VX-015-01-11"},{"color":"Tan","size":"12","stock":6,"sku":"VX-015-01-12"},{"color":"Dark Brown","size":"7","stock":3,"sku":"VX-015-02-7"},{"color":"Dark Brown","size":"8","stock":4,"sku":"VX-015-02-8"},{"color":"Dark Brown","size":"9","stock":5,"sku":"VX-015-02-9"},{"color":"Dark Brown","size":"10","stock":6,"sku":"VX-015-02-10"},{"color":"Dark Brown","size":"11","stock":0,"sku":"VX-015-02-11"},{"color":"Dark Brown","size":"12","stock":1,"sku":"VX-015-02-12"}],"description":"Classic leather derby crafted with stitched welt, stacked heel, and cushioned insole.","tags":["leather","formal","derby"],"featured":false,"createdAt":"2025-09-08"},{"id":16,"name":"Echo Canvas High Top","category":"shoes","brand":"VAUX","price":102,"images":["https://picsum.photos/seed/vaux-16-a/900/1125","https://picsum.photos/seed/vaux-16-b/900/1125","https://picsum.photos/seed/vaux-16-c/900/1125"],"colors":["Off-White","Black"],"sizes":["7","8","9","10","11","12"],"variants":[{"color":"Off-White","size":"7","stock":2,"sku":"VX-016-01-7"},{"color":"Off-White","size":"8","stock":3,"sku":"VX-016-01-8"},{"color":"Off-White","size":"9","stock":4,"sku":"VX-016-01-9"},{"color":"Off-White","size":"10","stock":5,"sku":"VX-016-01-10"},{"color":"Off-White","size":"11","stock":6,"sku":"VX-016-01-11"},{"color":"Off-White","size":"12","stock":0,"sku":"VX-016-01-12"},{"color":"Black","size":"7","stock":4,"sku":"VX-016-02-7"},{"color":"Black","size":"8","stock":5,"sku":"VX-016-02-8"},{"color":"Black","size":"9","stock":6,"sku":"VX-016-02-9"},{"color":"Black","size":"10","stock":0,"sku":"VX-016-02-10"},{"color":"Black","size":"11","stock":1,"sku":"VX-016-02-11"},{"color":"Black","size":"12","stock":2,"sku":"VX-016-02-12"}],"description":"Durable canvas high top with vulcanized sole, metal eyelets, and padded tongue comfort.","tags":["canvas","high-top","casual"],"featured":true,"createdAt":"2025-11-03"},{"id":17,"name":"Rift Court Sneaker","category":"shoes","brand":"VAUX","price":136,"images":["https://picsum.photos/seed/vaux-17-a/900/1125","https://picsum.photos/seed/vaux-17-b/900/1125","https://picsum.photos/seed/vaux-17-c/900/1125"],"colors":["White","Navy"],"sizes":["7","8","9","10","11","12"],"variants":[{"color":"White","size":"7","stock":3,"sku":"VX-017-01-7"},{"color":"White","size":"8","stock":4,"sku":"VX-017-01-8"},{"color":"White","size":"9","stock":5,"sku":"VX-017-01-9"},{"color":"White","size":"10","stock":6,"sku":"VX-017-01-10"},{"color":"White","size":"11","stock":0,"sku":"VX-017-01-11"},{"color":"White","size":"12","stock":1,"sku":"VX-017-01-12"},{"color":"Navy","size":"7","stock":5,"sku":"VX-017-02-7"},{"color":"Navy","size":"8","stock":6,"sku":"VX-017-02-8"},{"color":"Navy","size":"9","stock":0,"sku":"VX-017-02-9"},{"color":"Navy","size":"10","stock":1,"sku":"VX-017-02-10"},{"color":"Navy","size":"11","stock":2,"sku":"VX-017-02-11"},{"color":"Navy","size":"12","stock":3,"sku":"VX-017-02-12"}],"description":"Retro court sneaker with layered leather panels, gum outsole, and low-profile cupsole.","tags":["court","sneaker","sale"],"featured":true,"createdAt":"2026-02-14","salePrice":109},{"id":18,"name":"Summit Knit Trainer","category":"shoes","brand":"SOLE+","price":172,"images":["https://picsum.photos/seed/vaux-18-a/900/1125","https://picsum.photos/seed/vaux-18-b/900/1125","https://picsum.photos/seed/vaux-18-c/900/1125"],"colors":["Stone","Black"],"sizes":["7","8","9","10","11","12"],"variants":[{"color":"Stone","size":"7","stock":4,"sku":"VX-018-01-7"},{"color":"Stone","size":"8","stock":5,"sku":"VX-018-01-8"},{"color":"Stone","size":"9","stock":6,"sku":"VX-018-01-9"},{"color":"Stone","size":"10","stock":0,"sku":"VX-018-01-10"},{"color":"Stone","size":"11","stock":1,"sku":"VX-018-01-11"},{"color":"Stone","size":"12","stock":2,"sku":"VX-018-01-12"},{"color":"Black","size":"7","stock":6,"sku":"VX-018-02-7"},{"color":"Black","size":"8","stock":0,"sku":"VX-018-02-8"},{"color":"Black","size":"9","stock":1,"sku":"VX-018-02-9"},{"color":"Black","size":"10","stock":2,"sku":"VX-018-02-10"},{"color":"Black","size":"11","stock":3,"sku":"VX-018-02-11"},{"color":"Black","size":"12","stock":4,"sku":"VX-018-02-12"}],"description":"Adaptive knit trainer with sock-like collar, EVA cushioning, and lightweight traction.","tags":["trainer","knit","daily"],"featured":false,"createdAt":"2025-10-16"},{"id":19,"name":"Ridge Suede Chelsea","category":"shoes","brand":"CROFT","price":286,"images":["https://picsum.photos/seed/vaux-19-a/900/1125","https://picsum.photos/seed/vaux-19-b/900/1125","https://picsum.photos/seed/vaux-19-c/900/1125"],"colors":["Sand","Chestnut"],"sizes":["7","8","9","10","11","12"],"variants":[{"color":"Sand","size":"7","stock":5,"sku":"VX-019-01-7"},{"color":"Sand","size":"8","stock":6,"sku":"VX-019-01-8"},{"color":"Sand","size":"9","stock":0,"sku":"VX-019-01-9"},{"color":"Sand","size":"10","stock":1,"sku":"VX-019-01-10"},{"color":"Sand","size":"11","stock":2,"sku":"VX-019-01-11"},{"color":"Sand","size":"12","stock":3,"sku":"VX-019-01-12"},{"color":"Chestnut","size":"7","stock":0,"sku":"VX-019-02-7"},{"color":"Chestnut","size":"8","stock":1,"sku":"VX-019-02-8"},{"color":"Chestnut","size":"9","stock":2,"sku":"VX-019-02-9"},{"color":"Chestnut","size":"10","stock":3,"sku":"VX-019-02-10"},{"color":"Chestnut","size":"11","stock":4,"sku":"VX-019-02-11"},{"color":"Chestnut","size":"12","stock":5,"sku":"VX-019-02-12"}],"description":"Suede chelsea boot with elastic gore, pull tab, and grippy rubber-stacked outsole.","tags":["chelsea","suede","boots"],"featured":false,"createdAt":"2025-12-12"},{"id":20,"name":"Vector Slide Sandal","category":"shoes","brand":"SOLE+","price":92,"images":["https://picsum.photos/seed/vaux-20-a/900/1125","https://picsum.photos/seed/vaux-20-b/900/1125","https://picsum.photos/seed/vaux-20-c/900/1125"],"colors":["Black","Olive"],"sizes":["7","8","9","10","11","12"],"variants":[{"color":"Black","size":"7","stock":6,"sku":"VX-020-01-7"},{"color":"Black","size":"8","stock":0,"sku":"VX-020-01-8"},{"color":"Black","size":"9","stock":1,"sku":"VX-020-01-9"},{"color":"Black","size":"10","stock":2,"sku":"VX-020-01-10"},{"color":"Black","size":"11","stock":3,"sku":"VX-020-01-11"},{"color":"Black","size":"12","stock":4,"sku":"VX-020-01-12"},{"color":"Olive","size":"7","stock":1,"sku":"VX-020-02-7"},{"color":"Olive","size":"8","stock":2,"sku":"VX-020-02-8"},{"color":"Olive","size":"9","stock":3,"sku":"VX-020-02-9"},{"color":"Olive","size":"10","stock":4,"sku":"VX-020-02-10"},{"color":"Olive","size":"11","stock":5,"sku":"VX-020-02-11"},{"color":"Olive","size":"12","stock":6,"sku":"VX-020-02-12"}],"description":"Contoured footbed slide sandal with padded strap and flexible outsole for easy wear.","tags":["slide","summer","comfort"],"featured":false,"createdAt":"2026-02-03"},{"id":21,"name":"Transit Loafer","category":"shoes","brand":"CROFT","price":248,"images":["https://picsum.photos/seed/vaux-21-a/900/1125","https://picsum.photos/seed/vaux-21-b/900/1125","https://picsum.photos/seed/vaux-21-c/900/1125"],"colors":["Black","Burgundy"],"sizes":["7","8","9","10","11","12"],"variants":[{"color":"Black","size":"7","stock":0,"sku":"VX-021-01-7"},{"color":"Black","size":"8","stock":1,"sku":"VX-021-01-8"},{"color":"Black","size":"9","stock":2,"sku":"VX-021-01-9"},{"color":"Black","size":"10","stock":3,"sku":"VX-021-01-10"},{"color":"Black","size":"11","stock":4,"sku":"VX-021-01-11"},{"color":"Black","size":"12","stock":5,"sku":"VX-021-01-12"},{"color":"Burgundy","size":"7","stock":2,"sku":"VX-021-02-7"},{"color":"Burgundy","size":"8","stock":3,"sku":"VX-021-02-8"},{"color":"Burgundy","size":"9","stock":4,"sku":"VX-021-02-9"},{"color":"Burgundy","size":"10","stock":5,"sku":"VX-021-02-10"},{"color":"Burgundy","size":"11","stock":6,"sku":"VX-021-02-11"},{"color":"Burgundy","size":"12","stock":0,"sku":"VX-021-02-12"}],"description":"Minimal penny loafer made from polished leather with glove-soft lining and arch support.","tags":["loafer","office","smart"],"featured":false,"createdAt":"2025-08-27"},{"id":22,"name":"Aero Performance Sneaker","category":"shoes","brand":"SOLE+","price":198,"images":["https://picsum.photos/seed/vaux-22-a/900/1125","https://picsum.photos/seed/vaux-22-b/900/1125","https://picsum.photos/seed/vaux-22-c/900/1125"],"colors":["White","Graphite"],"sizes":["7","8","9","10","11","12"],"variants":[{"color":"White","size":"7","stock":1,"sku":"VX-022-01-7"},{"color":"White","size":"8","stock":2,"sku":"VX-022-01-8"},{"color":"White","size":"9","stock":3,"sku":"VX-022-01-9"},{"color":"White","size":"10","stock":4,"sku":"VX-022-01-10"},{"color":"White","size":"11","stock":5,"sku":"VX-022-01-11"},{"color":"White","size":"12","stock":6,"sku":"VX-022-01-12"},{"color":"Graphite","size":"7","stock":3,"sku":"VX-022-02-7"},{"color":"Graphite","size":"8","stock":4,"sku":"VX-022-02-8"},{"color":"Graphite","size":"9","stock":5,"sku":"VX-022-02-9"},{"color":"Graphite","size":"10","stock":6,"sku":"VX-022-02-10"},{"color":"Graphite","size":"11","stock":0,"sku":"VX-022-02-11"},{"color":"Graphite","size":"12","stock":1,"sku":"VX-022-02-12"}],"description":"Hybrid training sneaker combining lateral support wings and high-rebound cushioning foam.","tags":["performance","training","new-season"],"featured":true,"createdAt":"2026-02-09"},{"id":23,"name":"Arc Belt 35mm","category":"belts","brand":"CROFT","price":96,"images":["https://picsum.photos/seed/vaux-23-a/900/1125","https://picsum.photos/seed/vaux-23-b/900/1125","https://picsum.photos/seed/vaux-23-c/900/1125"],"colors":["Black","Dark Brown"],"sizes":["S","M","L","XL"],"variants":[{"color":"Black","size":"S","stock":2,"sku":"VX-023-01-S"},{"color":"Black","size":"M","stock":3,"sku":"VX-023-01-M"},{"color":"Black","size":"L","stock":4,"sku":"VX-023-01-L"},{"color":"Black","size":"XL","stock":5,"sku":"VX-023-01-XL"},{"color":"Dark Brown","size":"S","stock":4,"sku":"VX-023-02-S"},{"color":"Dark Brown","size":"M","stock":5,"sku":"VX-023-02-M"},{"color":"Dark Brown","size":"L","stock":6,"sku":"VX-023-02-L"},{"color":"Dark Brown","size":"XL","stock":0,"sku":"VX-023-02-XL"}],"description":"Full-grain leather belt with brushed metal buckle and balanced 35mm strap width.","tags":["leather","35mm","formal"],"featured":true,"createdAt":"2026-02-18"},{"id":24,"name":"Crest Braided Belt","category":"belts","brand":"CROFT","price":84,"images":["https://picsum.photos/seed/vaux-24-a/900/1125","https://picsum.photos/seed/vaux-24-b/900/1125","https://picsum.photos/seed/vaux-24-c/900/1125"],"colors":["Tan","Navy"],"sizes":["S","M","L","XL"],"variants":[{"color":"Tan","size":"S","stock":3,"sku":"VX-024-01-S"},{"color":"Tan","size":"M","stock":4,"sku":"VX-024-01-M"},{"color":"Tan","size":"L","stock":5,"sku":"VX-024-01-L"},{"color":"Tan","size":"XL","stock":6,"sku":"VX-024-01-XL"},{"color":"Navy","size":"S","stock":5,"sku":"VX-024-02-S"},{"color":"Navy","size":"M","stock":6,"sku":"VX-024-02-M"},{"color":"Navy","size":"L","stock":0,"sku":"VX-024-02-L"},{"color":"Navy","size":"XL","stock":1,"sku":"VX-024-02-XL"}],"description":"Braided belt with flexible fit and textured finish for denim, chinos, and shorts.","tags":["braided","casual","weekend"],"featured":false,"createdAt":"2025-10-12"},{"id":25,"name":"Mono Reversible Belt","category":"belts","brand":"VAUX","price":118,"images":["https://picsum.photos/seed/vaux-25-a/900/1125","https://picsum.photos/seed/vaux-25-b/900/1125","https://picsum.photos/seed/vaux-25-c/900/1125"],"colors":["Black/Cognac","Navy/Grey"],"sizes":["S","M","L","XL"],"variants":[{"color":"Black/Cognac","size":"S","stock":4,"sku":"VX-025-01-S"},{"color":"Black/Cognac","size":"M","stock":5,"sku":"VX-025-01-M"},{"color":"Black/Cognac","size":"L","stock":6,"sku":"VX-025-01-L"},{"color":"Black/Cognac","size":"XL","stock":0,"sku":"VX-025-01-XL"},{"color":"Navy/Grey","size":"S","stock":6,"sku":"VX-025-02-S"},{"color":"Navy/Grey","size":"M","stock":0,"sku":"VX-025-02-M"},{"color":"Navy/Grey","size":"L","stock":1,"sku":"VX-025-02-L"},{"color":"Navy/Grey","size":"XL","stock":2,"sku":"VX-025-02-XL"}],"description":"Two-tone reversible strap with rotating buckle for quick styling between two looks.","tags":["reversible","sale","versatile"],"featured":true,"createdAt":"2025-12-20","salePrice":89},{"id":26,"name":"Forge Utility Belt","category":"belts","brand":"ARCFORM","price":72,"images":["https://picsum.photos/seed/vaux-26-a/900/1125","https://picsum.photos/seed/vaux-26-b/900/1125","https://picsum.photos/seed/vaux-26-c/900/1125"],"colors":["Olive","Black"],"sizes":["S","M","L","XL"],"variants":[{"color":"Olive","size":"S","stock":5,"sku":"VX-026-01-S"},{"color":"Olive","size":"M","stock":6,"sku":"VX-026-01-M"},{"color":"Olive","size":"L","stock":0,"sku":"VX-026-01-L"},{"color":"Olive","size":"XL","stock":1,"sku":"VX-026-01-XL"},{"color":"Black","size":"S","stock":0,"sku":"VX-026-02-S"},{"color":"Black","size":"M","stock":1,"sku":"VX-026-02-M"},{"color":"Black","size":"L","stock":2,"sku":"VX-026-02-L"},{"color":"Black","size":"XL","stock":3,"sku":"VX-026-02-XL"}],"description":"Durable webbing utility belt featuring quick-release buckle and reinforced stitching.","tags":["utility","nylon","street"],"featured":false,"createdAt":"2025-09-02"},{"id":27,"name":"Linea Smooth Belt","category":"belts","brand":"CROFT","price":102,"images":["https://picsum.photos/seed/vaux-27-a/900/1125","https://picsum.photos/seed/vaux-27-b/900/1125","https://picsum.photos/seed/vaux-27-c/900/1125"],"colors":["Chestnut","Black"],"sizes":["S","M","L","XL"],"variants":[{"color":"Chestnut","size":"S","stock":6,"sku":"VX-027-01-S"},{"color":"Chestnut","size":"M","stock":0,"sku":"VX-027-01-M"},{"color":"Chestnut","size":"L","stock":1,"sku":"VX-027-01-L"},{"color":"Chestnut","size":"XL","stock":2,"sku":"VX-027-01-XL"},{"color":"Black","size":"S","stock":1,"sku":"VX-027-02-S"},{"color":"Black","size":"M","stock":2,"sku":"VX-027-02-M"},{"color":"Black","size":"L","stock":3,"sku":"VX-027-02-L"},{"color":"Black","size":"XL","stock":4,"sku":"VX-027-02-XL"}],"description":"Smooth-finish leather belt with edge paint, slim keeper loop, and clean squared buckle.","tags":["smooth","minimal","office"],"featured":false,"createdAt":"2025-11-18"},{"id":28,"name":"Atlas Roller Belt","category":"belts","brand":"ARCFORM","price":76,"images":["https://picsum.photos/seed/vaux-28-a/900/1125","https://picsum.photos/seed/vaux-28-b/900/1125","https://picsum.photos/seed/vaux-28-c/900/1125"],"colors":["Khaki","Charcoal"],"sizes":["S","M","L","XL"],"variants":[{"color":"Khaki","size":"S","stock":0,"sku":"VX-028-01-S"},{"color":"Khaki","size":"M","stock":1,"sku":"VX-028-01-M"},{"color":"Khaki","size":"L","stock":2,"sku":"VX-028-01-L"},{"color":"Khaki","size":"XL","stock":3,"sku":"VX-028-01-XL"},{"color":"Charcoal","size":"S","stock":2,"sku":"VX-028-02-S"},{"color":"Charcoal","size":"M","stock":3,"sku":"VX-028-02-M"},{"color":"Charcoal","size":"L","stock":4,"sku":"VX-028-02-L"},{"color":"Charcoal","size":"XL","stock":5,"sku":"VX-028-02-XL"}],"description":"Canvas roller belt with matte hardware and tonal bar-tacks for rugged everyday use.","tags":["roller","canvas","daily"],"featured":false,"createdAt":"2026-01-21"},{"id":29,"name":"Orbit Web Belt","category":"belts","brand":"VAUX","price":64,"images":["https://picsum.photos/seed/vaux-29-a/900/1125","https://picsum.photos/seed/vaux-29-b/900/1125","https://picsum.photos/seed/vaux-29-c/900/1125"],"colors":["Graphite","Sand"],"sizes":["S","M","L","XL"],"variants":[{"color":"Graphite","size":"S","stock":1,"sku":"VX-029-01-S"},{"color":"Graphite","size":"M","stock":2,"sku":"VX-029-01-M"},{"color":"Graphite","size":"L","stock":3,"sku":"VX-029-01-L"},{"color":"Graphite","size":"XL","stock":4,"sku":"VX-029-01-XL"},{"color":"Sand","size":"S","stock":3,"sku":"VX-029-02-S"},{"color":"Sand","size":"M","stock":4,"sku":"VX-029-02-M"},{"color":"Sand","size":"L","stock":5,"sku":"VX-029-02-L"},{"color":"Sand","size":"XL","stock":6,"sku":"VX-029-02-XL"}],"description":"Lightweight web belt with micro-adjust closure designed for comfort on long days.","tags":["web","lightweight","travel"],"featured":false,"createdAt":"2025-08-11"},{"id":30,"name":"Prime Dress Belt","category":"belts","brand":"CROFT","price":128,"images":["https://picsum.photos/seed/vaux-30-a/900/1125","https://picsum.photos/seed/vaux-30-b/900/1125","https://picsum.photos/seed/vaux-30-c/900/1125"],"colors":["Black","Oxblood"],"sizes":["S","M","L","XL"],"variants":[{"color":"Black","size":"S","stock":2,"sku":"VX-030-01-S"},{"color":"Black","size":"M","stock":3,"sku":"VX-030-01-M"},{"color":"Black","size":"L","stock":4,"sku":"VX-030-01-L"},{"color":"Black","size":"XL","stock":5,"sku":"VX-030-01-XL"},{"color":"Oxblood","size":"S","stock":4,"sku":"VX-030-02-S"},{"color":"Oxblood","size":"M","stock":5,"sku":"VX-030-02-M"},{"color":"Oxblood","size":"L","stock":6,"sku":"VX-030-02-L"},{"color":"Oxblood","size":"XL","stock":0,"sku":"VX-030-02-XL"}],"description":"Refined dress belt in polished calf leather with slim profile and beveled buckle.","tags":["dress","polished","premium"],"featured":true,"createdAt":"2025-11-27"},{"id":31,"name":"Axis Structured Tote","category":"accessories","brand":"ARCFORM","price":274,"images":["https://picsum.photos/seed/vaux-31-a/900/1125","https://picsum.photos/seed/vaux-31-b/900/1125","https://picsum.photos/seed/vaux-31-c/900/1125"],"colors":["Sand","Black"],"sizes":["One Size"],"variants":[{"color":"Sand","size":"One Size","stock":3,"sku":"VX-031-01-OneSize"},{"color":"Black","size":"One Size","stock":5,"sku":"VX-031-02-OneSize"}],"description":"Structured carry-all tote with magnetic closure, interior organizers, and reinforced base.","tags":["tote","work","structured"],"featured":true,"createdAt":"2026-02-16"},{"id":32,"name":"Signal Crossbody Bag","category":"accessories","brand":"CROFT","price":198,"images":["https://picsum.photos/seed/vaux-32-a/900/1125","https://picsum.photos/seed/vaux-32-b/900/1125","https://picsum.photos/seed/vaux-32-c/900/1125"],"colors":["Cognac","Black"],"sizes":["One Size"],"variants":[{"color":"Cognac","size":"One Size","stock":4,"sku":"VX-032-01-OneSize"},{"color":"Black","size":"One Size","stock":6,"sku":"VX-032-02-OneSize"}],"description":"Compact crossbody bag with adjustable strap, zip compartment, and easy-access front slot.","tags":["crossbody","bag","sale"],"featured":true,"createdAt":"2026-01-29","salePrice":154},{"id":33,"name":"Nova Card Holder","category":"accessories","brand":"VAUX","price":68,"images":["https://picsum.photos/seed/vaux-33-a/900/1125","https://picsum.photos/seed/vaux-33-b/900/1125","https://picsum.photos/seed/vaux-33-c/900/1125"],"colors":["Black","Burgundy"],"sizes":["One Size"],"variants":[{"color":"Black","size":"One Size","stock":5,"sku":"VX-033-01-OneSize"},{"color":"Burgundy","size":"One Size","stock":0,"sku":"VX-033-02-OneSize"}],"description":"Slim card holder with center sleeve and stitched edges built for minimalist carry.","tags":["wallet","card-holder","slim"],"featured":false,"createdAt":"2026-02-22"},{"id":34,"name":"Meridian Watch 38mm","category":"accessories","brand":"ARCFORM","price":292,"images":["https://picsum.photos/seed/vaux-34-a/900/1125","https://picsum.photos/seed/vaux-34-b/900/1125","https://picsum.photos/seed/vaux-34-c/900/1125"],"colors":["Silver/White","Black/Black"],"sizes":["One Size"],"variants":[{"color":"Silver/White","size":"One Size","stock":6,"sku":"VX-034-01-OneSize"},{"color":"Black/Black","size":"One Size","stock":1,"sku":"VX-034-02-OneSize"}],"description":"38mm quartz watch with sapphire-coated crystal, mesh strap, and clean dial typography.","tags":["watch","minimal","38mm"],"featured":true,"createdAt":"2025-09-23"},{"id":35,"name":"Harbor Silk Scarf","category":"accessories","brand":"VAUX","price":124,"images":["https://picsum.photos/seed/vaux-35-a/900/1125","https://picsum.photos/seed/vaux-35-b/900/1125","https://picsum.photos/seed/vaux-35-c/900/1125"],"colors":["Ivory/Gold","Black/Red"],"sizes":["One Size"],"variants":[{"color":"Ivory/Gold","size":"One Size","stock":0,"sku":"VX-035-01-OneSize"},{"color":"Black/Red","size":"One Size","stock":2,"sku":"VX-035-02-OneSize"}],"description":"Pure silk scarf with hand-finished edges and modern geometric print composition.","tags":["scarf","silk","premium"],"featured":false,"createdAt":"2025-12-05"},{"id":36,"name":"Summit Merino Beanie","category":"accessories","brand":"VAUX","price":48,"images":["https://picsum.photos/seed/vaux-36-a/900/1125","https://picsum.photos/seed/vaux-36-b/900/1125","https://picsum.photos/seed/vaux-36-c/900/1125"],"colors":["Charcoal","Cream"],"sizes":["One Size"],"variants":[{"color":"Charcoal","size":"One Size","stock":1,"sku":"VX-036-01-OneSize"},{"color":"Cream","size":"One Size","stock":3,"sku":"VX-036-02-OneSize"}],"description":"Rib-knit merino beanie offering breathable warmth, soft hand feel, and shape recovery.","tags":["beanie","merino","winter"],"featured":false,"createdAt":"2025-11-06"},{"id":37,"name":"Frame Sunglasses","category":"accessories","brand":"ARCFORM","price":142,"images":["https://picsum.photos/seed/vaux-37-a/900/1125","https://picsum.photos/seed/vaux-37-b/900/1125","https://picsum.photos/seed/vaux-37-c/900/1125"],"colors":["Matte Black","Tortoise"],"sizes":["One Size"],"variants":[{"color":"Matte Black","size":"One Size","stock":2,"sku":"VX-037-01-OneSize"},{"color":"Tortoise","size":"One Size","stock":4,"sku":"VX-037-02-OneSize"}],"description":"UV400 sunglasses with lightweight acetate frame and anti-scratch polarized lenses.","tags":["sunglasses","eyewear","sale"],"featured":true,"createdAt":"2026-02-11","salePrice":112},{"id":38,"name":"Core Canvas Cap","category":"accessories","brand":"VAUX","price":42,"images":["https://picsum.photos/seed/vaux-38-a/900/1125","https://picsum.photos/seed/vaux-38-b/900/1125","https://picsum.photos/seed/vaux-38-c/900/1125"],"colors":["Black","Stone"],"sizes":["One Size"],"variants":[{"color":"Black","size":"One Size","stock":3,"sku":"VX-038-01-OneSize"},{"color":"Stone","size":"One Size","stock":5,"sku":"VX-038-02-OneSize"}],"description":"Six-panel canvas cap with curved brim, metal adjuster, and moisture-wicking sweatband.","tags":["cap","canvas","everyday"],"featured":false,"createdAt":"2026-02-04"},{"id":39,"name":"Relay Tech Pouch","category":"accessories","brand":"ARCFORM","price":88,"images":["https://picsum.photos/seed/vaux-39-a/900/1125","https://picsum.photos/seed/vaux-39-b/900/1125","https://picsum.photos/seed/vaux-39-c/900/1125"],"colors":["Slate","Olive"],"sizes":["One Size"],"variants":[{"color":"Slate","size":"One Size","stock":4,"sku":"VX-039-01-OneSize"},{"color":"Olive","size":"One Size","stock":6,"sku":"VX-039-02-OneSize"}],"description":"Organized tech pouch with segmented elastic loops, zip mesh divider, and grab handle.","tags":["pouch","tech","travel"],"featured":false,"createdAt":"2025-10-30"},{"id":40,"name":"Drift Key Lanyard","category":"accessories","brand":"VAUX","price":36,"images":["https://picsum.photos/seed/vaux-40-a/900/1125","https://picsum.photos/seed/vaux-40-b/900/1125","https://picsum.photos/seed/vaux-40-c/900/1125"],"colors":["Navy","Black"],"sizes":["One Size"],"variants":[{"color":"Navy","size":"One Size","stock":5,"sku":"VX-040-01-OneSize"},{"color":"Black","size":"One Size","stock":0,"sku":"VX-040-02-OneSize"}],"description":"Minimal key lanyard with quick-release clip and durable woven strap construction.","tags":["lanyard","keys","daily-carry"],"featured":false,"createdAt":"2026-02-26"}]
+[
+  {
+    "id": 1,
+    "name": "Obsidian Oversized Tee",
+    "category": "clothing",
+    "brand": "VAUX",
+    "price": 68,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/3.webp"
+    ],
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "size": "XS",
+        "stock": 3,
+        "sku": "VX-001-01-XS"
+      },
+      {
+        "color": "Black",
+        "size": "S",
+        "stock": 4,
+        "sku": "VX-001-01-S"
+      },
+      {
+        "color": "Black",
+        "size": "M",
+        "stock": 5,
+        "sku": "VX-001-01-M"
+      },
+      {
+        "color": "Black",
+        "size": "L",
+        "stock": 6,
+        "sku": "VX-001-01-L"
+      },
+      {
+        "color": "Black",
+        "size": "XL",
+        "stock": 7,
+        "sku": "VX-001-01-XL"
+      },
+      {
+        "color": "White",
+        "size": "XS",
+        "stock": 5,
+        "sku": "VX-001-02-XS"
+      },
+      {
+        "color": "White",
+        "size": "S",
+        "stock": 6,
+        "sku": "VX-001-02-S"
+      },
+      {
+        "color": "White",
+        "size": "M",
+        "stock": 7,
+        "sku": "VX-001-02-M"
+      },
+      {
+        "color": "White",
+        "size": "L",
+        "stock": 8,
+        "sku": "VX-001-02-L"
+      },
+      {
+        "color": "White",
+        "size": "XL",
+        "stock": 0,
+        "sku": "VX-001-02-XL"
+      }
+    ],
+    "description": "Heavyweight jersey tee with dropped shoulders and a relaxed boxy fit.",
+    "tags": [
+      "oversized",
+      "cotton",
+      "everyday"
+    ],
+    "featured": true,
+    "createdAt": "2026-02-20",
+    "salePrice": 52
+  },
+  {
+    "id": 2,
+    "name": "Marble Loopback Crew",
+    "category": "clothing",
+    "brand": "VAUX",
+    "price": 118,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/3.webp"
+    ],
+    "colors": [
+      "Cream",
+      "Slate"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Cream",
+        "size": "XS",
+        "stock": 6,
+        "sku": "VX-002-01-XS"
+      },
+      {
+        "color": "Cream",
+        "size": "S",
+        "stock": 7,
+        "sku": "VX-002-01-S"
+      },
+      {
+        "color": "Cream",
+        "size": "M",
+        "stock": 8,
+        "sku": "VX-002-01-M"
+      },
+      {
+        "color": "Cream",
+        "size": "L",
+        "stock": 0,
+        "sku": "VX-002-01-L"
+      },
+      {
+        "color": "Cream",
+        "size": "XL",
+        "stock": 1,
+        "sku": "VX-002-01-XL"
+      },
+      {
+        "color": "Slate",
+        "size": "XS",
+        "stock": 8,
+        "sku": "VX-002-02-XS"
+      },
+      {
+        "color": "Slate",
+        "size": "S",
+        "stock": 0,
+        "sku": "VX-002-02-S"
+      },
+      {
+        "color": "Slate",
+        "size": "M",
+        "stock": 1,
+        "sku": "VX-002-02-M"
+      },
+      {
+        "color": "Slate",
+        "size": "L",
+        "stock": 2,
+        "sku": "VX-002-02-L"
+      },
+      {
+        "color": "Slate",
+        "size": "XL",
+        "stock": 3,
+        "sku": "VX-002-02-XL"
+      }
+    ],
+    "description": "Loopback cotton crewneck with clean rib trim and softly brushed interior.",
+    "tags": [
+      "crewneck",
+      "loopback",
+      "layering"
+    ],
+    "featured": true,
+    "createdAt": "2025-11-14"
+  },
+  {
+    "id": 3,
+    "name": "Slate Utility Cargo Pant",
+    "category": "clothing",
+    "brand": "ARCFORM",
+    "price": 186,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/3.webp"
+    ],
+    "colors": [
+      "Khaki",
+      "Charcoal"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Khaki",
+        "size": "XS",
+        "stock": 0,
+        "sku": "VX-003-01-XS"
+      },
+      {
+        "color": "Khaki",
+        "size": "S",
+        "stock": 1,
+        "sku": "VX-003-01-S"
+      },
+      {
+        "color": "Khaki",
+        "size": "M",
+        "stock": 2,
+        "sku": "VX-003-01-M"
+      },
+      {
+        "color": "Khaki",
+        "size": "L",
+        "stock": 3,
+        "sku": "VX-003-01-L"
+      },
+      {
+        "color": "Khaki",
+        "size": "XL",
+        "stock": 4,
+        "sku": "VX-003-01-XL"
+      },
+      {
+        "color": "Charcoal",
+        "size": "XS",
+        "stock": 2,
+        "sku": "VX-003-02-XS"
+      },
+      {
+        "color": "Charcoal",
+        "size": "S",
+        "stock": 3,
+        "sku": "VX-003-02-S"
+      },
+      {
+        "color": "Charcoal",
+        "size": "M",
+        "stock": 4,
+        "sku": "VX-003-02-M"
+      },
+      {
+        "color": "Charcoal",
+        "size": "L",
+        "stock": 5,
+        "sku": "VX-003-02-L"
+      },
+      {
+        "color": "Charcoal",
+        "size": "XL",
+        "stock": 6,
+        "sku": "VX-003-02-XL"
+      }
+    ],
+    "description": "Structured cargo pant with articulated knees and secure flap pockets.",
+    "tags": [
+      "cargo",
+      "utility",
+      "streetwear"
+    ],
+    "featured": false,
+    "createdAt": "2025-10-08"
+  },
+  {
+    "id": 4,
+    "name": "Ivory Merino Turtleneck",
+    "category": "clothing",
+    "brand": "VAUX",
+    "price": 152,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/3.webp"
+    ],
+    "colors": [
+      "Ivory",
+      "Navy"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Ivory",
+        "size": "XS",
+        "stock": 3,
+        "sku": "VX-004-01-XS"
+      },
+      {
+        "color": "Ivory",
+        "size": "S",
+        "stock": 4,
+        "sku": "VX-004-01-S"
+      },
+      {
+        "color": "Ivory",
+        "size": "M",
+        "stock": 5,
+        "sku": "VX-004-01-M"
+      },
+      {
+        "color": "Ivory",
+        "size": "L",
+        "stock": 6,
+        "sku": "VX-004-01-L"
+      },
+      {
+        "color": "Ivory",
+        "size": "XL",
+        "stock": 7,
+        "sku": "VX-004-01-XL"
+      },
+      {
+        "color": "Navy",
+        "size": "XS",
+        "stock": 5,
+        "sku": "VX-004-02-XS"
+      },
+      {
+        "color": "Navy",
+        "size": "S",
+        "stock": 6,
+        "sku": "VX-004-02-S"
+      },
+      {
+        "color": "Navy",
+        "size": "M",
+        "stock": 7,
+        "sku": "VX-004-02-M"
+      },
+      {
+        "color": "Navy",
+        "size": "L",
+        "stock": 8,
+        "sku": "VX-004-02-L"
+      },
+      {
+        "color": "Navy",
+        "size": "XL",
+        "stock": 0,
+        "sku": "VX-004-02-XL"
+      }
+    ],
+    "description": "Fine-gauge merino turtleneck with smooth hand feel and slim profile.",
+    "tags": [
+      "merino",
+      "knitwear",
+      "winter"
+    ],
+    "featured": true,
+    "createdAt": "2025-12-02"
+  },
+  {
+    "id": 5,
+    "name": "Dune Relaxed Hoodie",
+    "category": "clothing",
+    "brand": "VAUX",
+    "price": 132,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/3.webp"
+    ],
+    "colors": [
+      "Sand",
+      "Olive"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Sand",
+        "size": "XS",
+        "stock": 6,
+        "sku": "VX-005-01-XS"
+      },
+      {
+        "color": "Sand",
+        "size": "S",
+        "stock": 7,
+        "sku": "VX-005-01-S"
+      },
+      {
+        "color": "Sand",
+        "size": "M",
+        "stock": 8,
+        "sku": "VX-005-01-M"
+      },
+      {
+        "color": "Sand",
+        "size": "L",
+        "stock": 0,
+        "sku": "VX-005-01-L"
+      },
+      {
+        "color": "Sand",
+        "size": "XL",
+        "stock": 1,
+        "sku": "VX-005-01-XL"
+      },
+      {
+        "color": "Olive",
+        "size": "XS",
+        "stock": 8,
+        "sku": "VX-005-02-XS"
+      },
+      {
+        "color": "Olive",
+        "size": "S",
+        "stock": 0,
+        "sku": "VX-005-02-S"
+      },
+      {
+        "color": "Olive",
+        "size": "M",
+        "stock": 1,
+        "sku": "VX-005-02-M"
+      },
+      {
+        "color": "Olive",
+        "size": "L",
+        "stock": 2,
+        "sku": "VX-005-02-L"
+      },
+      {
+        "color": "Olive",
+        "size": "XL",
+        "stock": 3,
+        "sku": "VX-005-02-XL"
+      }
+    ],
+    "description": "Relaxed fleece hoodie with lined hood and reinforced kangaroo pocket.",
+    "tags": [
+      "hoodie",
+      "cozy",
+      "sale"
+    ],
+    "featured": true,
+    "createdAt": "2026-02-12",
+    "salePrice": 98
+  },
+  {
+    "id": 6,
+    "name": "Eclipse Zip Bomber",
+    "category": "clothing",
+    "brand": "ARCFORM",
+    "price": 228,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/tops/blue-frock/1.webp",
+      "https://cdn.dummyjson.com/product-images/tops/blue-frock/2.webp",
+      "https://cdn.dummyjson.com/product-images/tops/blue-frock/3.webp"
+    ],
+    "colors": [
+      "Black",
+      "Graphite"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "size": "XS",
+        "stock": 0,
+        "sku": "VX-006-01-XS"
+      },
+      {
+        "color": "Black",
+        "size": "S",
+        "stock": 1,
+        "sku": "VX-006-01-S"
+      },
+      {
+        "color": "Black",
+        "size": "M",
+        "stock": 2,
+        "sku": "VX-006-01-M"
+      },
+      {
+        "color": "Black",
+        "size": "L",
+        "stock": 3,
+        "sku": "VX-006-01-L"
+      },
+      {
+        "color": "Black",
+        "size": "XL",
+        "stock": 4,
+        "sku": "VX-006-01-XL"
+      },
+      {
+        "color": "Graphite",
+        "size": "XS",
+        "stock": 2,
+        "sku": "VX-006-02-XS"
+      },
+      {
+        "color": "Graphite",
+        "size": "S",
+        "stock": 3,
+        "sku": "VX-006-02-S"
+      },
+      {
+        "color": "Graphite",
+        "size": "M",
+        "stock": 4,
+        "sku": "VX-006-02-M"
+      },
+      {
+        "color": "Graphite",
+        "size": "L",
+        "stock": 5,
+        "sku": "VX-006-02-L"
+      },
+      {
+        "color": "Graphite",
+        "size": "XL",
+        "stock": 6,
+        "sku": "VX-006-02-XL"
+      }
+    ],
+    "description": "Two-way zip bomber with tonal ribbing and lightweight technical shell.",
+    "tags": [
+      "bomber",
+      "jacket",
+      "outerwear"
+    ],
+    "featured": false,
+    "createdAt": "2025-09-19"
+  },
+  {
+    "id": 7,
+    "name": "Granite Knit Polo",
+    "category": "clothing",
+    "brand": "VAUX",
+    "price": 124,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/1.webp",
+      "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/2.webp",
+      "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/3.webp"
+    ],
+    "colors": [
+      "Stone",
+      "Black"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Stone",
+        "size": "XS",
+        "stock": 3,
+        "sku": "VX-007-01-XS"
+      },
+      {
+        "color": "Stone",
+        "size": "S",
+        "stock": 4,
+        "sku": "VX-007-01-S"
+      },
+      {
+        "color": "Stone",
+        "size": "M",
+        "stock": 5,
+        "sku": "VX-007-01-M"
+      },
+      {
+        "color": "Stone",
+        "size": "L",
+        "stock": 6,
+        "sku": "VX-007-01-L"
+      },
+      {
+        "color": "Stone",
+        "size": "XL",
+        "stock": 7,
+        "sku": "VX-007-01-XL"
+      },
+      {
+        "color": "Black",
+        "size": "XS",
+        "stock": 5,
+        "sku": "VX-007-02-XS"
+      },
+      {
+        "color": "Black",
+        "size": "S",
+        "stock": 6,
+        "sku": "VX-007-02-S"
+      },
+      {
+        "color": "Black",
+        "size": "M",
+        "stock": 7,
+        "sku": "VX-007-02-M"
+      },
+      {
+        "color": "Black",
+        "size": "L",
+        "stock": 8,
+        "sku": "VX-007-02-L"
+      },
+      {
+        "color": "Black",
+        "size": "XL",
+        "stock": 0,
+        "sku": "VX-007-02-XL"
+      }
+    ],
+    "description": "Soft knit polo with compact collar and minimal placket construction.",
+    "tags": [
+      "polo",
+      "knit",
+      "smart-casual"
+    ],
+    "featured": false,
+    "createdAt": "2025-08-24"
+  },
+  {
+    "id": 8,
+    "name": "Drift Linen Overshirt",
+    "category": "clothing",
+    "brand": "ARCFORM",
+    "price": 164,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/tops/gray-dress/1.webp",
+      "https://cdn.dummyjson.com/product-images/tops/gray-dress/2.webp",
+      "https://cdn.dummyjson.com/product-images/tops/gray-dress/3.webp"
+    ],
+    "colors": [
+      "Bone",
+      "Slate"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Bone",
+        "size": "XS",
+        "stock": 6,
+        "sku": "VX-008-01-XS"
+      },
+      {
+        "color": "Bone",
+        "size": "S",
+        "stock": 7,
+        "sku": "VX-008-01-S"
+      },
+      {
+        "color": "Bone",
+        "size": "M",
+        "stock": 8,
+        "sku": "VX-008-01-M"
+      },
+      {
+        "color": "Bone",
+        "size": "L",
+        "stock": 0,
+        "sku": "VX-008-01-L"
+      },
+      {
+        "color": "Bone",
+        "size": "XL",
+        "stock": 1,
+        "sku": "VX-008-01-XL"
+      },
+      {
+        "color": "Slate",
+        "size": "XS",
+        "stock": 8,
+        "sku": "VX-008-02-XS"
+      },
+      {
+        "color": "Slate",
+        "size": "S",
+        "stock": 0,
+        "sku": "VX-008-02-S"
+      },
+      {
+        "color": "Slate",
+        "size": "M",
+        "stock": 1,
+        "sku": "VX-008-02-M"
+      },
+      {
+        "color": "Slate",
+        "size": "L",
+        "stock": 2,
+        "sku": "VX-008-02-L"
+      },
+      {
+        "color": "Slate",
+        "size": "XL",
+        "stock": 3,
+        "sku": "VX-008-02-XL"
+      }
+    ],
+    "description": "Breathable linen overshirt with straight hem and chest patch pocket.",
+    "tags": [
+      "linen",
+      "overshirt",
+      "sale"
+    ],
+    "featured": false,
+    "createdAt": "2026-02-06",
+    "salePrice": 129
+  },
+  {
+    "id": 9,
+    "name": "Core Waffle Long Sleeve",
+    "category": "clothing",
+    "brand": "VAUX",
+    "price": 88,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/tops/short-frock/1.webp",
+      "https://cdn.dummyjson.com/product-images/tops/short-frock/2.webp",
+      "https://cdn.dummyjson.com/product-images/tops/short-frock/3.webp"
+    ],
+    "colors": [
+      "White",
+      "Clay"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "White",
+        "size": "XS",
+        "stock": 0,
+        "sku": "VX-009-01-XS"
+      },
+      {
+        "color": "White",
+        "size": "S",
+        "stock": 1,
+        "sku": "VX-009-01-S"
+      },
+      {
+        "color": "White",
+        "size": "M",
+        "stock": 2,
+        "sku": "VX-009-01-M"
+      },
+      {
+        "color": "White",
+        "size": "L",
+        "stock": 3,
+        "sku": "VX-009-01-L"
+      },
+      {
+        "color": "White",
+        "size": "XL",
+        "stock": 4,
+        "sku": "VX-009-01-XL"
+      },
+      {
+        "color": "Clay",
+        "size": "XS",
+        "stock": 2,
+        "sku": "VX-009-02-XS"
+      },
+      {
+        "color": "Clay",
+        "size": "S",
+        "stock": 3,
+        "sku": "VX-009-02-S"
+      },
+      {
+        "color": "Clay",
+        "size": "M",
+        "stock": 4,
+        "sku": "VX-009-02-M"
+      },
+      {
+        "color": "Clay",
+        "size": "L",
+        "stock": 5,
+        "sku": "VX-009-02-L"
+      },
+      {
+        "color": "Clay",
+        "size": "XL",
+        "stock": 6,
+        "sku": "VX-009-02-XL"
+      }
+    ],
+    "description": "Thermal waffle long sleeve made for layering in transitional weather.",
+    "tags": [
+      "waffle",
+      "basics",
+      "long-sleeve"
+    ],
+    "featured": false,
+    "createdAt": "2025-12-22"
+  },
+  {
+    "id": 10,
+    "name": "Atlas Pleated Trouser",
+    "category": "clothing",
+    "brand": "ARCFORM",
+    "price": 198,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/tops/tartan-dress/1.webp",
+      "https://cdn.dummyjson.com/product-images/tops/tartan-dress/2.webp",
+      "https://cdn.dummyjson.com/product-images/tops/tartan-dress/3.webp"
+    ],
+    "colors": [
+      "Taupe",
+      "Ink"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Taupe",
+        "size": "XS",
+        "stock": 3,
+        "sku": "VX-010-01-XS"
+      },
+      {
+        "color": "Taupe",
+        "size": "S",
+        "stock": 4,
+        "sku": "VX-010-01-S"
+      },
+      {
+        "color": "Taupe",
+        "size": "M",
+        "stock": 5,
+        "sku": "VX-010-01-M"
+      },
+      {
+        "color": "Taupe",
+        "size": "L",
+        "stock": 6,
+        "sku": "VX-010-01-L"
+      },
+      {
+        "color": "Taupe",
+        "size": "XL",
+        "stock": 7,
+        "sku": "VX-010-01-XL"
+      },
+      {
+        "color": "Ink",
+        "size": "XS",
+        "stock": 5,
+        "sku": "VX-010-02-XS"
+      },
+      {
+        "color": "Ink",
+        "size": "S",
+        "stock": 6,
+        "sku": "VX-010-02-S"
+      },
+      {
+        "color": "Ink",
+        "size": "M",
+        "stock": 7,
+        "sku": "VX-010-02-M"
+      },
+      {
+        "color": "Ink",
+        "size": "L",
+        "stock": 8,
+        "sku": "VX-010-02-L"
+      },
+      {
+        "color": "Ink",
+        "size": "XL",
+        "stock": 0,
+        "sku": "VX-010-02-XL"
+      }
+    ],
+    "description": "Relaxed pleated trouser with clean crease and fluid drape through leg.",
+    "tags": [
+      "trouser",
+      "tailored",
+      "modern"
+    ],
+    "featured": true,
+    "createdAt": "2025-11-30"
+  },
+  {
+    "id": 11,
+    "name": "Mono Tech Jogger",
+    "category": "clothing",
+    "brand": "VAUX",
+    "price": 142,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/3.webp"
+    ],
+    "colors": [
+      "Black",
+      "Smoke"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "size": "XS",
+        "stock": 6,
+        "sku": "VX-011-01-XS"
+      },
+      {
+        "color": "Black",
+        "size": "S",
+        "stock": 7,
+        "sku": "VX-011-01-S"
+      },
+      {
+        "color": "Black",
+        "size": "M",
+        "stock": 8,
+        "sku": "VX-011-01-M"
+      },
+      {
+        "color": "Black",
+        "size": "L",
+        "stock": 0,
+        "sku": "VX-011-01-L"
+      },
+      {
+        "color": "Black",
+        "size": "XL",
+        "stock": 1,
+        "sku": "VX-011-01-XL"
+      },
+      {
+        "color": "Smoke",
+        "size": "XS",
+        "stock": 8,
+        "sku": "VX-011-02-XS"
+      },
+      {
+        "color": "Smoke",
+        "size": "S",
+        "stock": 0,
+        "sku": "VX-011-02-S"
+      },
+      {
+        "color": "Smoke",
+        "size": "M",
+        "stock": 1,
+        "sku": "VX-011-02-M"
+      },
+      {
+        "color": "Smoke",
+        "size": "L",
+        "stock": 2,
+        "sku": "VX-011-02-L"
+      },
+      {
+        "color": "Smoke",
+        "size": "XL",
+        "stock": 3,
+        "sku": "VX-011-02-XL"
+      }
+    ],
+    "description": "Stretch tech jogger with zip pockets, articulated knee seams, and cuff hem.",
+    "tags": [
+      "jogger",
+      "techwear",
+      "commute"
+    ],
+    "featured": false,
+    "createdAt": "2026-01-18"
+  },
+  {
+    "id": 12,
+    "name": "Apex Street Sneaker",
+    "category": "shoes",
+    "brand": "SOLE+",
+    "price": 205,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/3.webp"
+    ],
+    "colors": [
+      "Black",
+      "Silver"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "size": "7",
+        "stock": 0,
+        "sku": "VX-012-01-7"
+      },
+      {
+        "color": "Black",
+        "size": "8",
+        "stock": 1,
+        "sku": "VX-012-01-8"
+      },
+      {
+        "color": "Black",
+        "size": "9",
+        "stock": 2,
+        "sku": "VX-012-01-9"
+      },
+      {
+        "color": "Black",
+        "size": "10",
+        "stock": 3,
+        "sku": "VX-012-01-10"
+      },
+      {
+        "color": "Black",
+        "size": "11",
+        "stock": 4,
+        "sku": "VX-012-01-11"
+      },
+      {
+        "color": "Black",
+        "size": "12",
+        "stock": 5,
+        "sku": "VX-012-01-12"
+      },
+      {
+        "color": "Silver",
+        "size": "7",
+        "stock": 2,
+        "sku": "VX-012-02-7"
+      },
+      {
+        "color": "Silver",
+        "size": "8",
+        "stock": 3,
+        "sku": "VX-012-02-8"
+      },
+      {
+        "color": "Silver",
+        "size": "9",
+        "stock": 4,
+        "sku": "VX-012-02-9"
+      },
+      {
+        "color": "Silver",
+        "size": "10",
+        "stock": 5,
+        "sku": "VX-012-02-10"
+      },
+      {
+        "color": "Silver",
+        "size": "11",
+        "stock": 6,
+        "sku": "VX-012-02-11"
+      },
+      {
+        "color": "Silver",
+        "size": "12",
+        "stock": 7,
+        "sku": "VX-012-02-12"
+      }
+    ],
+    "description": "Low-profile street sneaker with responsive foam midsole and rubber cupsole.",
+    "tags": [
+      "sneaker",
+      "street",
+      "sale"
+    ],
+    "featured": true,
+    "createdAt": "2026-02-24",
+    "salePrice": 165
+  },
+  {
+    "id": 13,
+    "name": "Northbound Trail Runner",
+    "category": "shoes",
+    "brand": "SOLE+",
+    "price": 218,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/3.webp"
+    ],
+    "colors": [
+      "Moss",
+      "Grey"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "variants": [
+      {
+        "color": "Moss",
+        "size": "7",
+        "stock": 3,
+        "sku": "VX-013-01-7"
+      },
+      {
+        "color": "Moss",
+        "size": "8",
+        "stock": 4,
+        "sku": "VX-013-01-8"
+      },
+      {
+        "color": "Moss",
+        "size": "9",
+        "stock": 5,
+        "sku": "VX-013-01-9"
+      },
+      {
+        "color": "Moss",
+        "size": "10",
+        "stock": 6,
+        "sku": "VX-013-01-10"
+      },
+      {
+        "color": "Moss",
+        "size": "11",
+        "stock": 7,
+        "sku": "VX-013-01-11"
+      },
+      {
+        "color": "Moss",
+        "size": "12",
+        "stock": 8,
+        "sku": "VX-013-01-12"
+      },
+      {
+        "color": "Grey",
+        "size": "7",
+        "stock": 5,
+        "sku": "VX-013-02-7"
+      },
+      {
+        "color": "Grey",
+        "size": "8",
+        "stock": 6,
+        "sku": "VX-013-02-8"
+      },
+      {
+        "color": "Grey",
+        "size": "9",
+        "stock": 7,
+        "sku": "VX-013-02-9"
+      },
+      {
+        "color": "Grey",
+        "size": "10",
+        "stock": 8,
+        "sku": "VX-013-02-10"
+      },
+      {
+        "color": "Grey",
+        "size": "11",
+        "stock": 0,
+        "sku": "VX-013-02-11"
+      },
+      {
+        "color": "Grey",
+        "size": "12",
+        "stock": 1,
+        "sku": "VX-013-02-12"
+      }
+    ],
+    "description": "Trail runner with directional lugs, reinforced toe guard, and stable heel cradle.",
+    "tags": [
+      "trail",
+      "runner",
+      "grip"
+    ],
+    "featured": true,
+    "createdAt": "2026-01-10"
+  },
+  {
+    "id": 14,
+    "name": "Harbor Leather Derby",
+    "category": "shoes",
+    "brand": "CROFT",
+    "price": 312,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/3.webp"
+    ],
+    "colors": [
+      "Tan",
+      "Dark Brown"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "variants": [
+      {
+        "color": "Tan",
+        "size": "7",
+        "stock": 6,
+        "sku": "VX-014-01-7"
+      },
+      {
+        "color": "Tan",
+        "size": "8",
+        "stock": 7,
+        "sku": "VX-014-01-8"
+      },
+      {
+        "color": "Tan",
+        "size": "9",
+        "stock": 8,
+        "sku": "VX-014-01-9"
+      },
+      {
+        "color": "Tan",
+        "size": "10",
+        "stock": 0,
+        "sku": "VX-014-01-10"
+      },
+      {
+        "color": "Tan",
+        "size": "11",
+        "stock": 1,
+        "sku": "VX-014-01-11"
+      },
+      {
+        "color": "Tan",
+        "size": "12",
+        "stock": 2,
+        "sku": "VX-014-01-12"
+      },
+      {
+        "color": "Dark Brown",
+        "size": "7",
+        "stock": 8,
+        "sku": "VX-014-02-7"
+      },
+      {
+        "color": "Dark Brown",
+        "size": "8",
+        "stock": 0,
+        "sku": "VX-014-02-8"
+      },
+      {
+        "color": "Dark Brown",
+        "size": "9",
+        "stock": 1,
+        "sku": "VX-014-02-9"
+      },
+      {
+        "color": "Dark Brown",
+        "size": "10",
+        "stock": 2,
+        "sku": "VX-014-02-10"
+      },
+      {
+        "color": "Dark Brown",
+        "size": "11",
+        "stock": 3,
+        "sku": "VX-014-02-11"
+      },
+      {
+        "color": "Dark Brown",
+        "size": "12",
+        "stock": 4,
+        "sku": "VX-014-02-12"
+      }
+    ],
+    "description": "Polished leather derby with stitched welt and cushioned leather footbed.",
+    "tags": [
+      "derby",
+      "leather",
+      "formal"
+    ],
+    "featured": false,
+    "createdAt": "2025-09-08"
+  },
+  {
+    "id": 15,
+    "name": "Echo Canvas High Top",
+    "category": "shoes",
+    "brand": "VAUX",
+    "price": 102,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/3.webp"
+    ],
+    "colors": [
+      "Off-White",
+      "Black"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "variants": [
+      {
+        "color": "Off-White",
+        "size": "7",
+        "stock": 0,
+        "sku": "VX-015-01-7"
+      },
+      {
+        "color": "Off-White",
+        "size": "8",
+        "stock": 1,
+        "sku": "VX-015-01-8"
+      },
+      {
+        "color": "Off-White",
+        "size": "9",
+        "stock": 2,
+        "sku": "VX-015-01-9"
+      },
+      {
+        "color": "Off-White",
+        "size": "10",
+        "stock": 3,
+        "sku": "VX-015-01-10"
+      },
+      {
+        "color": "Off-White",
+        "size": "11",
+        "stock": 4,
+        "sku": "VX-015-01-11"
+      },
+      {
+        "color": "Off-White",
+        "size": "12",
+        "stock": 5,
+        "sku": "VX-015-01-12"
+      },
+      {
+        "color": "Black",
+        "size": "7",
+        "stock": 2,
+        "sku": "VX-015-02-7"
+      },
+      {
+        "color": "Black",
+        "size": "8",
+        "stock": 3,
+        "sku": "VX-015-02-8"
+      },
+      {
+        "color": "Black",
+        "size": "9",
+        "stock": 4,
+        "sku": "VX-015-02-9"
+      },
+      {
+        "color": "Black",
+        "size": "10",
+        "stock": 5,
+        "sku": "VX-015-02-10"
+      },
+      {
+        "color": "Black",
+        "size": "11",
+        "stock": 6,
+        "sku": "VX-015-02-11"
+      },
+      {
+        "color": "Black",
+        "size": "12",
+        "stock": 7,
+        "sku": "VX-015-02-12"
+      }
+    ],
+    "description": "Classic canvas high top with metal eyelets and vulcanized rubber foxing.",
+    "tags": [
+      "canvas",
+      "high-top",
+      "casual"
+    ],
+    "featured": true,
+    "createdAt": "2025-11-03"
+  },
+  {
+    "id": 16,
+    "name": "Rift Court Sneaker",
+    "category": "shoes",
+    "brand": "VAUX",
+    "price": 136,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/3.webp"
+    ],
+    "colors": [
+      "White",
+      "Navy"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "variants": [
+      {
+        "color": "White",
+        "size": "7",
+        "stock": 3,
+        "sku": "VX-016-01-7"
+      },
+      {
+        "color": "White",
+        "size": "8",
+        "stock": 4,
+        "sku": "VX-016-01-8"
+      },
+      {
+        "color": "White",
+        "size": "9",
+        "stock": 5,
+        "sku": "VX-016-01-9"
+      },
+      {
+        "color": "White",
+        "size": "10",
+        "stock": 6,
+        "sku": "VX-016-01-10"
+      },
+      {
+        "color": "White",
+        "size": "11",
+        "stock": 7,
+        "sku": "VX-016-01-11"
+      },
+      {
+        "color": "White",
+        "size": "12",
+        "stock": 8,
+        "sku": "VX-016-01-12"
+      },
+      {
+        "color": "Navy",
+        "size": "7",
+        "stock": 5,
+        "sku": "VX-016-02-7"
+      },
+      {
+        "color": "Navy",
+        "size": "8",
+        "stock": 6,
+        "sku": "VX-016-02-8"
+      },
+      {
+        "color": "Navy",
+        "size": "9",
+        "stock": 7,
+        "sku": "VX-016-02-9"
+      },
+      {
+        "color": "Navy",
+        "size": "10",
+        "stock": 8,
+        "sku": "VX-016-02-10"
+      },
+      {
+        "color": "Navy",
+        "size": "11",
+        "stock": 0,
+        "sku": "VX-016-02-11"
+      },
+      {
+        "color": "Navy",
+        "size": "12",
+        "stock": 1,
+        "sku": "VX-016-02-12"
+      }
+    ],
+    "description": "Retro court sneaker with layered panels and durable stitched outsole edge.",
+    "tags": [
+      "court",
+      "sneaker",
+      "sale"
+    ],
+    "featured": true,
+    "createdAt": "2026-02-14",
+    "salePrice": 109
+  },
+  {
+    "id": 17,
+    "name": "Summit Knit Trainer",
+    "category": "shoes",
+    "brand": "SOLE+",
+    "price": 172,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/3.webp"
+    ],
+    "colors": [
+      "Stone",
+      "Black"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "variants": [
+      {
+        "color": "Stone",
+        "size": "7",
+        "stock": 6,
+        "sku": "VX-017-01-7"
+      },
+      {
+        "color": "Stone",
+        "size": "8",
+        "stock": 7,
+        "sku": "VX-017-01-8"
+      },
+      {
+        "color": "Stone",
+        "size": "9",
+        "stock": 8,
+        "sku": "VX-017-01-9"
+      },
+      {
+        "color": "Stone",
+        "size": "10",
+        "stock": 0,
+        "sku": "VX-017-01-10"
+      },
+      {
+        "color": "Stone",
+        "size": "11",
+        "stock": 1,
+        "sku": "VX-017-01-11"
+      },
+      {
+        "color": "Stone",
+        "size": "12",
+        "stock": 2,
+        "sku": "VX-017-01-12"
+      },
+      {
+        "color": "Black",
+        "size": "7",
+        "stock": 8,
+        "sku": "VX-017-02-7"
+      },
+      {
+        "color": "Black",
+        "size": "8",
+        "stock": 0,
+        "sku": "VX-017-02-8"
+      },
+      {
+        "color": "Black",
+        "size": "9",
+        "stock": 1,
+        "sku": "VX-017-02-9"
+      },
+      {
+        "color": "Black",
+        "size": "10",
+        "stock": 2,
+        "sku": "VX-017-02-10"
+      },
+      {
+        "color": "Black",
+        "size": "11",
+        "stock": 3,
+        "sku": "VX-017-02-11"
+      },
+      {
+        "color": "Black",
+        "size": "12",
+        "stock": 4,
+        "sku": "VX-017-02-12"
+      }
+    ],
+    "description": "Knit trainer with breathable upper, lightweight midsole, and snug collar fit.",
+    "tags": [
+      "trainer",
+      "knit",
+      "daily"
+    ],
+    "featured": false,
+    "createdAt": "2025-10-16"
+  },
+  {
+    "id": 18,
+    "name": "Ridge Suede Chelsea",
+    "category": "shoes",
+    "brand": "CROFT",
+    "price": 286,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/3.webp"
+    ],
+    "colors": [
+      "Sand",
+      "Chestnut"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "variants": [
+      {
+        "color": "Sand",
+        "size": "7",
+        "stock": 0,
+        "sku": "VX-018-01-7"
+      },
+      {
+        "color": "Sand",
+        "size": "8",
+        "stock": 1,
+        "sku": "VX-018-01-8"
+      },
+      {
+        "color": "Sand",
+        "size": "9",
+        "stock": 2,
+        "sku": "VX-018-01-9"
+      },
+      {
+        "color": "Sand",
+        "size": "10",
+        "stock": 3,
+        "sku": "VX-018-01-10"
+      },
+      {
+        "color": "Sand",
+        "size": "11",
+        "stock": 4,
+        "sku": "VX-018-01-11"
+      },
+      {
+        "color": "Sand",
+        "size": "12",
+        "stock": 5,
+        "sku": "VX-018-01-12"
+      },
+      {
+        "color": "Chestnut",
+        "size": "7",
+        "stock": 2,
+        "sku": "VX-018-02-7"
+      },
+      {
+        "color": "Chestnut",
+        "size": "8",
+        "stock": 3,
+        "sku": "VX-018-02-8"
+      },
+      {
+        "color": "Chestnut",
+        "size": "9",
+        "stock": 4,
+        "sku": "VX-018-02-9"
+      },
+      {
+        "color": "Chestnut",
+        "size": "10",
+        "stock": 5,
+        "sku": "VX-018-02-10"
+      },
+      {
+        "color": "Chestnut",
+        "size": "11",
+        "stock": 6,
+        "sku": "VX-018-02-11"
+      },
+      {
+        "color": "Chestnut",
+        "size": "12",
+        "stock": 7,
+        "sku": "VX-018-02-12"
+      }
+    ],
+    "description": "Suede chelsea boot with elastic gusset and traction-ready stacked rubber sole.",
+    "tags": [
+      "chelsea",
+      "suede",
+      "boots"
+    ],
+    "featured": false,
+    "createdAt": "2025-12-12"
+  },
+  {
+    "id": 19,
+    "name": "Vector Slide Sandal",
+    "category": "shoes",
+    "brand": "SOLE+",
+    "price": 92,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/3.webp"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "size": "7",
+        "stock": 3,
+        "sku": "VX-019-01-7"
+      },
+      {
+        "color": "Black",
+        "size": "8",
+        "stock": 4,
+        "sku": "VX-019-01-8"
+      },
+      {
+        "color": "Black",
+        "size": "9",
+        "stock": 5,
+        "sku": "VX-019-01-9"
+      },
+      {
+        "color": "Black",
+        "size": "10",
+        "stock": 6,
+        "sku": "VX-019-01-10"
+      },
+      {
+        "color": "Black",
+        "size": "11",
+        "stock": 7,
+        "sku": "VX-019-01-11"
+      },
+      {
+        "color": "Black",
+        "size": "12",
+        "stock": 8,
+        "sku": "VX-019-01-12"
+      },
+      {
+        "color": "Olive",
+        "size": "7",
+        "stock": 5,
+        "sku": "VX-019-02-7"
+      },
+      {
+        "color": "Olive",
+        "size": "8",
+        "stock": 6,
+        "sku": "VX-019-02-8"
+      },
+      {
+        "color": "Olive",
+        "size": "9",
+        "stock": 7,
+        "sku": "VX-019-02-9"
+      },
+      {
+        "color": "Olive",
+        "size": "10",
+        "stock": 8,
+        "sku": "VX-019-02-10"
+      },
+      {
+        "color": "Olive",
+        "size": "11",
+        "stock": 0,
+        "sku": "VX-019-02-11"
+      },
+      {
+        "color": "Olive",
+        "size": "12",
+        "stock": 1,
+        "sku": "VX-019-02-12"
+      }
+    ],
+    "description": "Contoured slide sandal with padded strap and flexible lightweight outsole.",
+    "tags": [
+      "slide",
+      "sandal",
+      "comfort"
+    ],
+    "featured": false,
+    "createdAt": "2026-02-03"
+  },
+  {
+    "id": 20,
+    "name": "Transit Penny Loafer",
+    "category": "shoes",
+    "brand": "CROFT",
+    "price": 248,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/3.webp"
+    ],
+    "colors": [
+      "Black",
+      "Burgundy"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "size": "7",
+        "stock": 6,
+        "sku": "VX-020-01-7"
+      },
+      {
+        "color": "Black",
+        "size": "8",
+        "stock": 7,
+        "sku": "VX-020-01-8"
+      },
+      {
+        "color": "Black",
+        "size": "9",
+        "stock": 8,
+        "sku": "VX-020-01-9"
+      },
+      {
+        "color": "Black",
+        "size": "10",
+        "stock": 0,
+        "sku": "VX-020-01-10"
+      },
+      {
+        "color": "Black",
+        "size": "11",
+        "stock": 1,
+        "sku": "VX-020-01-11"
+      },
+      {
+        "color": "Black",
+        "size": "12",
+        "stock": 2,
+        "sku": "VX-020-01-12"
+      },
+      {
+        "color": "Burgundy",
+        "size": "7",
+        "stock": 8,
+        "sku": "VX-020-02-7"
+      },
+      {
+        "color": "Burgundy",
+        "size": "8",
+        "stock": 0,
+        "sku": "VX-020-02-8"
+      },
+      {
+        "color": "Burgundy",
+        "size": "9",
+        "stock": 1,
+        "sku": "VX-020-02-9"
+      },
+      {
+        "color": "Burgundy",
+        "size": "10",
+        "stock": 2,
+        "sku": "VX-020-02-10"
+      },
+      {
+        "color": "Burgundy",
+        "size": "11",
+        "stock": 3,
+        "sku": "VX-020-02-11"
+      },
+      {
+        "color": "Burgundy",
+        "size": "12",
+        "stock": 4,
+        "sku": "VX-020-02-12"
+      }
+    ],
+    "description": "Minimal penny loafer with soft leather lining and structured moc toe.",
+    "tags": [
+      "loafer",
+      "office",
+      "smart"
+    ],
+    "featured": false,
+    "createdAt": "2025-08-27"
+  },
+  {
+    "id": 21,
+    "name": "Aero Performance Sneaker",
+    "category": "shoes",
+    "brand": "SOLE+",
+    "price": 198,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/3.webp"
+    ],
+    "colors": [
+      "White",
+      "Graphite"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "variants": [
+      {
+        "color": "White",
+        "size": "7",
+        "stock": 0,
+        "sku": "VX-021-01-7"
+      },
+      {
+        "color": "White",
+        "size": "8",
+        "stock": 1,
+        "sku": "VX-021-01-8"
+      },
+      {
+        "color": "White",
+        "size": "9",
+        "stock": 2,
+        "sku": "VX-021-01-9"
+      },
+      {
+        "color": "White",
+        "size": "10",
+        "stock": 3,
+        "sku": "VX-021-01-10"
+      },
+      {
+        "color": "White",
+        "size": "11",
+        "stock": 4,
+        "sku": "VX-021-01-11"
+      },
+      {
+        "color": "White",
+        "size": "12",
+        "stock": 5,
+        "sku": "VX-021-01-12"
+      },
+      {
+        "color": "Graphite",
+        "size": "7",
+        "stock": 2,
+        "sku": "VX-021-02-7"
+      },
+      {
+        "color": "Graphite",
+        "size": "8",
+        "stock": 3,
+        "sku": "VX-021-02-8"
+      },
+      {
+        "color": "Graphite",
+        "size": "9",
+        "stock": 4,
+        "sku": "VX-021-02-9"
+      },
+      {
+        "color": "Graphite",
+        "size": "10",
+        "stock": 5,
+        "sku": "VX-021-02-10"
+      },
+      {
+        "color": "Graphite",
+        "size": "11",
+        "stock": 6,
+        "sku": "VX-021-02-11"
+      },
+      {
+        "color": "Graphite",
+        "size": "12",
+        "stock": 7,
+        "sku": "VX-021-02-12"
+      }
+    ],
+    "description": "Performance trainer with responsive cushioning and lateral support frame.",
+    "tags": [
+      "performance",
+      "training",
+      "new-season"
+    ],
+    "featured": true,
+    "createdAt": "2026-02-09"
+  },
+  {
+    "id": 22,
+    "name": "Pulse Runner V2",
+    "category": "shoes",
+    "brand": "SOLE+",
+    "price": 214,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/3.webp"
+    ],
+    "colors": [
+      "Slate",
+      "White"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "variants": [
+      {
+        "color": "Slate",
+        "size": "7",
+        "stock": 3,
+        "sku": "VX-022-01-7"
+      },
+      {
+        "color": "Slate",
+        "size": "8",
+        "stock": 4,
+        "sku": "VX-022-01-8"
+      },
+      {
+        "color": "Slate",
+        "size": "9",
+        "stock": 5,
+        "sku": "VX-022-01-9"
+      },
+      {
+        "color": "Slate",
+        "size": "10",
+        "stock": 6,
+        "sku": "VX-022-01-10"
+      },
+      {
+        "color": "Slate",
+        "size": "11",
+        "stock": 7,
+        "sku": "VX-022-01-11"
+      },
+      {
+        "color": "Slate",
+        "size": "12",
+        "stock": 8,
+        "sku": "VX-022-01-12"
+      },
+      {
+        "color": "White",
+        "size": "7",
+        "stock": 5,
+        "sku": "VX-022-02-7"
+      },
+      {
+        "color": "White",
+        "size": "8",
+        "stock": 6,
+        "sku": "VX-022-02-8"
+      },
+      {
+        "color": "White",
+        "size": "9",
+        "stock": 7,
+        "sku": "VX-022-02-9"
+      },
+      {
+        "color": "White",
+        "size": "10",
+        "stock": 8,
+        "sku": "VX-022-02-10"
+      },
+      {
+        "color": "White",
+        "size": "11",
+        "stock": 0,
+        "sku": "VX-022-02-11"
+      },
+      {
+        "color": "White",
+        "size": "12",
+        "stock": 1,
+        "sku": "VX-022-02-12"
+      }
+    ],
+    "description": "Second-gen runner with breathable mesh shell and high-rebound midsole foam.",
+    "tags": [
+      "runner",
+      "sport",
+      "lightweight"
+    ],
+    "featured": true,
+    "createdAt": "2026-02-26"
+  },
+  {
+    "id": 23,
+    "name": "Arc Leather Belt 35mm",
+    "category": "belts",
+    "brand": "CROFT",
+    "price": 96,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/Leather_Belt.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Leather_belt.jpg/960px-Leather_belt.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Leather_belt_%26_buckle.jpg/960px-Leather_belt_%26_buckle.jpg"
+    ],
+    "colors": [
+      "Black",
+      "Dark Brown"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "size": "S",
+        "stock": 6,
+        "sku": "VX-023-01-S"
+      },
+      {
+        "color": "Black",
+        "size": "M",
+        "stock": 7,
+        "sku": "VX-023-01-M"
+      },
+      {
+        "color": "Black",
+        "size": "L",
+        "stock": 8,
+        "sku": "VX-023-01-L"
+      },
+      {
+        "color": "Black",
+        "size": "XL",
+        "stock": 0,
+        "sku": "VX-023-01-XL"
+      },
+      {
+        "color": "Dark Brown",
+        "size": "S",
+        "stock": 8,
+        "sku": "VX-023-02-S"
+      },
+      {
+        "color": "Dark Brown",
+        "size": "M",
+        "stock": 0,
+        "sku": "VX-023-02-M"
+      },
+      {
+        "color": "Dark Brown",
+        "size": "L",
+        "stock": 1,
+        "sku": "VX-023-02-L"
+      },
+      {
+        "color": "Dark Brown",
+        "size": "XL",
+        "stock": 2,
+        "sku": "VX-023-02-XL"
+      }
+    ],
+    "description": "Full-grain leather belt with brushed hardware and 35mm structured strap.",
+    "tags": [
+      "leather",
+      "35mm",
+      "formal"
+    ],
+    "featured": true,
+    "createdAt": "2026-02-18"
+  },
+  {
+    "id": 24,
+    "name": "Crest Braided Belt",
+    "category": "belts",
+    "brand": "CROFT",
+    "price": 84,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Leather_belt.jpg/960px-Leather_belt.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Leather_belt_%26_buckle.jpg/960px-Leather_belt_%26_buckle.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/A_Leather_Belt.jpg/960px-A_Leather_Belt.jpg"
+    ],
+    "colors": [
+      "Tan",
+      "Navy"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Tan",
+        "size": "S",
+        "stock": 0,
+        "sku": "VX-024-01-S"
+      },
+      {
+        "color": "Tan",
+        "size": "M",
+        "stock": 1,
+        "sku": "VX-024-01-M"
+      },
+      {
+        "color": "Tan",
+        "size": "L",
+        "stock": 2,
+        "sku": "VX-024-01-L"
+      },
+      {
+        "color": "Tan",
+        "size": "XL",
+        "stock": 3,
+        "sku": "VX-024-01-XL"
+      },
+      {
+        "color": "Navy",
+        "size": "S",
+        "stock": 2,
+        "sku": "VX-024-02-S"
+      },
+      {
+        "color": "Navy",
+        "size": "M",
+        "stock": 3,
+        "sku": "VX-024-02-M"
+      },
+      {
+        "color": "Navy",
+        "size": "L",
+        "stock": 4,
+        "sku": "VX-024-02-L"
+      },
+      {
+        "color": "Navy",
+        "size": "XL",
+        "stock": 5,
+        "sku": "VX-024-02-XL"
+      }
+    ],
+    "description": "Flexible braided belt built for casual styling and all-day comfort.",
+    "tags": [
+      "braided",
+      "casual",
+      "weekend"
+    ],
+    "featured": false,
+    "createdAt": "2025-10-12"
+  },
+  {
+    "id": 25,
+    "name": "Mono Reversible Belt",
+    "category": "belts",
+    "brand": "VAUX",
+    "price": 118,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Leather_belt_%26_buckle.jpg/960px-Leather_belt_%26_buckle.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/A_Leather_Belt.jpg/960px-A_Leather_Belt.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Belt-clothing.jpg/960px-Belt-clothing.jpg"
+    ],
+    "colors": [
+      "Black/Cognac",
+      "Navy/Grey"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Black/Cognac",
+        "size": "S",
+        "stock": 3,
+        "sku": "VX-025-01-S"
+      },
+      {
+        "color": "Black/Cognac",
+        "size": "M",
+        "stock": 4,
+        "sku": "VX-025-01-M"
+      },
+      {
+        "color": "Black/Cognac",
+        "size": "L",
+        "stock": 5,
+        "sku": "VX-025-01-L"
+      },
+      {
+        "color": "Black/Cognac",
+        "size": "XL",
+        "stock": 6,
+        "sku": "VX-025-01-XL"
+      },
+      {
+        "color": "Navy/Grey",
+        "size": "S",
+        "stock": 5,
+        "sku": "VX-025-02-S"
+      },
+      {
+        "color": "Navy/Grey",
+        "size": "M",
+        "stock": 6,
+        "sku": "VX-025-02-M"
+      },
+      {
+        "color": "Navy/Grey",
+        "size": "L",
+        "stock": 7,
+        "sku": "VX-025-02-L"
+      },
+      {
+        "color": "Navy/Grey",
+        "size": "XL",
+        "stock": 8,
+        "sku": "VX-025-02-XL"
+      }
+    ],
+    "description": "Reversible leather belt with rotating buckle for dual-color wear.",
+    "tags": [
+      "reversible",
+      "sale",
+      "versatile"
+    ],
+    "featured": true,
+    "createdAt": "2025-12-20",
+    "salePrice": 89
+  },
+  {
+    "id": 26,
+    "name": "Forge Utility Belt",
+    "category": "belts",
+    "brand": "ARCFORM",
+    "price": 72,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/A_Leather_Belt.jpg/960px-A_Leather_Belt.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Belt-clothing.jpg/960px-Belt-clothing.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Belt.jpg/960px-Belt.jpg"
+    ],
+    "colors": [
+      "Olive",
+      "Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Olive",
+        "size": "S",
+        "stock": 6,
+        "sku": "VX-026-01-S"
+      },
+      {
+        "color": "Olive",
+        "size": "M",
+        "stock": 7,
+        "sku": "VX-026-01-M"
+      },
+      {
+        "color": "Olive",
+        "size": "L",
+        "stock": 8,
+        "sku": "VX-026-01-L"
+      },
+      {
+        "color": "Olive",
+        "size": "XL",
+        "stock": 0,
+        "sku": "VX-026-01-XL"
+      },
+      {
+        "color": "Black",
+        "size": "S",
+        "stock": 8,
+        "sku": "VX-026-02-S"
+      },
+      {
+        "color": "Black",
+        "size": "M",
+        "stock": 0,
+        "sku": "VX-026-02-M"
+      },
+      {
+        "color": "Black",
+        "size": "L",
+        "stock": 1,
+        "sku": "VX-026-02-L"
+      },
+      {
+        "color": "Black",
+        "size": "XL",
+        "stock": 2,
+        "sku": "VX-026-02-XL"
+      }
+    ],
+    "description": "Durable utility belt with quick-release buckle and reinforced webbing.",
+    "tags": [
+      "utility",
+      "nylon",
+      "street"
+    ],
+    "featured": false,
+    "createdAt": "2025-09-02"
+  },
+  {
+    "id": 27,
+    "name": "Linea Smooth Belt",
+    "category": "belts",
+    "brand": "CROFT",
+    "price": 102,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Belt-clothing.jpg/960px-Belt-clothing.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Belt.jpg/960px-Belt.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Belts.jpg/960px-Belts.jpg"
+    ],
+    "colors": [
+      "Chestnut",
+      "Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Chestnut",
+        "size": "S",
+        "stock": 0,
+        "sku": "VX-027-01-S"
+      },
+      {
+        "color": "Chestnut",
+        "size": "M",
+        "stock": 1,
+        "sku": "VX-027-01-M"
+      },
+      {
+        "color": "Chestnut",
+        "size": "L",
+        "stock": 2,
+        "sku": "VX-027-01-L"
+      },
+      {
+        "color": "Chestnut",
+        "size": "XL",
+        "stock": 3,
+        "sku": "VX-027-01-XL"
+      },
+      {
+        "color": "Black",
+        "size": "S",
+        "stock": 2,
+        "sku": "VX-027-02-S"
+      },
+      {
+        "color": "Black",
+        "size": "M",
+        "stock": 3,
+        "sku": "VX-027-02-M"
+      },
+      {
+        "color": "Black",
+        "size": "L",
+        "stock": 4,
+        "sku": "VX-027-02-L"
+      },
+      {
+        "color": "Black",
+        "size": "XL",
+        "stock": 5,
+        "sku": "VX-027-02-XL"
+      }
+    ],
+    "description": "Smooth leather dress belt with painted edge and slim polished buckle.",
+    "tags": [
+      "smooth",
+      "minimal",
+      "office"
+    ],
+    "featured": false,
+    "createdAt": "2025-11-18"
+  },
+  {
+    "id": 28,
+    "name": "Atlas Roller Belt",
+    "category": "belts",
+    "brand": "ARCFORM",
+    "price": 76,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Belt.jpg/960px-Belt.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Belts.jpg/960px-Belts.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a3/Leather_Belt_for_Men_.jpg"
+    ],
+    "colors": [
+      "Khaki",
+      "Charcoal"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Khaki",
+        "size": "S",
+        "stock": 3,
+        "sku": "VX-028-01-S"
+      },
+      {
+        "color": "Khaki",
+        "size": "M",
+        "stock": 4,
+        "sku": "VX-028-01-M"
+      },
+      {
+        "color": "Khaki",
+        "size": "L",
+        "stock": 5,
+        "sku": "VX-028-01-L"
+      },
+      {
+        "color": "Khaki",
+        "size": "XL",
+        "stock": 6,
+        "sku": "VX-028-01-XL"
+      },
+      {
+        "color": "Charcoal",
+        "size": "S",
+        "stock": 5,
+        "sku": "VX-028-02-S"
+      },
+      {
+        "color": "Charcoal",
+        "size": "M",
+        "stock": 6,
+        "sku": "VX-028-02-M"
+      },
+      {
+        "color": "Charcoal",
+        "size": "L",
+        "stock": 7,
+        "sku": "VX-028-02-L"
+      },
+      {
+        "color": "Charcoal",
+        "size": "XL",
+        "stock": 8,
+        "sku": "VX-028-02-XL"
+      }
+    ],
+    "description": "Canvas roller belt with matte buckle and tonal high-strength stitching.",
+    "tags": [
+      "roller",
+      "canvas",
+      "daily"
+    ],
+    "featured": false,
+    "createdAt": "2026-01-21"
+  },
+  {
+    "id": 29,
+    "name": "Orbit Web Belt",
+    "category": "belts",
+    "brand": "VAUX",
+    "price": 64,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Belts.jpg/960px-Belts.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a3/Leather_Belt_for_Men_.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/StampedLeatherBelt.jpg"
+    ],
+    "colors": [
+      "Graphite",
+      "Sand"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Graphite",
+        "size": "S",
+        "stock": 6,
+        "sku": "VX-029-01-S"
+      },
+      {
+        "color": "Graphite",
+        "size": "M",
+        "stock": 7,
+        "sku": "VX-029-01-M"
+      },
+      {
+        "color": "Graphite",
+        "size": "L",
+        "stock": 8,
+        "sku": "VX-029-01-L"
+      },
+      {
+        "color": "Graphite",
+        "size": "XL",
+        "stock": 0,
+        "sku": "VX-029-01-XL"
+      },
+      {
+        "color": "Sand",
+        "size": "S",
+        "stock": 8,
+        "sku": "VX-029-02-S"
+      },
+      {
+        "color": "Sand",
+        "size": "M",
+        "stock": 0,
+        "sku": "VX-029-02-M"
+      },
+      {
+        "color": "Sand",
+        "size": "L",
+        "stock": 1,
+        "sku": "VX-029-02-L"
+      },
+      {
+        "color": "Sand",
+        "size": "XL",
+        "stock": 2,
+        "sku": "VX-029-02-XL"
+      }
+    ],
+    "description": "Micro-adjust web belt made for lightweight travel and everyday wear.",
+    "tags": [
+      "web",
+      "lightweight",
+      "travel"
+    ],
+    "featured": false,
+    "createdAt": "2025-08-11"
+  },
+  {
+    "id": 30,
+    "name": "Prime Dress Belt",
+    "category": "belts",
+    "brand": "CROFT",
+    "price": 128,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a3/Leather_Belt_for_Men_.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/StampedLeatherBelt.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/63/Crocodile_leather_belt_and_buckle.jpg"
+    ],
+    "colors": [
+      "Black",
+      "Oxblood"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "size": "S",
+        "stock": 0,
+        "sku": "VX-030-01-S"
+      },
+      {
+        "color": "Black",
+        "size": "M",
+        "stock": 1,
+        "sku": "VX-030-01-M"
+      },
+      {
+        "color": "Black",
+        "size": "L",
+        "stock": 2,
+        "sku": "VX-030-01-L"
+      },
+      {
+        "color": "Black",
+        "size": "XL",
+        "stock": 3,
+        "sku": "VX-030-01-XL"
+      },
+      {
+        "color": "Oxblood",
+        "size": "S",
+        "stock": 2,
+        "sku": "VX-030-02-S"
+      },
+      {
+        "color": "Oxblood",
+        "size": "M",
+        "stock": 3,
+        "sku": "VX-030-02-M"
+      },
+      {
+        "color": "Oxblood",
+        "size": "L",
+        "stock": 4,
+        "sku": "VX-030-02-L"
+      },
+      {
+        "color": "Oxblood",
+        "size": "XL",
+        "stock": 5,
+        "sku": "VX-030-02-XL"
+      }
+    ],
+    "description": "Premium calfskin dress belt with beveled buckle and clean edge finish.",
+    "tags": [
+      "dress",
+      "polished",
+      "premium"
+    ],
+    "featured": true,
+    "createdAt": "2025-11-27"
+  },
+  {
+    "id": 31,
+    "name": "Canyon Nubuck Belt",
+    "category": "belts",
+    "brand": "CROFT",
+    "price": 108,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/StampedLeatherBelt.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/63/Crocodile_leather_belt_and_buckle.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Black_stretch_woven_polyester_belt_with_brown_chape.jpg/960px-Black_stretch_woven_polyester_belt_with_brown_chape.jpg"
+    ],
+    "colors": [
+      "Taupe",
+      "Tan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Taupe",
+        "size": "S",
+        "stock": 3,
+        "sku": "VX-031-01-S"
+      },
+      {
+        "color": "Taupe",
+        "size": "M",
+        "stock": 4,
+        "sku": "VX-031-01-M"
+      },
+      {
+        "color": "Taupe",
+        "size": "L",
+        "stock": 5,
+        "sku": "VX-031-01-L"
+      },
+      {
+        "color": "Taupe",
+        "size": "XL",
+        "stock": 6,
+        "sku": "VX-031-01-XL"
+      },
+      {
+        "color": "Tan",
+        "size": "S",
+        "stock": 5,
+        "sku": "VX-031-02-S"
+      },
+      {
+        "color": "Tan",
+        "size": "M",
+        "stock": 6,
+        "sku": "VX-031-02-M"
+      },
+      {
+        "color": "Tan",
+        "size": "L",
+        "stock": 7,
+        "sku": "VX-031-02-L"
+      },
+      {
+        "color": "Tan",
+        "size": "XL",
+        "stock": 8,
+        "sku": "VX-031-02-XL"
+      }
+    ],
+    "description": "Nubuck leather belt with soft brushed surface and rounded square buckle.",
+    "tags": [
+      "nubuck",
+      "casual",
+      "premium"
+    ],
+    "featured": false,
+    "createdAt": "2026-02-17"
+  },
+  {
+    "id": 32,
+    "name": "Metro Buckle Belt",
+    "category": "belts",
+    "brand": "VAUX",
+    "price": 90,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/63/Crocodile_leather_belt_and_buckle.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Black_stretch_woven_polyester_belt_with_brown_chape.jpg/960px-Black_stretch_woven_polyester_belt_with_brown_chape.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Woven_Leather_Belt_-_Macro_%2849851869996%29.jpg/960px-Woven_Leather_Belt_-_Macro_%2849851869996%29.jpg"
+    ],
+    "colors": [
+      "Black",
+      "Silver/White"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "size": "S",
+        "stock": 6,
+        "sku": "VX-032-01-S"
+      },
+      {
+        "color": "Black",
+        "size": "M",
+        "stock": 7,
+        "sku": "VX-032-01-M"
+      },
+      {
+        "color": "Black",
+        "size": "L",
+        "stock": 8,
+        "sku": "VX-032-01-L"
+      },
+      {
+        "color": "Black",
+        "size": "XL",
+        "stock": 0,
+        "sku": "VX-032-01-XL"
+      },
+      {
+        "color": "Silver/White",
+        "size": "S",
+        "stock": 8,
+        "sku": "VX-032-02-S"
+      },
+      {
+        "color": "Silver/White",
+        "size": "M",
+        "stock": 0,
+        "sku": "VX-032-02-M"
+      },
+      {
+        "color": "Silver/White",
+        "size": "L",
+        "stock": 1,
+        "sku": "VX-032-02-L"
+      },
+      {
+        "color": "Silver/White",
+        "size": "XL",
+        "stock": 2,
+        "sku": "VX-032-02-XL"
+      }
+    ],
+    "description": "Minimal buckle belt with smooth strap construction and secure keeper.",
+    "tags": [
+      "buckle",
+      "minimal",
+      "daily"
+    ],
+    "featured": false,
+    "createdAt": "2026-01-30"
+  },
+  {
+    "id": 33,
+    "name": "Drift Canvas Belt",
+    "category": "belts",
+    "brand": "ARCFORM",
+    "price": 58,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Black_stretch_woven_polyester_belt_with_brown_chape.jpg/960px-Black_stretch_woven_polyester_belt_with_brown_chape.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Woven_Leather_Belt_-_Macro_%2849851869996%29.jpg/960px-Woven_Leather_Belt_-_Macro_%2849851869996%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/Leather_Belt.jpg"
+    ],
+    "colors": [
+      "Stone",
+      "Navy"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "variants": [
+      {
+        "color": "Stone",
+        "size": "S",
+        "stock": 0,
+        "sku": "VX-033-01-S"
+      },
+      {
+        "color": "Stone",
+        "size": "M",
+        "stock": 1,
+        "sku": "VX-033-01-M"
+      },
+      {
+        "color": "Stone",
+        "size": "L",
+        "stock": 2,
+        "sku": "VX-033-01-L"
+      },
+      {
+        "color": "Stone",
+        "size": "XL",
+        "stock": 3,
+        "sku": "VX-033-01-XL"
+      },
+      {
+        "color": "Navy",
+        "size": "S",
+        "stock": 2,
+        "sku": "VX-033-02-S"
+      },
+      {
+        "color": "Navy",
+        "size": "M",
+        "stock": 3,
+        "sku": "VX-033-02-M"
+      },
+      {
+        "color": "Navy",
+        "size": "L",
+        "stock": 4,
+        "sku": "VX-033-02-L"
+      },
+      {
+        "color": "Navy",
+        "size": "XL",
+        "stock": 5,
+        "sku": "VX-033-02-XL"
+      }
+    ],
+    "description": "Soft canvas belt with tonal stitching and brushed alloy belt buckle.",
+    "tags": [
+      "canvas",
+      "belt",
+      "casual"
+    ],
+    "featured": false,
+    "createdAt": "2026-02-27"
+  },
+  {
+    "id": 34,
+    "name": "Axis Structured Tote",
+    "category": "accessories",
+    "brand": "ARCFORM",
+    "price": 274,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/3.webp"
+    ],
+    "colors": [
+      "Sand",
+      "Black"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "variants": [
+      {
+        "color": "Sand",
+        "size": "One Size",
+        "stock": 3,
+        "sku": "VX-034-01-OneSize"
+      },
+      {
+        "color": "Black",
+        "size": "One Size",
+        "stock": 5,
+        "sku": "VX-034-02-OneSize"
+      }
+    ],
+    "description": "Structured tote with reinforced base, magnetic closure, and inner pockets.",
+    "tags": [
+      "tote",
+      "work",
+      "structured"
+    ],
+    "featured": true,
+    "createdAt": "2026-02-16"
+  },
+  {
+    "id": 35,
+    "name": "Signal Crossbody Bag",
+    "category": "accessories",
+    "brand": "CROFT",
+    "price": 198,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/3.webp"
+    ],
+    "colors": [
+      "Cognac",
+      "Black"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "variants": [
+      {
+        "color": "Cognac",
+        "size": "One Size",
+        "stock": 6,
+        "sku": "VX-035-01-OneSize"
+      },
+      {
+        "color": "Black",
+        "size": "One Size",
+        "stock": 8,
+        "sku": "VX-035-02-OneSize"
+      }
+    ],
+    "description": "Compact crossbody bag with adjustable strap and zipper-secured compartment.",
+    "tags": [
+      "crossbody",
+      "bag",
+      "sale"
+    ],
+    "featured": true,
+    "createdAt": "2026-01-29",
+    "salePrice": 154
+  },
+  {
+    "id": 36,
+    "name": "Nova Card Holder",
+    "category": "accessories",
+    "brand": "VAUX",
+    "price": 68,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Leather_wallets_01.JPG/960px-Leather_wallets_01.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Leather_wallets_03.JPG/960px-Leather_wallets_03.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Leather_wallets_04.JPG/960px-Leather_wallets_04.JPG"
+    ],
+    "colors": [
+      "Black",
+      "Burgundy"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "size": "One Size",
+        "stock": 0,
+        "sku": "VX-036-01-OneSize"
+      },
+      {
+        "color": "Burgundy",
+        "size": "One Size",
+        "stock": 2,
+        "sku": "VX-036-02-OneSize"
+      }
+    ],
+    "description": "Slim card holder with center sleeve and precision edge stitching.",
+    "tags": [
+      "wallet",
+      "card-holder",
+      "slim"
+    ],
+    "featured": false,
+    "createdAt": "2026-02-22"
+  },
+  {
+    "id": 37,
+    "name": "Meridian Watch 38mm",
+    "category": "accessories",
+    "brand": "ARCFORM",
+    "price": 292,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/3.webp"
+    ],
+    "colors": [
+      "Silver/White",
+      "Black/Black"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "variants": [
+      {
+        "color": "Silver/White",
+        "size": "One Size",
+        "stock": 3,
+        "sku": "VX-037-01-OneSize"
+      },
+      {
+        "color": "Black/Black",
+        "size": "One Size",
+        "stock": 5,
+        "sku": "VX-037-02-OneSize"
+      }
+    ],
+    "description": "38mm watch with clean dial, mesh strap, and sapphire-coated crystal.",
+    "tags": [
+      "watch",
+      "minimal",
+      "38mm"
+    ],
+    "featured": true,
+    "createdAt": "2025-09-23"
+  },
+  {
+    "id": 38,
+    "name": "Harbor Silk Scarf",
+    "category": "accessories",
+    "brand": "VAUX",
+    "price": 124,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Colored_silk_scarf_from_India_01.jpg/960px-Colored_silk_scarf_from_India_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Colored_silk_scarf_from_India_04.jpg/960px-Colored_silk_scarf_from_India_04.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e6/Scarf_%28costume_accessory%29.jpg"
+    ],
+    "colors": [
+      "Ivory/Gold",
+      "Black/Red"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "variants": [
+      {
+        "color": "Ivory/Gold",
+        "size": "One Size",
+        "stock": 6,
+        "sku": "VX-038-01-OneSize"
+      },
+      {
+        "color": "Black/Red",
+        "size": "One Size",
+        "stock": 8,
+        "sku": "VX-038-02-OneSize"
+      }
+    ],
+    "description": "Pure silk scarf with hand-finished edge and balanced geometric print.",
+    "tags": [
+      "scarf",
+      "silk",
+      "premium"
+    ],
+    "featured": false,
+    "createdAt": "2025-12-05"
+  },
+  {
+    "id": 39,
+    "name": "Summit Merino Beanie",
+    "category": "accessories",
+    "brand": "VAUX",
+    "price": 48,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Beanie_-_Knit_Cap_%2851013511676%29.jpg/960px-Beanie_-_Knit_Cap_%2851013511676%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Beanie_hat_by_Polo_Ralph_Lauren.jpg/960px-Beanie_hat_by_Polo_Ralph_Lauren.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Blue_knit-cap_beanie_by_RobertLender.jpeg/960px-Blue_knit-cap_beanie_by_RobertLender.jpeg"
+    ],
+    "colors": [
+      "Charcoal",
+      "Cream"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "variants": [
+      {
+        "color": "Charcoal",
+        "size": "One Size",
+        "stock": 0,
+        "sku": "VX-039-01-OneSize"
+      },
+      {
+        "color": "Cream",
+        "size": "One Size",
+        "stock": 2,
+        "sku": "VX-039-02-OneSize"
+      }
+    ],
+    "description": "Merino beanie with rib construction for warmth and shape retention.",
+    "tags": [
+      "beanie",
+      "merino",
+      "winter"
+    ],
+    "featured": false,
+    "createdAt": "2025-11-06"
+  },
+  {
+    "id": 40,
+    "name": "Frame Sunglasses",
+    "category": "accessories",
+    "brand": "ARCFORM",
+    "price": 142,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/1.webp",
+      "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/2.webp",
+      "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/3.webp"
+    ],
+    "colors": [
+      "Matte Black",
+      "Tortoise"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "variants": [
+      {
+        "color": "Matte Black",
+        "size": "One Size",
+        "stock": 3,
+        "sku": "VX-040-01-OneSize"
+      },
+      {
+        "color": "Tortoise",
+        "size": "One Size",
+        "stock": 5,
+        "sku": "VX-040-02-OneSize"
+      }
+    ],
+    "description": "Rectangular sunglasses with UV lens protection and lightweight frame.",
+    "tags": [
+      "sunglasses",
+      "eyewear",
+      "sale"
+    ],
+    "featured": true,
+    "createdAt": "2026-02-11",
+    "salePrice": 112
+  },
+  {
+    "id": 41,
+    "name": "Core Canvas Cap",
+    "category": "accessories",
+    "brand": "VAUX",
+    "price": 42,
+    "images": [
+      "https://i.imgur.com/KeqG6r4.jpeg",
+      "https://i.imgur.com/xGQOw3p.jpeg",
+      "https://i.imgur.com/oO5OUjb.jpeg"
+    ],
+    "colors": [
+      "Black",
+      "Stone"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "size": "One Size",
+        "stock": 6,
+        "sku": "VX-041-01-OneSize"
+      },
+      {
+        "color": "Stone",
+        "size": "One Size",
+        "stock": 8,
+        "sku": "VX-041-02-OneSize"
+      }
+    ],
+    "description": "Six-panel canvas cap with curved brim and adjustable back strap.",
+    "tags": [
+      "cap",
+      "canvas",
+      "everyday"
+    ],
+    "featured": false,
+    "createdAt": "2026-02-04"
+  },
+  {
+    "id": 42,
+    "name": "Relay Tech Pouch",
+    "category": "accessories",
+    "brand": "ARCFORM",
+    "price": 88,
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/3.webp"
+    ],
+    "colors": [
+      "Slate",
+      "Olive"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "variants": [
+      {
+        "color": "Slate",
+        "size": "One Size",
+        "stock": 0,
+        "sku": "VX-042-01-OneSize"
+      },
+      {
+        "color": "Olive",
+        "size": "One Size",
+        "stock": 2,
+        "sku": "VX-042-02-OneSize"
+      }
+    ],
+    "description": "Tech pouch with segmented interior loops and zipper mesh divider.",
+    "tags": [
+      "pouch",
+      "tech",
+      "travel"
+    ],
+    "featured": false,
+    "createdAt": "2025-10-30"
+  },
+  {
+    "id": 43,
+    "name": "Drift Key Lanyard",
+    "category": "accessories",
+    "brand": "VAUX",
+    "price": 36,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/A_lanyard_with_runes_-_Schl%C3%BCsseltrageband_mit_Runen.jpg/960px-A_lanyard_with_runes_-_Schl%C3%BCsseltrageband_mit_Runen.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Lanyard_%283379981636%29_%284%29.jpg/960px-Lanyard_%283379981636%29_%284%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Lanyard_view_1.JPG/960px-Lanyard_view_1.JPG"
+    ],
+    "colors": [
+      "Navy",
+      "Black"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "variants": [
+      {
+        "color": "Navy",
+        "size": "One Size",
+        "stock": 3,
+        "sku": "VX-043-01-OneSize"
+      },
+      {
+        "color": "Black",
+        "size": "One Size",
+        "stock": 5,
+        "sku": "VX-043-02-OneSize"
+      }
+    ],
+    "description": "Woven key lanyard with quick-release clip and durable metal ring.",
+    "tags": [
+      "lanyard",
+      "keys",
+      "daily-carry"
+    ],
+    "featured": false,
+    "createdAt": "2026-02-26"
+  },
+  {
+    "id": 44,
+    "name": "Nova Zip Wallet",
+    "category": "accessories",
+    "brand": "CROFT",
+    "price": 96,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Leather_wallets_05.JPG/960px-Leather_wallets_05.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Leather_wallets_06.JPG/960px-Leather_wallets_06.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Leather_wallets_07.JPG/960px-Leather_wallets_07.JPG"
+    ],
+    "colors": [
+      "Chestnut",
+      "Black"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "variants": [
+      {
+        "color": "Chestnut",
+        "size": "One Size",
+        "stock": 6,
+        "sku": "VX-044-01-OneSize"
+      },
+      {
+        "color": "Black",
+        "size": "One Size",
+        "stock": 8,
+        "sku": "VX-044-02-OneSize"
+      }
+    ],
+    "description": "Zip-around wallet with organized card slots and smooth pull tab closure.",
+    "tags": [
+      "wallet",
+      "zip",
+      "everyday"
+    ],
+    "featured": true,
+    "createdAt": "2026-02-19"
+  }
+]

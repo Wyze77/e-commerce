@@ -66,6 +66,7 @@ export default function ProductCard({ product }) {
             alt={product.name}
             className={styles.img}
             wrapperClassName={styles.imgLayer}
+            fallbackSrc="/images/placeholder.jpg"
             loading="lazy"
           />
         </Link>
