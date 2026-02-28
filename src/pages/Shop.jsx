@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { useProducts } from '../hooks/useProducts'
 import ProductCard from '../components/ProductCard'
@@ -13,8 +13,10 @@ const SORT_OPTIONS = [
   { value: 'rating', label: 'Rating' },
 ]
 
-const DEFAULT_FILTERS = { search: '', category: '', minPrice: '', maxPrice: '', colors: [], sizes: [], sale: '', tag: '' }
+const DEFAULT_FILTERS = { search: '', category: '', minPrice: '', maxPrice: '', colors: [], sizes: [], sale: '', newArrival: '', tag: '' }
 const PER_PAGE = 12
+const NEW_ARRIVAL_DAYS = 30
+const DAY_MS = 24 * 60 * 60 * 1000
 const CATEGORY_LABELS = {
   clothing: 'Clothing',
   shoes: 'Shoes',
@@ -33,6 +35,7 @@ const parseFiltersFromParams = (params) => ({
   colors: parseArrayParam(params.get('colors')),
   sizes: parseArrayParam(params.get('sizes')),
   sale: params.get('sale') === '1' ? '1' : '',
+  newArrival: params.get('new') === '1' ? '1' : '',
   tag: params.get('tag') || '',
 })
 
@@ -55,10 +58,23 @@ const buildParams = (filters, sort, page) => {
   if (filters.colors?.length) params.set('colors', filters.colors.join(','))
   if (filters.sizes?.length) params.set('sizes', filters.sizes.join(','))
   if (filters.sale === '1') params.set('sale', '1')
+  if (filters.newArrival === '1') params.set('new', '1')
   if (filters.tag) params.set('tag', filters.tag)
   if (sort && sort !== 'newest') params.set('sort', sort)
   if (page > 1) params.set('page', String(page))
   return params
+}
+
+const createdAtMs = (createdAt) => {
+  const parsed = Date.parse(createdAt)
+  return Number.isFinite(parsed) ? parsed : 0
+}
+
+const isNewArrivalProduct = (createdAt) => {
+  const created = createdAtMs(createdAt)
+  if (created < 1) return false
+  const ageMs = Date.now() - created
+  return ageMs >= 0 && ageMs <= NEW_ARRIVAL_DAYS * DAY_MS
 }
 
 export default function Shop() {
@@ -68,11 +84,29 @@ export default function Shop() {
   const [sort, setSort] = useState(() => parseSortFromParams(searchParams))
   const [page, setPage] = useState(() => parsePageFromParams(searchParams))
   const [showFilters, setShowFilters] = useState(false)
+  const queryStateRef = useRef('')
 
   useEffect(() => {
-    setFilters(parseFiltersFromParams(searchParams))
-    setSort(parseSortFromParams(searchParams))
-    setPage(parsePageFromParams(searchParams))
+    const nextFilters = parseFiltersFromParams(searchParams)
+    const nextSort = parseSortFromParams(searchParams)
+    const nextPage = parsePageFromParams(searchParams)
+
+    const queryState = JSON.stringify({ filters: nextFilters, sort: nextSort })
+    const hasChangedState = queryStateRef.current !== '' && queryStateRef.current !== queryState
+    queryStateRef.current = queryState
+
+    setFilters(nextFilters)
+    setSort(nextSort)
+
+    if (hasChangedState) {
+      setPage(1)
+      if (nextPage !== 1) {
+        syncQuery(nextFilters, nextSort, 1)
+      }
+      return
+    }
+
+    setPage(nextPage)
   }, [searchParams])
 
   const syncQuery = (nextFilters, nextSort, nextPage) => {
@@ -81,6 +115,31 @@ export default function Shop() {
       setSearchParams(nextParams)
     }
   }
+
+  useEffect(() => {
+    if (!showFilters) return undefined
+
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') setShowFilters(false)
+    }
+
+    const onResize = () => {
+      if (window.innerWidth >= 1025) setShowFilters(false)
+    }
+
+    const previousOverflow = document.body.style.overflow
+    if (window.innerWidth <= 1024) {
+      document.body.style.overflow = 'hidden'
+    }
+
+    window.addEventListener('keydown', onKeyDown)
+    window.addEventListener('resize', onResize)
+    return () => {
+      document.body.style.overflow = previousOverflow
+      window.removeEventListener('keydown', onKeyDown)
+      window.removeEventListener('resize', onResize)
+    }
+  }, [showFilters])
 
   const handleFiltersChange = (nextFilters) => {
     setFilters(nextFilters)
@@ -108,6 +167,7 @@ export default function Shop() {
 
     if (filters.category) list = list.filter(p => p.category === filters.category)
     if (filters.sale === '1') list = list.filter(p => Boolean(p.salePrice))
+    if (filters.newArrival === '1') list = list.filter(p => isNewArrivalProduct(p.createdAt))
     if (filters.tag) {
       const tagNeedle = filters.tag.toLowerCase()
       list = list.filter(p => p.tags.some(tag => tag.toLowerCase() === tagNeedle))
@@ -127,7 +187,7 @@ export default function Shop() {
     if (sort === 'price-asc') list.sort((a, b) => (a.salePrice ?? a.price) - (b.salePrice ?? b.price))
     else if (sort === 'price-desc') list.sort((a, b) => (b.salePrice ?? b.price) - (a.salePrice ?? a.price))
     else if (sort === 'rating') list.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0) || (b.id - a.id))
-    else list.sort((a, b) => b.id - a.id)
+    else list.sort((a, b) => createdAtMs(b.createdAt) - createdAtMs(a.createdAt) || b.id - a.id)
 
     return list
   }, [products, filters, sort])
@@ -148,17 +208,16 @@ export default function Shop() {
   }, [filtered, page])
 
   const suggestedProducts = useMemo(() => {
-    const list = [...products]
-    if (!list.length) return []
-
-    const hasRatings = list.some((item) => Number.isFinite(item.rating))
-    if (hasRatings) {
-      list.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0) || b.id - a.id)
-    } else {
-      list.sort((a, b) => b.id - a.id)
+    const featured = products.filter((item) => item.featured)
+    if (featured.length >= 4) {
+      return featured
+        .sort((a, b) => createdAtMs(b.createdAt) - createdAtMs(a.createdAt) || b.id - a.id)
+        .slice(0, 4)
     }
 
-    return list.slice(0, 4)
+    return [...products]
+      .sort((a, b) => createdAtMs(b.createdAt) - createdAtMs(a.createdAt) || b.id - a.id)
+      .slice(0, 4)
   }, [products])
 
   const clearFilters = () => {
@@ -176,6 +235,7 @@ export default function Shop() {
     filters.colors?.length ||
     filters.sizes?.length ||
     filters.sale === '1' ||
+    filters.newArrival === '1' ||
     filters.tag ||
     sort !== 'newest' ||
     page !== 1
@@ -188,7 +248,7 @@ export default function Shop() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  const categoryLabel = CATEGORY_LABELS[filters.category] || 'Items'
+  const categoryLabel = CATEGORY_LABELS[filters.category] || 'Products'
   const breadcrumbCategory = CATEGORY_LABELS[filters.category] || 'All Items'
   const itemsOnCurrentPage = loading ? 0 : paginatedProducts.length
 
@@ -206,6 +266,20 @@ export default function Shop() {
         </p>
 
         <div className={styles.summaryActions}>
+          <button
+            type="button"
+            className={`btn btn-ghost ${styles.filterToggle}`}
+            onClick={() => setShowFilters(true)}
+            aria-label="Open filters"
+            aria-expanded={showFilters}
+            aria-controls="shop-filters-panel"
+          >
+            <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+              <line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="12" y1="18" x2="20" y2="18"/>
+            </svg>
+            Filters
+          </button>
+
           {hasActiveFilters && (
             <button
               className={`btn btn-ghost ${styles.clearAllBtn}`}
@@ -228,19 +302,8 @@ export default function Shop() {
       </div>
 
       <div className={styles.layout}>
-        {/* Mobile filter toggle */}
-        <button
-          className={`btn btn-ghost ${styles.filterToggle}`}
-          onClick={() => setShowFilters(o => !o)}
-        >
-          <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-            <line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="12" y1="18" x2="20" y2="18"/>
-          </svg>
-          {showFilters ? 'Hide Filters' : 'Filters'}
-        </button>
-
-        {/* Sidebar */}
-        <div className={`${styles.sidebar} ${showFilters ? styles.sidebarOpen : ''}`}>
+        {/* Desktop Sidebar */}
+        <div className={styles.sidebar}>
           <Filters filters={filters} onChange={handleFiltersChange} onClear={clearFilters} />
         </div>
 
@@ -263,7 +326,7 @@ export default function Shop() {
                 <p className={styles.emptyTitle}>No items match your filters</p>
                 <p className={styles.emptySub}>Try adjusting your category, price range, or search terms.</p>
                 <button className="btn btn-primary" onClick={clearFilters}>
-                  Clear Filters
+                  Clear filters
                 </button>
               </div>
 
@@ -325,6 +388,31 @@ export default function Shop() {
           )}
         </div>
       </div>
+
+      {showFilters && (
+        <div className={styles.filtersOverlay} onClick={() => setShowFilters(false)}>
+          <aside
+            id="shop-filters-panel"
+            className={styles.filtersPanel}
+            onClick={(event) => event.stopPropagation()}
+            aria-label="Filter products"
+          >
+            <div className={styles.filtersPanelHeader}>
+              <p>Filters</p>
+              <button
+                type="button"
+                className={styles.filtersClose}
+                onClick={() => setShowFilters(false)}
+                aria-label="Close filters"
+              >
+                Close
+              </button>
+            </div>
+            <Filters filters={filters} onChange={handleFiltersChange} onClear={clearFilters} sticky={false} />
+          </aside>
+        </div>
+      )}
+
       <BackToTop />
     </div>
   )

@@ -8,12 +8,11 @@ import styles from './Navbar.module.css'
 const RECENTLY_VIEWED_KEY = 'recentlyViewedProducts'
 
 const SHORTCUTS = [
-  { label: 'New Arrivals', to: '/shop?sort=newest' },
+  { label: 'New Arrivals', to: '/shop?new=1&sort=newest' },
   { label: 'Sale', to: '/shop?sale=1' },
-  { label: 'Clothing', to: '/shop?category=clothing' },
   { label: 'Shoes', to: '/shop?category=shoes' },
-  { label: 'Belts', to: '/shop?category=belts' },
   { label: 'Accessories', to: '/shop?category=accessories' },
+  { label: 'Belts', to: '/shop?category=belts' },
 ]
 
 const loadRecentIds = () => {
@@ -32,6 +31,7 @@ export default function Navbar() {
   const [searchOverlayOpen, setSearchOverlayOpen] = useState(false)
   const [shopMenuOpen, setShopMenuOpen] = useState(false)
   const [accountOpen, setAccountOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
   const [desktopQuery, setDesktopQuery] = useState('')
   const [mobileQuery, setMobileQuery] = useState('')
@@ -44,6 +44,7 @@ export default function Navbar() {
 
   const location = useLocation()
   const navigate = useNavigate()
+  const isShopRoute = location.pathname.startsWith('/shop')
 
   const cartCount = state.cart.reduce((s, i) => s + i.qty, 0)
   const wishlistCount = state.wishlist.length
@@ -101,6 +102,26 @@ export default function Navbar() {
     }
     prevCartCount.current = cartCount
   }, [cartCount])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 8)
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    if (!menuOpen && !searchOverlayOpen) return undefined
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+
+    return () => {
+      document.body.style.overflow = previousOverflow
+    }
+  }, [menuOpen, searchOverlayOpen])
 
   useEffect(() => {
     const onKeyDown = (e) => {
@@ -217,8 +238,15 @@ export default function Navbar() {
     }
   }
 
+  const drawerLinkClass = ({ isActive }) => (isActive ? styles.drawerActive : '')
+  const openSearchOverlay = () => {
+    setSearchOverlayOpen(true)
+    setMobileSearchOpen(true)
+    setMobileActive(-1)
+  }
+
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${scrolled ? styles.navScrolled : ''}`}>
       <div className={styles.inner}>
         <div className={styles.left}>
           <Link to="/" className={styles.logo}>VAUX</Link>
@@ -228,7 +256,7 @@ export default function Navbar() {
 
             <div className={styles.shopMenuWrap} ref={shopMenuRef}>
               <button
-                className={`${styles.shopTrigger} ${location.pathname.startsWith('/shop') ? styles.active : ''}`}
+                className={`${styles.shopTrigger} ${isShopRoute ? styles.active : ''}`}
                 onClick={() => {
                   setShopMenuOpen(v => !v)
                   refreshRecent()
@@ -339,6 +367,18 @@ export default function Navbar() {
         </div>
 
         <div className={styles.right}>
+          <button
+            type="button"
+            className={`${styles.iconBtn} ${styles.searchIconBtn}`}
+            aria-label="Open search"
+            onClick={openSearchOverlay}
+          >
+            <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="7" />
+              <line x1="16.65" y1="16.65" x2="21" y2="21" />
+            </svg>
+          </button>
+
           <Link to="/wishlist" className={styles.iconBtn} aria-label="Wishlist">
             <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
@@ -375,8 +415,17 @@ export default function Navbar() {
 
           <button
             className={styles.hamburger}
-            onClick={() => setMenuOpen(v => !v)}
-            aria-label="Open menu"
+            onClick={() => {
+              setMenuOpen((open) => {
+                const next = !open
+                if (next) refreshRecent()
+                return next
+              })
+              setShopMenuOpen(false)
+              setAccountOpen(false)
+              setSearchOverlayOpen(false)
+            }}
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
           >
             <span className={menuOpen ? styles.bar1Open : styles.bar1} />
@@ -395,10 +444,10 @@ export default function Navbar() {
             </div>
 
             <div className={styles.drawerLinks}>
-              <NavLink to="/" onClick={() => setMenuOpen(false)} end>Home</NavLink>
-              <NavLink to="/shop" onClick={() => setMenuOpen(false)}>Shop</NavLink>
-              <NavLink to="/collections" onClick={() => setMenuOpen(false)}>Collections</NavLink>
-              <NavLink to="/lookbook" onClick={() => setMenuOpen(false)}>Lookbook</NavLink>
+              <NavLink to="/" className={drawerLinkClass} onClick={() => setMenuOpen(false)} end>Home</NavLink>
+              <NavLink to="/shop" className={drawerLinkClass} onClick={() => setMenuOpen(false)}>Shop</NavLink>
+              <NavLink to="/collections" className={drawerLinkClass} onClick={() => setMenuOpen(false)}>Collections</NavLink>
+              <NavLink to="/lookbook" className={drawerLinkClass} onClick={() => setMenuOpen(false)}>Lookbook</NavLink>
             </div>
 
             <div className={styles.drawerSection}>
@@ -429,9 +478,7 @@ export default function Navbar() {
               className={`btn btn-outline ${styles.searchOverlayBtn}`}
               onClick={() => {
                 setMenuOpen(false)
-                setSearchOverlayOpen(true)
-                setMobileSearchOpen(true)
-                setMobileActive(-1)
+                openSearchOverlay()
               }}
             >
               Search Products

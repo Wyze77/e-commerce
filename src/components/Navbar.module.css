@@ -8,6 +8,12 @@
   background: rgba(250, 248, 245, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--sand-dark);
+  transition: box-shadow .2s ease, border-color .2s ease;
+}
+
+.navScrolled {
+  box-shadow: var(--shadow-sm);
+  border-bottom-color: rgba(26, 26, 24, .14);
 }
 
 .inner {
@@ -18,11 +24,15 @@
   height: 100%;
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 16px;
 }
 
-@media (min-width: 768px) {
-  .inner { padding: 0 2rem; }
+@media (min-width: 769px) {
+  .inner { padding: 0 24px; }
+}
+
+@media (min-width: 1025px) {
+  .inner { padding: 0 32px; }
 }
 
 .left {
@@ -157,12 +167,18 @@
   transition: background .2s, color .2s;
 }
 
-.menuRecent > span {
+.menuRecent > span:first-child {
   width: 30px;
   height: 36px;
   border-radius: 3px;
   background: var(--sand);
   flex-shrink: 0;
+}
+
+.menuRecent > span:last-child {
+  width: auto;
+  height: auto;
+  background: none;
 }
 
 .menuRecent:hover {
@@ -209,7 +225,7 @@
   transition: background .2s;
 }
 
-.searchItem > span {
+.searchItem > span:first-child {
   width: 34px;
   height: 42px;
   border-radius: 4px;
@@ -218,6 +234,9 @@
 }
 
 .searchItem > span:last-child {
+  width: auto;
+  height: auto;
+  background: none;
   display: grid;
   gap: .08rem;
 }
@@ -248,7 +267,9 @@
   justify-self: end;
   display: flex;
   align-items: center;
-  gap: .7rem;
+  gap: .65rem;
+  flex-wrap: nowrap;
+  min-width: max-content;
 }
 
 .iconBtn {
@@ -261,6 +282,10 @@
   height: 32px;
   border-radius: 50%;
   transition: background .2s;
+}
+
+.searchIconBtn {
+  display: none;
 }
 
 .iconBtn:hover {
@@ -371,7 +396,7 @@
 
 .drawer {
   margin-left: auto;
-  width: min(420px, 90vw);
+  width: min(440px, 88vw);
   height: 100%;
   background: var(--cream);
   border-left: 1px solid var(--sand-dark);
@@ -411,6 +436,16 @@
 
 .drawerLinks a:last-child {
   border-bottom: none;
+}
+
+.drawerLinks a:hover,
+.drawerLinks a.drawerActive {
+  background: var(--cream);
+  color: var(--ink);
+}
+
+.drawerLinks a.drawerActive {
+  font-weight: 600;
 }
 
 .drawerSection {
@@ -492,7 +527,7 @@
   border-radius: var(--r-sm);
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 1024px) {
   .inner {
     grid-template-columns: 1fr auto;
   }
@@ -503,12 +538,38 @@
     display: none;
   }
 
+  .searchIconBtn,
   .hamburger {
     display: flex;
+  }
+
+  .right {
+    gap: .45rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .right {
+    gap: .35rem;
+  }
+
+  .iconBtn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .badge {
+    min-width: 16px;
+    height: 16px;
+    font-size: .58rem;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .nav {
+    transition: none;
+  }
+
   .badgePulse {
     animation: none;
   }

@@ -4,9 +4,15 @@
   border-radius: var(--r-md);
   padding: 1.5rem;
   position: sticky;
-  top: calc(var(--nav-h) + 1.5rem);
-  max-height: calc(100vh - var(--nav-h) - 3rem);
+  top: var(--nav-h);
+  max-height: calc(100vh - var(--nav-h) - 1rem);
   overflow-y: auto;
+}
+
+.asideStatic {
+  position: static;
+  top: auto;
+  max-height: none;
 }
 
 .header {

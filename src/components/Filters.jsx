@@ -1,10 +1,16 @@
 ﻿import styles from './Filters.module.css'
 
 const CATEGORIES = ['clothing', 'shoes', 'belts', 'accessories']
-const ALL_COLORS = ['Black', 'White', 'Cream', 'Slate', 'Khaki', 'Charcoal', 'Camel', 'Navy', 'Ivory', 'Rust/Black', 'Grey/White', 'Tan', 'Dark Brown', 'Sand', 'Rust', 'Burgundy', 'Cognac', 'Off-White', 'Olive']
-const ALL_SIZES = ['XS', 'S', 'M', 'L', 'XL', '5', '6', '7', '8', '9', '10', '11', '12', '28', '30', '32', '34', '36', 'S/M', 'M/L', 'L/XL', 'One Size']
+const ALL_COLORS = [
+  'Ash', 'Black', 'Black/Black', 'Black/Cognac', 'Black/Red', 'Bone', 'Burgundy',
+  'Charcoal', 'Chestnut', 'Clay', 'Cognac', 'Cream', 'Dark Brown', 'Graphite', 'Grey',
+  'Ink', 'Ivory', 'Ivory/Gold', 'Khaki', 'Matte Black', 'Moss', 'Navy', 'Navy/Grey',
+  'Off-White', 'Olive', 'Oxblood', 'Sand', 'Silver', 'Silver/White', 'Slate', 'Smoke',
+  'Stone', 'Tan', 'Taupe', 'Tortoise', 'White',
+]
+const ALL_SIZES = ['XS', 'S', 'M', 'L', 'XL', '7', '8', '9', '10', '11', '12', 'One Size']
 
-export default function Filters({ filters, onChange, onClear }) {
+export default function Filters({ filters, onChange, onClear, sticky = true }) {
   const set = (key, value) => onChange({ ...filters, [key]: value })
 
   const toggleArr = (key, val) => {
@@ -13,10 +19,11 @@ export default function Filters({ filters, onChange, onClear }) {
   }
 
   const hasFilters = filters.search || filters.category || filters.minPrice || filters.maxPrice ||
-    (filters.colors?.length) || (filters.sizes?.length)
+    (filters.colors?.length) || (filters.sizes?.length) || filters.sale === '1' ||
+    filters.newArrival === '1' || filters.tag
 
   return (
-    <aside className={styles.aside}>
+    <aside className={`${styles.aside} ${sticky ? '' : styles.asideStatic}`}>
       <div className={styles.header}>
         <h3 className={styles.title}>Filters</h3>
         {hasFilters && (
@@ -32,6 +39,24 @@ export default function Filters({ filters, onChange, onClear }) {
           value={filters.search || ''}
           onChange={e => set('search', e.target.value)}
         />
+      </div>
+
+      <div className={styles.group}>
+        <label className={styles.label}>Quick Filters</label>
+        <div className={styles.pills}>
+          <button
+            className={`${styles.pill} ${filters.newArrival === '1' ? styles.active : ''}`}
+            onClick={() => set('newArrival', filters.newArrival === '1' ? '' : '1')}
+          >
+            New Arrivals
+          </button>
+          <button
+            className={`${styles.pill} ${filters.sale === '1' ? styles.active : ''}`}
+            onClick={() => set('sale', filters.sale === '1' ? '' : '1')}
+          >
+            On Sale
+          </button>
+        </div>
       </div>
 
       <div className={styles.group}>
