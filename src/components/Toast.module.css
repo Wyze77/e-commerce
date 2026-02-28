@@ -1,0 +1,32 @@
+.container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  pointer-events: none;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .75rem 1.25rem;
+  border-radius: var(--r-sm);
+  font-size: .85rem;
+  font-weight: 500;
+  animation: slideIn .3s cubic-bezier(.22,1,.36,1) both;
+  box-shadow: var(--shadow-lg);
+  min-width: 220px;
+}
+
+.success { background: var(--ink); color: var(--white); }
+.error { background: var(--error); color: var(--white); }
+.info { background: var(--sand-dark); color: var(--ink); }
+
+.icon {
+  font-size: .75rem;
+  font-weight: 700;
+}

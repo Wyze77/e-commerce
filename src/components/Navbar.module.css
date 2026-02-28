@@ -1,0 +1,138 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  background: rgba(250, 248, 245, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--sand-dark);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .inner { padding: 0 2rem; }
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: .2em;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  transition: color .2s;
+}
+
+.links a:hover, .active {
+  color: var(--ink) !important;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.iconBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  padding: .3rem;
+  transition: opacity .2s;
+}
+
+.iconBtn:hover { opacity: .6; }
+
+.badge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: .6rem;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: .3rem;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--ink);
+  transition: all .25s;
+  transform-origin: center;
+}
+
+.bar1Open { transform: translateY(6.5px) rotate(45deg); }
+.bar2Open { opacity: 0; transform: scaleX(0); }
+.bar3Open { transform: translateY(-6.5px) rotate(-45deg); }
+
+@media (max-width: 767px) {
+  .hamburger { display: flex; }
+
+  .links {
+    position: fixed;
+    top: var(--nav-h);
+    left: 0; right: 0;
+    background: var(--cream);
+    border-bottom: 1px solid var(--sand-dark);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 1rem 0;
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: transform .3s ease, opacity .3s ease;
+    pointer-events: none;
+  }
+
+  .links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .links a {
+    padding: .9rem 2rem;
+    width: 100%;
+    text-align: center;
+  }
+}

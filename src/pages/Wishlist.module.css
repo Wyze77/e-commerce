@@ -1,0 +1,96 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 1rem;
+  text-align: center;
+  gap: .75rem;
+}
+
+.emptyTitle {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.emptySub { color: var(--ink-muted); }
+
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: .75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--sand-dark);
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 300;
+}
+
+.count { color: var(--ink-muted); font-size: 1.1rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1100px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  animation: fadeUp .4s ease both;
+}
+
+.imgWrap {
+  position: relative;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border-radius: var(--r-sm);
+  background: var(--sand);
+}
+
+.img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.imgWrap:hover .img { transform: scale(1.04); }
+
+.info {
+  padding: .75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.brand { font-size: .68rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: .2rem; }
+.name { font-size: .9rem; color: var(--ink); transition: opacity .2s; display: block; margin-bottom: .25rem; }
+.name:hover { opacity: .7; }
+
+.price { font-size: .9rem; font-weight: 500; display: flex; gap: .4rem; align-items: baseline; }
+.original { color: var(--ink-muted); text-decoration: line-through; font-size: .8rem; font-weight: 400; }
+
+.btnRow { display: flex; gap: .5rem; align-items: center; }
+
+.cartBtn { flex: 1; font-size: .75rem; padding: .6rem 1rem; height: 38px; }
+
+.removeBtn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-muted);
+  background: var(--white);
+  cursor: pointer;
+  transition: all .2s;
+  flex-shrink: 0;
+}
+.removeBtn:hover { border-color: var(--error); color: var(--error); }
