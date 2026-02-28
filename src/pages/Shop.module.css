@@ -95,6 +95,38 @@
   font-size: .9rem;
 }
 
+.emptyActions {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: .65rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardSkeleton {
+  display: grid;
+  gap: .55rem;
+}
+
+.imageSkeleton {
+  aspect-ratio: 4/5;
+  border-radius: var(--r-sm);
+  background: var(--sand);
+  animation: pulse 1.4s ease infinite;
+}
+
+.lineSkeleton,
+.lineSkeletonShort {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--sand);
+  animation: pulse 1.4s ease infinite;
+}
+
+.lineSkeletonShort {
+  width: 56%;
+}
+
 .pagination {
   margin-top: 2rem;
   display: flex;

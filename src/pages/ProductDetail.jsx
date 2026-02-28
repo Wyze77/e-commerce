@@ -5,6 +5,8 @@ import { useStore } from '../context/StoreContext'
 import QuantitySelector from '../components/QuantitySelector'
 import ProductCard from '../components/ProductCard'
 import BackToTop from '../components/BackToTop'
+import AppImage from '../components/AppImage'
+import { formatCurrency } from '../utils/currency'
 import styles from './ProductDetail.module.css'
 
 const RECENTLY_VIEWED_KEY = 'recentlyViewedProducts'
@@ -85,7 +87,9 @@ export default function ProductDetail() {
   }, [products, product])
 
   const maxQty = currentVariant?.stock || 1
-  const canAdd = selectedColor && selectedSize && currentVariant && currentVariant.stock > 0
+  const selectionMissing = !selectedColor || !selectedSize
+  const variantOutOfStock = selectedColor && selectedSize && (!currentVariant || currentVariant.stock < 1)
+  const canAdd = !selectionMissing && !variantOutOfStock && currentVariant
 
   const handleColorSelect = (color) => {
     setSelectedColor(color)
@@ -101,7 +105,16 @@ export default function ProductDetail() {
   }
 
   const addToCart = () => {
-    if (!canAdd) return
+    if (selectionMissing) {
+      toast('Select both color and size before adding to cart', 'info')
+      return
+    }
+
+    if (!currentVariant || currentVariant.stock < 1) {
+      toast('Selected variant is out of stock', 'error')
+      return
+    }
+
     dispatch({ type: 'ADD_TO_CART', payload: { product, color: selectedColor, size: selectedSize, qty } })
     toast(`${product.name} added to cart`)
   }
@@ -137,7 +150,7 @@ export default function ProductDetail() {
         <span>&gt;</span>
         <Link to="/shop">Shop</Link>
         <span>&gt;</span>
-        <Link to={`/shop?category=${product.category}`} style={{ textTransform: 'capitalize' }}>{product.category}</Link>
+        <Link to={`/shop?category=${product.category}`} className={styles.breadcrumbCategory}>{product.category}</Link>
         <span>&gt;</span>
         <span>{product.name}</span>
       </nav>
@@ -146,10 +159,11 @@ export default function ProductDetail() {
         {/* Gallery */}
         <div className={styles.gallery}>
           <div className={styles.mainImg}>
-            <img
+            <AppImage
               src={product.images[activeImg]}
               alt={product.name}
               className={styles.img}
+              wrapperClassName={styles.mainImageMedia}
             />
             {product.salePrice && <span className="tag tag-sale" style={{ position: 'absolute', top: '1rem', left: '1rem' }}>Sale</span>}
           </div>
@@ -161,7 +175,7 @@ export default function ProductDetail() {
                   className={`${styles.thumb} ${i === activeImg ? styles.thumbActive : ''}`}
                   onClick={() => setActiveImg(i)}
                 >
-                  <img src={img} alt="" />
+                  <AppImage src={img} alt="" />
                 </button>
               ))}
             </div>
@@ -174,8 +188,8 @@ export default function ProductDetail() {
           <h1 className={styles.name}>{product.name}</h1>
 
           <p className={styles.price}>
-            <span className={product.salePrice ? styles.sale : ''}>${displayPrice}</span>
-            {product.salePrice && <span className={styles.original}>${product.price}</span>}
+            <span className={product.salePrice ? styles.sale : ''}>{formatCurrency(displayPrice)}</span>
+            {product.salePrice && <span className={styles.original}>{formatCurrency(product.price)}</span>}
           </p>
 
           <hr style={{ margin: '1.5rem 0' }} />
@@ -241,11 +255,15 @@ export default function ProductDetail() {
             <button
               className={`btn btn-primary ${styles.addBtn}`}
               onClick={addToCart}
-              disabled={!canAdd}
+              disabled={variantOutOfStock}
+              aria-disabled={selectionMissing ? 'true' : undefined}
             >
-              {canAdd ? 'Add to Cart' : 'Select Options'}
+              {variantOutOfStock ? 'Out of Stock' : canAdd ? 'Add to Cart' : 'Select Options'}
             </button>
           </div>
+          {selectionMissing && (
+            <p className={styles.addHint}>Pick color and size to continue.</p>
+          )}
 
           <button
             className={`btn ${styles.wishBtn}`}

@@ -4,6 +4,8 @@ import { useProducts } from '../hooks/useProducts'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import { LOOKBOOK_ENTRIES } from '../data/lookbook'
 import BackToTop from '../components/BackToTop'
+import AppImage from '../components/AppImage'
+import { formatCurrency } from '../utils/currency'
 import styles from './Lookbook.module.css'
 
 export default function Lookbook() {
@@ -66,7 +68,7 @@ export default function Lookbook() {
               onClick={() => setActiveId(entry.id)}
               aria-label={`Open lookbook story ${entry.title}`}
             >
-              <img src={entry.image} alt={entry.title} className={styles.image} />
+              <AppImage src={entry.image} alt={entry.title} className={styles.image} />
               <div className={styles.overlay}>
                 <p>{entry.title}</p>
                 <span>{entry.caption}</span>
@@ -81,7 +83,7 @@ export default function Lookbook() {
           <div className={styles.modal} onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" aria-label="Lookbook details">
             <button className={styles.closeBtn} onClick={() => setActiveId(null)} aria-label="Close lookbook modal">Close</button>
             <div className={styles.modalImageWrap}>
-              <img src={activeEntry.image} alt={activeEntry.title} className={styles.modalImage} />
+              <AppImage src={activeEntry.image} alt={activeEntry.title} className={styles.modalImage} />
             </div>
             <div className={styles.modalInfo}>
               <h2>{activeEntry.title}</h2>
@@ -90,10 +92,10 @@ export default function Lookbook() {
               <div className={styles.productLinks}>
                 {linkedProducts.map(product => (
                   <Link key={product.id} to={`/product/${product.id}`} onClick={() => setActiveId(null)} className={styles.productLink}>
-                    <img src={product.images[0]} alt="" />
+                    <AppImage src={product.images[0]} alt="" />
                     <span>
                       <strong>{product.name}</strong>
-                      <small>${product.salePrice ?? product.price}</small>
+                      <small>{formatCurrency(product.salePrice ?? product.price)}</small>
                     </span>
                   </Link>
                 ))}

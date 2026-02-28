@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import BackToTop from '../components/BackToTop'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import AppImage from '../components/AppImage'
 import styles from './Collections.module.css'
 
 const COLLECTIONS = [
@@ -48,7 +49,7 @@ export default function Collections() {
         {COLLECTIONS.map((collection, i) => (
           <article key={collection.name} className={styles.card} style={{ animationDelay: `${i * .05}s` }}>
             <Link to={collection.to} className={styles.imageWrap}>
-              <img src={collection.img} alt={collection.name} className={styles.image} />
+              <AppImage src={collection.img} alt={collection.name} className={styles.image} />
             </Link>
             <div className={styles.info}>
               <h2>{collection.name}</h2>

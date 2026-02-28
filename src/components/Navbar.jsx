@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { useStore } from '../context/StoreContext'
 import { useProducts } from '../hooks/useProducts'
+import AppImage from './AppImage'
 import styles from './Navbar.module.css'
 
 const RECENTLY_VIEWED_KEY = 'recentlyViewedProducts'
@@ -268,7 +269,7 @@ export default function Navbar() {
                           role="menuitem"
                           onClick={() => setShopMenuOpen(false)}
                         >
-                          <img src={item.images[0]} alt="" />
+                          <AppImage src={item.images[0]} alt="" />
                           <span>{item.name}</span>
                         </Link>
                       ))
@@ -325,7 +326,7 @@ export default function Navbar() {
                     role="option"
                     aria-selected={idx === desktopActive}
                   >
-                    <img src={item.images[0]} alt="" />
+                    <AppImage src={item.images[0]} alt="" />
                     <span>
                       <strong>{item.name}</strong>
                       <small>{item.brand}</small>
@@ -489,7 +490,7 @@ export default function Navbar() {
                       role="option"
                       aria-selected={idx === mobileActive}
                     >
-                      <img src={item.images[0]} alt="" />
+                      <AppImage src={item.images[0]} alt="" />
                       <span>
                         <strong>{item.name}</strong>
                         <small>{item.brand}</small>

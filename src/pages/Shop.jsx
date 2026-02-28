@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { useProducts } from '../hooks/useProducts'
 import ProductCard from '../components/ProductCard'
 import Filters from '../components/Filters'
@@ -218,16 +218,25 @@ export default function Shop() {
           {loading ? (
             <div className="products-grid">
               {[...Array(8)].map((_, i) => (
-                <div key={i} style={{ aspectRatio: '3/4', background: 'var(--sand)', borderRadius: '4px', animation: 'pulse 1.5s ease infinite' }} />
+                <div key={i} className={styles.cardSkeleton}>
+                  <div className={styles.imageSkeleton} />
+                  <div className={styles.lineSkeleton} />
+                  <div className={styles.lineSkeletonShort} />
+                </div>
               ))}
             </div>
           ) : filtered.length === 0 ? (
             <div className={styles.empty}>
               <p className={styles.emptyTitle}>No products found</p>
               <p className={styles.emptySub}>Try adjusting your filters or search term.</p>
-              <button className="btn btn-outline" onClick={clearFilters} style={{ marginTop: '1.5rem' }}>
-                Clear all filters
-              </button>
+              <div className={styles.emptyActions}>
+                <button className="btn btn-outline" onClick={clearFilters}>
+                  Clear all filters
+                </button>
+                <Link className="btn btn-ghost" to="/shop">
+                  Back to shop
+                </Link>
+              </div>
             </div>
           ) : (
             <>

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useProducts } from '../hooks/useProducts'
 import { useStore } from '../context/StoreContext'
+import AppImage from '../components/AppImage'
+import { formatCurrency } from '../utils/currency'
 import styles from './Wishlist.module.css'
 
 export default function Wishlist() {
@@ -60,7 +62,7 @@ export default function Wishlist() {
           return (
             <article key={product.id} className={styles.card} style={{ animationDelay: `${i * .06}s` }}>
               <Link to={`/product/${product.id}`} className={styles.imgWrap}>
-                <img src={product.images[0]} alt={product.name} className={styles.img} />
+                <AppImage src={product.images[0]} alt={product.name} className={styles.img} />
                 {product.salePrice && <span className="tag tag-sale" style={{ position: 'absolute', top: '.75rem', left: '.75rem' }}>Sale</span>}
               </Link>
               <div className={styles.info}>
@@ -68,8 +70,8 @@ export default function Wishlist() {
                   <p className={styles.brand}>{product.brand}</p>
                   <Link to={`/product/${product.id}`} className={styles.name}>{product.name}</Link>
                   <p className={styles.price}>
-                    <span>${price}</span>
-                    {product.salePrice && <span className={styles.original}>${product.price}</span>}
+                    <span>{formatCurrency(price)}</span>
+                    {product.salePrice && <span className={styles.original}>{formatCurrency(product.price)}</span>}
                   </p>
                 </div>
                 <div className={styles.btnRow}>

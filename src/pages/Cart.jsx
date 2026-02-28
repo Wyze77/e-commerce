@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useStore } from '../context/StoreContext'
 import QuantitySelector from '../components/QuantitySelector'
+import AppImage from '../components/AppImage'
+import { formatCurrency } from '../utils/currency'
 import styles from './Cart.module.css'
 
 const SHIPPING = 12
@@ -127,7 +129,7 @@ export default function Cart() {
             return (
               <div key={item.key} className={styles.item}>
                 <Link to={`/product/${item.product.id}`} className={styles.imgWrap}>
-                  <img src={item.product.images[0]} alt={item.product.name} className={styles.img} />
+                  <AppImage src={item.product.images[0]} alt={item.product.name} className={styles.img} />
                 </Link>
                 <div className={styles.itemInfo}>
                   <div className={styles.itemTop}>
@@ -136,7 +138,7 @@ export default function Cart() {
                       <Link to={`/product/${item.product.id}`} className={styles.itemName}>{item.product.name}</Link>
                       <p className={styles.itemMeta}>{item.color} | {item.size}</p>
                     </div>
-                    <p className={styles.itemPrice}>${(price * item.qty).toFixed(2)}</p>
+                    <p className={styles.itemPrice}>{formatCurrency(price * item.qty)}</p>
                   </div>
                   <div className={styles.itemBottom}>
                     <QuantitySelector
@@ -196,17 +198,17 @@ export default function Cart() {
           <div className={styles.summaryRows}>
             <div className={styles.row}>
               <span>Subtotal</span>
-              <span>${subtotal.toFixed(2)}</span>
+              <span>{formatCurrency(subtotal)}</span>
             </div>
             <div className={styles.row}>
               <span>Discount</span>
               <span style={{ color: discount > 0 ? 'var(--success)' : 'inherit' }}>
-                {discount > 0 ? `-$${discount.toFixed(2)}` : '$0.00'}
+                {discount > 0 ? `-${formatCurrency(discount)}` : formatCurrency(0)}
               </span>
             </div>
             <div className={styles.row}>
               <span>Shipping</span>
-              <span>{shipping === 0 ? <span style={{ color: 'var(--success)' }}>Free</span> : `$${SHIPPING.toFixed(2)}`}</span>
+              <span>{shipping === 0 ? <span style={{ color: 'var(--success)' }}>Free</span> : formatCurrency(SHIPPING)}</span>
             </div>
             {appliedPromo?.type === 'shipping' && baseShipping > 0 && (
               <p className={styles.shippingNote}>
@@ -215,13 +217,13 @@ export default function Cart() {
             )}
             {shipping > 0 && subtotal > 0 && (
               <p className={styles.shippingNote}>
-                Add ${(150 - subtotal).toFixed(2)} more for free shipping
+                Add {formatCurrency(150 - subtotal)} more for free shipping
               </p>
             )}
             <hr />
             <div className={`${styles.row} ${styles.total}`}>
               <span>Total</span>
-              <span>${total.toFixed(2)}</span>
+              <span>{formatCurrency(total)}</span>
             </div>
           </div>
           <button className={`btn btn-primary ${styles.checkoutBtn}`}>

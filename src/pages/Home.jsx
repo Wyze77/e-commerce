@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import { useProducts } from '../hooks/useProducts'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import ProductCard from '../components/ProductCard'
+import AppImage from '../components/AppImage'
+import { formatCurrency } from '../utils/currency'
 import styles from './Home.module.css'
 
 const FEATURED_COLLECTIONS = [
@@ -65,7 +67,7 @@ export default function Home() {
           <div className={styles.collectionGrid}>
             {FEATURED_COLLECTIONS.map((collection) => (
               <Link key={collection.name} to={collection.to} className={styles.collectionCard}>
-                <img src={collection.img} alt={collection.name} className={styles.collectionImg} />
+                <AppImage src={collection.img} alt={collection.name} className={styles.collectionImg} />
                 <div className={styles.collectionOverlay}>
                   <h3>{collection.name}</h3>
                   <p>{collection.desc}</p>
@@ -90,12 +92,12 @@ export default function Home() {
             {newArrivals.map((item) => (
               <article key={item.id} className={styles.arrivalCard}>
                 <Link to={`/product/${item.id}`} className={styles.arrivalImageWrap}>
-                  <img src={item.images[0]} alt={item.name} className={styles.arrivalImage} loading="lazy" />
+                  <AppImage src={item.images[0]} alt={item.name} className={styles.arrivalImage} loading="lazy" />
                 </Link>
                 <div className={styles.arrivalInfo}>
                   <p>{item.brand}</p>
                   <Link to={`/product/${item.id}`}>{item.name}</Link>
-                  <span>${item.salePrice ?? item.price}</span>
+                  <span>{formatCurrency(item.salePrice ?? item.price)}</span>
                 </div>
               </article>
             ))}
@@ -110,7 +112,7 @@ export default function Home() {
       >
         <div className="container">
           <div className={styles.lifestyleCard}>
-            <img
+            <AppImage
               src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=1400"
               alt="Lifestyle editorial"
               className={styles.lifestyleImg}

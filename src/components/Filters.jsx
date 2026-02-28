@@ -57,11 +57,25 @@ export default function Filters({ filters, onChange, onClear }) {
           </span>
         </label>
         <div className={styles.rangeRow}>
-          <input type="number" placeholder="Min" min="0" max="400"
-            value={filters.minPrice || ''} onChange={e => set('minPrice', e.target.value)} style={{width:'80px'}} />
-          <span style={{color:'var(--ink-muted)'}}>-</span>
-          <input type="number" placeholder="Max" min="0" max="500"
-            value={filters.maxPrice || ''} onChange={e => set('maxPrice', e.target.value)} style={{width:'80px'}} />
+          <input
+            type="number"
+            placeholder="Min"
+            min="0"
+            max="400"
+            value={filters.minPrice || ''}
+            onChange={e => set('minPrice', e.target.value)}
+            className={styles.rangeInput}
+          />
+          <span className={styles.rangeDash}>-</span>
+          <input
+            type="number"
+            placeholder="Max"
+            min="0"
+            max="500"
+            value={filters.maxPrice || ''}
+            onChange={e => set('maxPrice', e.target.value)}
+            className={styles.rangeInput}
+          />
         </div>
       </div>
 

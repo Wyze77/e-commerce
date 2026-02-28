@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom'
 import { useStore } from '../context/StoreContext'
+import AppImage from './AppImage'
+import { formatCurrency } from '../utils/currency'
 import styles from './ProductCard.module.css'
 
 export default function ProductCard({ product }) {
   const { state, dispatch, toast } = useStore()
   const inWishlist = state.wishlist.includes(product.id)
   const firstAvailableVariant = product.variants.find(v => v.stock > 0)
+  const totalStock = product.variants.reduce((sum, variant) => sum + Math.max(0, variant.stock || 0), 0)
+  const outOfStock = totalStock < 1
+  const showRating = Number.isFinite(product.rating) && Number.isFinite(product.reviewCount) && product.reviewCount > 0
 
   const toggleWishlist = (e) => {
     e.preventDefault()
@@ -39,25 +44,28 @@ export default function ProductCard({ product }) {
   return (
     <article className={styles.card}>
       <Link to={`/product/${product.id}`} className={styles.imgWrap}>
-        <img
+        <AppImage
           src={product.images[0]}
           alt={product.name}
           className={styles.img}
+          wrapperClassName={styles.imgLayer}
           loading="lazy"
         />
         {product.images[1] && (
-          <img
+          <AppImage
             src={product.images[1]}
             alt=""
             className={styles.imgHover}
+            wrapperClassName={styles.imgHoverLayer}
             loading="lazy"
           />
         )}
         <div className={styles.tags}>
           {product.salePrice && <span className="tag tag-sale">Sale</span>}
+          {outOfStock && <span className={styles.stockTag}>Out of stock</span>}
         </div>
 
-        {firstAvailableVariant && (
+        {!outOfStock && firstAvailableVariant && (
           <button
             className={styles.quickAdd}
             onClick={quickAdd}
@@ -81,9 +89,18 @@ export default function ProductCard({ product }) {
       <div className={styles.info}>
         <p className={styles.brand}>{product.brand}</p>
         <Link to={`/product/${product.id}`} className={styles.name}>{product.name}</Link>
+        {showRating && (
+          <p className={styles.rating}>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2l2.77 5.61L21 8.53l-4.5 4.39 1.06 6.2L12 16.77 6.44 19.12l1.06-6.2L3 8.53l6.23-.92L12 2z" />
+            </svg>
+            <span>{product.rating.toFixed(1)}</span>
+            <span className={styles.reviews}>({product.reviewCount})</span>
+          </p>
+        )}
         <p className={styles.price}>
-          <span className={product.salePrice ? styles.sale : ''}>${displayPrice}</span>
-          {product.salePrice && <span className={styles.original}>${product.price}</span>}
+          <span className={product.salePrice ? styles.sale : ''}>{formatCurrency(displayPrice)}</span>
+          {product.salePrice && <span className={styles.original}>{formatCurrency(product.price)}</span>}
         </p>
       </div>
     </article>

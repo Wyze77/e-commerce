@@ -220,15 +220,15 @@
   border-color: var(--ink);
 }
 
-.productLink img {
+.productLink > span:first-child {
   width: 46px;
   height: 58px;
   border-radius: 4px;
-  object-fit: cover;
   background: var(--sand);
+  flex-shrink: 0;
 }
 
-.productLink span {
+.productLink > span:last-child {
   display: grid;
   gap: .12rem;
 }

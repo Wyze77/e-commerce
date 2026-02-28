@@ -1,14 +1,14 @@
 .footer {
   border-top: 1px solid var(--sand-dark);
   margin-top: 1rem;
-  background: linear-gradient(180deg, var(--cream), #f3eee6);
+  background: linear-gradient(180deg, var(--cream), #f2ece3);
 }
 
 .layout {
-  padding-top: 2.1rem;
-  padding-bottom: 1.8rem;
+  padding-top: 2.4rem;
+  padding-bottom: 2rem;
   display: grid;
-  gap: 1.4rem;
+  gap: 1.6rem;
 }
 
 @media (min-width: 980px) {
@@ -43,7 +43,7 @@
 .newsletter {
   border: 1px solid var(--sand-dark);
   border-radius: var(--r-sm);
-  padding: .8rem;
+  padding: .9rem;
   background: var(--white);
 }
 
@@ -68,6 +68,12 @@
   height: 38px;
   font-size: .68rem;
   padding: 0 .95rem;
+}
+
+.errorText {
+  margin-top: .5rem;
+  font-size: .75rem;
+  color: var(--error);
 }
 
 .linksWrap {

@@ -62,7 +62,14 @@
   gap: .5rem;
 }
 
-.rangeRow input { width: 80px !important; }
+.rangeInput {
+  width: 82px !important;
+}
+
+.rangeDash {
+  color: var(--ink-muted);
+  font-size: .85rem;
+}
 
 .pills {
   display: flex;
