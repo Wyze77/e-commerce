@@ -15,6 +15,12 @@ const SORT_OPTIONS = [
 
 const DEFAULT_FILTERS = { search: '', category: '', minPrice: '', maxPrice: '', colors: [], sizes: [], sale: '', tag: '' }
 const PER_PAGE = 12
+const CATEGORY_LABELS = {
+  clothing: 'Clothing',
+  shoes: 'Shoes',
+  belts: 'Belts',
+  accessories: 'Accessories',
+}
 
 const parseArrayParam = (value) => (value ? value.split(',').map(x => x.trim()).filter(Boolean) : [])
 
@@ -141,6 +147,20 @@ export default function Shop() {
     return filtered.slice(start, start + PER_PAGE)
   }, [filtered, page])
 
+  const suggestedProducts = useMemo(() => {
+    const list = [...products]
+    if (!list.length) return []
+
+    const hasRatings = list.some((item) => Number.isFinite(item.rating))
+    if (hasRatings) {
+      list.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0) || b.id - a.id)
+    } else {
+      list.sort((a, b) => b.id - a.id)
+    }
+
+    return list.slice(0, 4)
+  }, [products])
+
   const clearFilters = () => {
     setFilters(DEFAULT_FILTERS)
     setSort('newest')
@@ -168,11 +188,43 @@ export default function Shop() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
+  const categoryLabel = CATEGORY_LABELS[filters.category] || 'Items'
+  const breadcrumbCategory = CATEGORY_LABELS[filters.category] || 'All Items'
+  const itemsOnCurrentPage = loading ? 0 : paginatedProducts.length
+
   return (
     <div className="container" style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
-      <div className={styles.pageHeader}>
-        <h1>Shop</h1>
-        <p className={styles.count}>{filtered.length} products</p>
+      <nav className={styles.breadcrumb} aria-label="Breadcrumb">
+        <Link to="/">Home</Link>
+        <span>/</span>
+        <strong>{breadcrumbCategory}</strong>
+      </nav>
+
+      <div className={styles.summaryRow}>
+        <p className={styles.counter}>
+          Showing {itemsOnCurrentPage} of {filtered.length} {categoryLabel}
+        </p>
+
+        <div className={styles.summaryActions}>
+          {hasActiveFilters && (
+            <button
+              className={`btn btn-ghost ${styles.clearAllBtn}`}
+              onClick={clearFilters}
+            >
+              Clear filters
+            </button>
+          )}
+          <select
+            value={sort}
+            onChange={e => handleSortChange(e.target.value)}
+            className={styles.sort}
+            aria-label="Sort products"
+          >
+            {SORT_OPTIONS.map(o => (
+              <option key={o.value} value={o.value}>{o.label}</option>
+            ))}
+          </select>
+        </div>
       </div>
 
       <div className={styles.layout}>
@@ -194,27 +246,6 @@ export default function Shop() {
 
         {/* Main */}
         <div className={styles.main}>
-          <div className={styles.toolbar}>
-            <p className={styles.countDesktop}>{filtered.length} products</p>
-            {hasActiveFilters && (
-              <button
-                className={`btn btn-ghost ${styles.clearAllBtn}`}
-                onClick={clearFilters}
-              >
-                Clear all filters
-              </button>
-            )}
-            <select
-              value={sort}
-              onChange={e => handleSortChange(e.target.value)}
-              className={styles.sort}
-            >
-              {SORT_OPTIONS.map(o => (
-                <option key={o.value} value={o.value}>{o.label}</option>
-              ))}
-            </select>
-          </div>
-
           {loading ? (
             <div className="products-grid">
               {[...Array(8)].map((_, i) => (
@@ -226,18 +257,25 @@ export default function Shop() {
               ))}
             </div>
           ) : filtered.length === 0 ? (
-            <div className={styles.empty}>
-              <p className={styles.emptyTitle}>No products found</p>
-              <p className={styles.emptySub}>Try adjusting your filters or search term.</p>
-              <div className={styles.emptyActions}>
-                <button className="btn btn-outline" onClick={clearFilters}>
-                  Clear all filters
+            <>
+              <div className={styles.empty}>
+                <div className={styles.emptyIllustration} aria-hidden="true" />
+                <p className={styles.emptyTitle}>No items match your filters</p>
+                <p className={styles.emptySub}>Try adjusting your category, price range, or search terms.</p>
+                <button className="btn btn-primary" onClick={clearFilters}>
+                  Clear Filters
                 </button>
-                <Link className="btn btn-ghost" to="/shop">
-                  Back to shop
-                </Link>
               </div>
-            </div>
+
+              <section className={styles.suggestions}>
+                <h2 className={styles.suggestionsTitle}>You might like</h2>
+                <div className={styles.suggestGrid}>
+                  {suggestedProducts.map((item) => (
+                    <ProductCard key={`suggest-${item.id}`} product={item} />
+                  ))}
+                </div>
+              </section>
+            </>
           ) : (
             <>
               <div className="products-grid">

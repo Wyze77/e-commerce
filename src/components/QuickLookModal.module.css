@@ -1,0 +1,233 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 260;
+  background: rgba(18, 17, 15, 0.62);
+  backdrop-filter: blur(3px);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.modal {
+  width: min(980px, 100%);
+  max-height: calc(100vh - 2rem);
+  background: var(--surface-elevated);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--r-md);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface-elevated);
+  border-bottom: 1px solid var(--surface-border);
+  min-height: 52px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eyebrow {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--ink-muted);
+}
+
+.closeButton {
+  border: 1px solid var(--surface-border);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  background: var(--white);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: auto;
+}
+
+@media (min-width: 769px) {
+  .layout {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+}
+
+.mediaColumn {
+  padding: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.mainImageWrap {
+  aspect-ratio: 4/5;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  background: var(--surface-muted);
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbRow {
+  display: flex;
+  gap: 0.55rem;
+  overflow-x: auto;
+  padding-bottom: 0.15rem;
+}
+
+.thumbButton {
+  width: 70px;
+  height: 88px;
+  flex-shrink: 0;
+  border: 1px solid var(--surface-border);
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  background: var(--surface-muted);
+}
+
+.thumbButtonActive {
+  border-color: var(--ink);
+}
+
+.thumbImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoColumn {
+  border-top: 1px solid var(--surface-border);
+  padding: 1rem;
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+@media (min-width: 769px) {
+  .infoColumn {
+    border-top: none;
+    border-left: 1px solid var(--surface-border);
+    padding: 1.25rem;
+  }
+}
+
+.title {
+  font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+  font-weight: 350;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  font-size: 1.05rem;
+}
+
+.salePrice {
+  color: var(--ink);
+}
+
+.originalPrice {
+  color: var(--ink-muted);
+  text-decoration: line-through;
+  font-size: 0.92rem;
+}
+
+.optionGroup {
+  border: 1px solid var(--surface-border);
+  border-radius: var(--r-sm);
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.optionMissing {
+  border-color: var(--error);
+  box-shadow: 0 0 0 1px rgba(183, 61, 47, 0.22);
+}
+
+.optionLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.71rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-muted);
+}
+
+.selectedValue {
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--ink);
+  font-size: 0.82rem;
+}
+
+.optionButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.optionButton {
+  border: 1px solid var(--surface-border);
+  border-radius: var(--r-sm);
+  min-width: 44px;
+  min-height: 36px;
+  padding: 0 0.7rem;
+  font-size: 0.78rem;
+  color: var(--ink);
+  background: var(--white);
+}
+
+.optionButton:disabled {
+  opacity: 0.38;
+  text-decoration: line-through;
+}
+
+.optionButtonActive {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--white);
+}
+
+.actions {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.addButton {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .addButton {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    backdrop-filter: none;
+  }
+}

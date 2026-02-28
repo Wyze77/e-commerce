@@ -1,159 +1,223 @@
-.card {
+﻿.card {
   display: flex;
   flex-direction: column;
-  animation: fadeUp .4s ease both;
-  transition: transform .22s ease, box-shadow .22s ease;
   border-radius: var(--r-sm);
+  animation: fadeUp .35s ease both;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+.media {
+  position: relative;
 }
 
 .imgWrap {
   position: relative;
+  display: block;
   aspect-ratio: 4/5;
   overflow: hidden;
-  background: var(--sand);
   border-radius: var(--r-sm);
+  background: var(--surface-muted);
 }
 
-.imgLayer,
-.imgHoverLayer {
+.imgLayer {
   position: absolute;
   inset: 0;
 }
 
-.img,
-.imgHover {
-  transition: opacity .4s ease, transform .5s ease;
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform .3s ease;
 }
 
-.imgHoverLayer .imgHover { opacity: 0; }
-
-.imgWrap:hover .imgLayer .img { opacity: 0; }
-.imgWrap:hover .imgHoverLayer .imgHover { opacity: 1; }
-.imgWrap:hover .img { transform: scale(1.04); }
-.imgWrap:hover .imgHover { transform: scale(1.04); }
-
-.tags {
+.imgWrap::after {
+  content: '';
   position: absolute;
-  top: .75rem;
-  left: .75rem;
-  display: flex;
-  gap: .35rem;
-  flex-wrap: wrap;
-  max-width: calc(100% - 3.3rem);
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 19, 17, .22), rgba(20, 19, 17, 0) 58%);
+  opacity: 0;
+  transition: opacity .3s ease;
+  pointer-events: none;
 }
 
-.stockTag {
-  display: inline-block;
+.card:hover .img,
+.card:focus-within .img {
+  transform: scale(1.05);
+}
+
+.card:hover .imgWrap::after,
+.card:focus-within .imgWrap::after {
+  opacity: 1;
+}
+
+.badges {
+  position: absolute;
+  top: .72rem;
+  left: .72rem;
+  display: grid;
+  gap: .35rem;
+  max-width: calc(100% - 8rem);
+  pointer-events: none;
+}
+
+.badgeNew,
+.badgeLimited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  padding: .15rem .5rem;
+  border-radius: 3px;
   font-size: .62rem;
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
-  padding: .2rem .45rem;
-  border-radius: 2px;
-  background: rgba(26, 26, 24, .86);
+  width: fit-content;
+}
+
+.badgeNew {
+  background: var(--ink);
   color: var(--white);
 }
 
-.quickAdd {
-  position: absolute;
-  left: .75rem;
-  right: .75rem;
-  bottom: .75rem;
-  height: 34px;
-  border-radius: 4px;
-  border: 1px solid var(--ink);
-  background: rgba(255, 255, 255, .96);
+.badgeLimited {
+  background: rgba(255, 255, 255, .9);
   color: var(--ink);
-  font-size: .68rem;
-  font-weight: 700;
-  letter-spacing: .09em;
-  text-transform: uppercase;
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity .2s, transform .2s;
+  border: 1px solid rgba(26, 26, 24, .2);
 }
 
-.imgWrap:hover .quickAdd,
-.imgWrap:focus-within .quickAdd {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.wishBtn {
+.quickLookButton {
   position: absolute;
-  top: .75rem;
-  right: .75rem;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: rgba(250,248,245,.85);
-  backdrop-filter: blur(4px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--ink-muted);
-  transition: all .2s;
-  opacity: 0;
+  top: .72rem;
+  right: .72rem;
+  min-height: 30px;
+  border-radius: 999px;
+  border: 1px solid rgba(26, 26, 24, .2);
+  background: rgba(255, 255, 255, .92);
+  color: var(--ink);
+  font-size: .63rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 0 .62rem;
+  transition: background-color .2s ease, border-color .2s ease;
 }
 
-.imgWrap:hover .wishBtn,
-.wishBtn.wished { opacity: 1; }
-
-.wishBtn.wished { color: var(--ink); }
-.wishBtn:hover { color: var(--ink); transform: scale(1.1); }
+.quickLookButton:hover {
+  background: var(--white);
+  border-color: rgba(26, 26, 24, .45);
+}
 
 .info {
-  padding: .75rem 0 0;
-  display: flex;
-  flex-direction: column;
-  gap: .2rem;
+  padding-top: .72rem;
+  display: grid;
+  gap: .55rem;
 }
 
-.brand {
-  font-size: .7rem;
-  font-weight: 500;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--ink-muted);
+.titleRow {
+  display: flex;
+  gap: .5rem;
+  align-items: start;
 }
 
 .name {
   font-size: .9rem;
+  line-height: 1.35;
   color: var(--ink);
-  line-height: 1.3;
-  transition: opacity .2s;
+  flex: 1;
 }
-.name:hover { opacity: .7; }
 
-.price { font-size: .875rem; display: flex; gap: .5rem; align-items: baseline; }
-.sale { color: var(--ink); }
-.original { color: var(--ink-muted); text-decoration: line-through; font-size: .8rem; }
+.name:hover {
+  opacity: .76;
+}
 
-.rating {
+.wishButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--surface-border);
+  background: var(--surface-elevated);
   display: flex;
   align-items: center;
-  gap: .22rem;
-  font-size: .76rem;
-  color: var(--ink-light);
-}
-
-.rating svg {
-  color: var(--accent-dark);
-}
-
-.reviews {
+  justify-content: center;
   color: var(--ink-muted);
+  flex-shrink: 0;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.wishButton:hover,
+.wishButton.wished {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: .45rem;
+  font-size: .88rem;
+}
+
+.sale {
+  color: var(--ink);
+}
+
+.original {
+  font-size: .78rem;
+  color: var(--ink-muted);
+  text-decoration: line-through;
+}
+
+.addButton {
+  width: 100%;
+  min-height: 40px;
+  font-size: .72rem;
+}
+
+@media (min-width: 769px) {
+  .card {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+
+  .card:hover,
+  .card:focus-within {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .addButton {
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity .25s ease, transform .25s ease;
+  }
+
+  .card:hover .addButton,
+  .card:focus-within .addButton {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .card:hover { transform: none; }
-  .quickAdd {
+  .card,
+  .img,
+  .imgWrap::after,
+  .addButton {
+    transition: none;
+  }
+
+  .card:hover,
+  .card:focus-within {
     transform: none;
-    transition: opacity .2s;
+  }
+
+  .addButton {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
   }
 }
