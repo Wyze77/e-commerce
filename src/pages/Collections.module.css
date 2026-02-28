@@ -1,0 +1,91 @@
+.header {
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--sand-dark);
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: var(--ink-muted);
+  margin-bottom: .55rem;
+}
+
+.header h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  margin-bottom: .55rem;
+}
+
+.sub {
+  color: var(--ink-light);
+  max-width: 56ch;
+  font-size: .92rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+@media (min-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 1.4rem; }
+}
+
+.card {
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--white);
+  animation: fadeUp .35s ease both;
+}
+
+.imageWrap {
+  display: block;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: var(--sand);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s;
+}
+
+.imageWrap:hover .image {
+  transform: scale(1.05);
+}
+
+.info {
+  padding: 1rem;
+}
+
+.info h2 {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: .45rem;
+}
+
+.info p {
+  color: var(--ink-light);
+  font-size: .88rem;
+  margin-bottom: .85rem;
+}
+
+.link {
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--ink-muted);
+  transition: color .2s;
+}
+
+.link:hover {
+  color: var(--ink);
+}

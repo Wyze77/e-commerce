@@ -1,0 +1,250 @@
+.header {
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--sand-dark);
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: var(--ink-muted);
+  margin-bottom: .55rem;
+}
+
+.header h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  margin-bottom: .55rem;
+}
+
+.sub {
+  color: var(--ink-light);
+  max-width: 58ch;
+  font-size: .92rem;
+}
+
+.loadingGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .loadingGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.skeleton {
+  aspect-ratio: 4/3;
+  border-radius: var(--r-md);
+  background: var(--sand);
+  animation: pulse 1.5s ease infinite;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 180px;
+  }
+}
+
+.frame {
+  position: relative;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--sand);
+  cursor: pointer;
+  padding: 0;
+  border: 1px solid var(--sand-dark);
+}
+
+.frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+@media (max-width: 899px) {
+  .frame { aspect-ratio: 4/3; }
+}
+
+@media (min-width: 900px) {
+  .tall {
+    grid-column: span 7;
+    grid-row: span 2;
+  }
+
+  .wide {
+    grid-column: span 5;
+    grid-row: span 2;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s;
+}
+
+.frame:hover .image {
+  transform: scale(1.04);
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(10, 10, 10, .72), rgba(10, 10, 10, .03));
+  color: var(--white);
+  padding: .95rem;
+  text-align: left;
+}
+
+.overlay p {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin-bottom: .25rem;
+}
+
+.overlay span {
+  font-size: .8rem;
+  color: rgba(255, 255, 255, .88);
+  line-height: 1.4;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 220;
+  background: rgba(16, 16, 14, .72);
+  backdrop-filter: blur(2px);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.modal {
+  position: relative;
+  width: min(980px, 94vw);
+  max-height: 92vh;
+  background: var(--cream);
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--r-md);
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .modal {
+    grid-template-columns: 1.25fr 1fr;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+  z-index: 3;
+  border: 1px solid var(--sand-dark);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .9);
+  padding: .35rem .8rem;
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+
+.modalImageWrap {
+  min-height: 280px;
+}
+
+.modalImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modalInfo {
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+@media (min-width: 900px) {
+  .modalInfo { padding: 1.5rem; }
+}
+
+.modalInfo h2 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: .55rem;
+}
+
+.modalInfo p {
+  font-size: .9rem;
+  color: var(--ink-light);
+  margin-bottom: 1rem;
+}
+
+.productLinks {
+  display: grid;
+  gap: .55rem;
+}
+
+.productLink {
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--r-sm);
+  background: var(--white);
+  padding: .45rem;
+  display: flex;
+  gap: .55rem;
+  align-items: center;
+  transition: border-color .2s;
+}
+
+.productLink:hover {
+  border-color: var(--ink);
+}
+
+.productLink img {
+  width: 46px;
+  height: 58px;
+  border-radius: 4px;
+  object-fit: cover;
+  background: var(--sand);
+}
+
+.productLink span {
+  display: grid;
+  gap: .12rem;
+}
+
+.productLink strong {
+  font-size: .83rem;
+  line-height: 1.25;
+}
+
+.productLink small {
+  font-size: .78rem;
+  color: var(--ink-muted);
+}
+
+@keyframes pulse {
+  0% { opacity: .5; }
+  50% { opacity: .86; }
+  100% { opacity: .5; }
+}

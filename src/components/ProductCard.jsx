@@ -5,6 +5,7 @@ import styles from './ProductCard.module.css'
 export default function ProductCard({ product }) {
   const { state, dispatch, toast } = useStore()
   const inWishlist = state.wishlist.includes(product.id)
+  const firstAvailableVariant = product.variants.find(v => v.stock > 0)
 
   const toggleWishlist = (e) => {
     e.preventDefault()
@@ -13,6 +14,27 @@ export default function ProductCard({ product }) {
   }
 
   const displayPrice = product.salePrice ?? product.price
+
+  const quickAdd = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+
+    if (!firstAvailableVariant) {
+      toast('No stock available', 'error')
+      return
+    }
+
+    dispatch({
+      type: 'ADD_TO_CART',
+      payload: {
+        product,
+        color: firstAvailableVariant.color,
+        size: firstAvailableVariant.size,
+        qty: 1,
+      },
+    })
+    toast(`${product.name} added to cart`)
+  }
 
   return (
     <article className={styles.card}>
@@ -34,6 +56,17 @@ export default function ProductCard({ product }) {
         <div className={styles.tags}>
           {product.salePrice && <span className="tag tag-sale">Sale</span>}
         </div>
+
+        {firstAvailableVariant && (
+          <button
+            className={styles.quickAdd}
+            onClick={quickAdd}
+            aria-label={`Quick add ${product.name}`}
+          >
+            Quick Add
+          </button>
+        )}
+
         <button
           className={`${styles.wishBtn} ${inWishlist ? styles.wished : ''}`}
           onClick={toggleWishlist}

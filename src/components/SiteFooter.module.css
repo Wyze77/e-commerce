@@ -1,0 +1,102 @@
+.footer {
+  border-top: 1px solid var(--sand-dark);
+  margin-top: 1rem;
+  background: linear-gradient(180deg, var(--cream), #f3eee6);
+}
+
+.layout {
+  padding-top: 2.1rem;
+  padding-bottom: 1.8rem;
+  display: grid;
+  gap: 1.4rem;
+}
+
+@media (min-width: 980px) {
+  .layout {
+    grid-template-columns: 1fr 1.3fr 1fr;
+    align-items: start;
+  }
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: .2em;
+  margin-bottom: .55rem;
+}
+
+.brandCopy {
+  color: var(--ink-muted);
+  font-size: .86rem;
+  max-width: 28ch;
+}
+
+.title {
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+  color: var(--ink-muted);
+  margin-bottom: .55rem;
+}
+
+.newsletter {
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--r-sm);
+  padding: .8rem;
+  background: var(--white);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .45rem;
+}
+
+@media (min-width: 560px) {
+  .formRow {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.formRow input {
+  height: 38px;
+  font-size: .82rem;
+}
+
+.formRow button {
+  height: 38px;
+  font-size: .68rem;
+  padding: 0 .95rem;
+}
+
+.linksWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .9rem;
+}
+
+.links {
+  display: grid;
+  gap: .3rem;
+}
+
+.links a {
+  font-size: .82rem;
+  color: var(--ink-light);
+  transition: color .2s;
+}
+
+.links a:hover {
+  color: var(--ink);
+}
+
+.bottom {
+  border-top: 1px solid var(--sand-dark);
+}
+
+.bottom p {
+  padding: .85rem 0;
+  font-size: .76rem;
+  color: var(--ink-muted);
+}

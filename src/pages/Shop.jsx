@@ -13,7 +13,7 @@ const SORT_OPTIONS = [
   { value: 'rating', label: 'Rating' },
 ]
 
-const DEFAULT_FILTERS = { search: '', category: '', minPrice: '', maxPrice: '', colors: [], sizes: [] }
+const DEFAULT_FILTERS = { search: '', category: '', minPrice: '', maxPrice: '', colors: [], sizes: [], sale: '', tag: '' }
 const PER_PAGE = 12
 
 const parseArrayParam = (value) => (value ? value.split(',').map(x => x.trim()).filter(Boolean) : [])
@@ -26,6 +26,8 @@ const parseFiltersFromParams = (params) => ({
   maxPrice: params.get('maxPrice') || '',
   colors: parseArrayParam(params.get('colors')),
   sizes: parseArrayParam(params.get('sizes')),
+  sale: params.get('sale') === '1' ? '1' : '',
+  tag: params.get('tag') || '',
 })
 
 const parseSortFromParams = (params) => {
@@ -46,6 +48,8 @@ const buildParams = (filters, sort, page) => {
   if (filters.maxPrice) params.set('maxPrice', filters.maxPrice)
   if (filters.colors?.length) params.set('colors', filters.colors.join(','))
   if (filters.sizes?.length) params.set('sizes', filters.sizes.join(','))
+  if (filters.sale === '1') params.set('sale', '1')
+  if (filters.tag) params.set('tag', filters.tag)
   if (sort && sort !== 'newest') params.set('sort', sort)
   if (page > 1) params.set('page', String(page))
   return params
@@ -97,6 +101,11 @@ export default function Shop() {
     }
 
     if (filters.category) list = list.filter(p => p.category === filters.category)
+    if (filters.sale === '1') list = list.filter(p => Boolean(p.salePrice))
+    if (filters.tag) {
+      const tagNeedle = filters.tag.toLowerCase()
+      list = list.filter(p => p.tags.some(tag => tag.toLowerCase() === tagNeedle))
+    }
 
     if (filters.minPrice) list = list.filter(p => (p.salePrice ?? p.price) >= Number(filters.minPrice))
     if (filters.maxPrice) list = list.filter(p => (p.salePrice ?? p.price) <= Number(filters.maxPrice))
@@ -146,6 +155,8 @@ export default function Shop() {
     filters.maxPrice ||
     filters.colors?.length ||
     filters.sizes?.length ||
+    filters.sale === '1' ||
+    filters.tag ||
     sort !== 'newest' ||
     page !== 1
   )
